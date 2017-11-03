@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>imageUrl</key>
+		<string>www.baidu.com</string>
+		<key>icon</key>
+		<string>ad_00</string>
+	</dict>
+    <dict>
+        <key>imageUrl</key>
+        <string>www.baidu.com</string>
+        <key>icon</key>
+        <string>ad_01</string>
+    </dict>
+    <dict>
+        <key>imageUrl</key>
+        <string>www.baidu.com</string>
+        <key>icon</key>
+        <string>ad_02</string>
+    </dict>
+    <dict>
+        <key>imageUrl</key>
+        <string>www.baidu.com</string>
+        <key>icon</key>
+        <string>ad_03</string>
+    </dict>
+    <dict>
+        <key>imageUrl</key>
+        <string>www.baidu.com</string>
+        <key>icon</key>
+        <string>ad_04</string>
+    </dict>
+</array>
+</plist>
