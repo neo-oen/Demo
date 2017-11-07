@@ -114,6 +114,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = B5E6CF901FA06E9F009DD920;
 			productRefGroup = B5E6CF9A1FA06E9F009DD920 /* Products */;
@@ -263,6 +264,7 @@
 				B5E6CFA21FA06E9F009DD920 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
