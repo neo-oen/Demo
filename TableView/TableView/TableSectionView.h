@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TableSectionModel.h"
-#import "CarModel.h"
+#import "CellModel.h"
 
 typedef NS_ENUM(NSInteger, UITableSectionViewStyle) {
     UITableSectionViewStyleDefault,
@@ -28,27 +28,26 @@ typedef NS_ENUM(NSInteger, UITableSectionViewStyle) {
 - (void)updateTableSectionViewWithModel:(NSArray *)models;//加载资源
 
 //cell的增，删，改，移
--(BOOL)addTableSectionCellWithModel:(CarModel *) model;//视图的输入接口，通过她来调用视图的某些功能
--(BOOL)addTableSectionCellWithModel:(CarModel *) model andIndexPath:(NSIndexPath *)indexPath;
+-(BOOL)addTableSectionCellWithModel:(CellModel *) model;//视图的输入接口，通过她来调用视图的某些功能
+-(BOOL)addTableSectionCellWithModel:(CellModel *) model andIndexPath:(NSIndexPath *)indexPath;
 
 -(BOOL)deleteTableSectionCell;//视图的输入接口，通过她来调用视图的某些功能
 -(BOOL)deleteTableSectionCellWithIndexPath:(NSIndexPath *)indexPath;
 
--(BOOL)changeTableSectionCellWithModel:(CarModel *) model andIndexPath:(NSIndexPath *)indexPath;
+-(BOOL)changeTableSectionCellWithModel:(CellModel *) model andIndexPath:(NSIndexPath *)indexPath;
 
 -(BOOL)moveTableSectionCellWithIndexPath:(NSIndexPath *)indexPathA toIndexPath:(NSIndexPath *)indexPathB;
 
 //section的增，删，改，移
--(BOOL)addTableSectionSectionWithModel:(TableSectionModel *) model;//视图的输入接口，通过她来调用视图的某些功能
--(BOOL)addTableSectionSectionWithModel:(TableSectionModel *) model andIndexPath:(NSIndexPath *)indexPath;
+//视图的输入接口，通过她来调用视图的某些功能
+-(BOOL)addTableSectionSectionWithModel:(TableSectionModel *) model andIndexSet:(NSIndexSet *)indexSet;
 
--(BOOL)deleteTableSectionSection;//视图的输入接口，通过她来调用视图的某些功能
--(BOOL)deleteTableSectionSectionWithModel:(TableSectionModel *) model andIndexPath:(NSIndexPath *)indexPath;
+//视图的输入接口，通过她来调用视图的某些功能
+-(BOOL)deleteTableSectionWithIndexSet:(NSIndexSet *)indexSet;
 
--(BOOL)changeTableSectionSectionWithModel:(TableSectionModel *) model andIndexPath:(NSIndexPath *)indexPath;
+-(BOOL)changeTableSectionWithModel:(TableSectionModel *) model andIndexSet:(NSIndexSet *)indexSet;
 
--(BOOL)moveTableSectionSectionWithIndexPath:(NSIndexPath *)indexPathA toIndexPath:(NSIndexPath *)indexPathB;
-
+-(BOOL)moveTableSectionWithSection:(NSInteger)sectionA toSection:(NSInteger)sectionB;
 -(BOOL)reloadData;
 -(BOOL)reloadDataWithModel:(NSArray *)models;
 

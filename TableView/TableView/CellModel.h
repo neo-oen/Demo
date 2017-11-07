@@ -1,5 +1,5 @@
 //
-//  CarModel.h
+//  CellModel.h
 //  TableView
 //
 //  Created by neo on 2017/10/21.
@@ -10,17 +10,17 @@
 #import <UIKit/UIKit.h>
 
 
-@interface CarModel : NSObject
+@interface CellModel : NSObject
 
 @property(nonatomic,copy)NSString * name;
 @property(nonatomic,copy)NSString * icon;
 @property(nonatomic,assign)CGFloat cellHeight;
 
 - (instancetype)initWithDict:(NSDictionary *)dict;
-+ (instancetype)carWithDict:(NSDictionary *)dict;
++ (instancetype)cellWithDict:(NSDictionary *)dict;
 
-+ (NSArray *)carsWithPath:(NSString *)path;
-+ (NSArray *)carsWithArray:(NSArray *)array;
++ (NSArray *)cellsWithPath:(NSString *)path;
++ (NSArray *)cellsWithArray:(NSArray *)array;
 
 
 @end

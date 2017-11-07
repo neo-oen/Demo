@@ -13,16 +13,16 @@
 
 @property(nonatomic,copy)NSString * title;
 @property(nonatomic,copy)NSString * desc;
-@property(nonatomic,copy)NSArray * cars;//列表里有数组
+@property(nonatomic,copy)NSArray * cells;//列表里有数组
 //给tableview特殊
 @property(nonatomic,assign)CGFloat  headerHeight;
 @property(nonatomic,assign)CGFloat footerHeight;
 
 - (instancetype)initWithDict:(NSDictionary *)dict;
-+ (instancetype)carBrandWithDict:(NSDictionary *)dict;
++ (instancetype)cellBrandWithDict:(NSDictionary *)dict;
 
-+ (NSArray *)carBrandsWithPath:(NSString *)path;
-+ (NSArray *)carBrandsWithArray:(NSArray *)array;
++ (NSArray *)cellBrandsWithPath:(NSString *)path;
++ (NSArray *)cellBrandsWithArray:(NSArray *)array;
 
 
 @end

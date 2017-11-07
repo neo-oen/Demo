@@ -16,10 +16,10 @@
 		B5835AC11F99B931006C7BFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5835ABF1F99B931006C7BFC /* LaunchScreen.storyboard */; };
 		B5835ACC1F99B931006C7BFC /* TableViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5835ACB1F99B931006C7BFC /* TableViewUITests.m */; };
 		B5835AD71F99B9B2006C7BFC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B5835AD61F99B9B2006C7BFC /* README.md */; };
-		B5835AE71F99D4F3006C7BFC /* TableAView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5835AE61F99D4F3006C7BFC /* TableAView.m */; };
+		B5835AE71F99D4F3006C7BFC /* TableSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5835AE61F99D4F3006C7BFC /* TableSectionView.m */; };
 		B5835AEA1F99D519006C7BFC /* TableSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5835AE91F99D519006C7BFC /* TableSectionModel.m */; };
 		B5E6CF891F9A6A75009DD920 /* cars_simple.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5E6CF881F9A6A75009DD920 /* cars_simple.plist */; };
-		B5E6CF8F1F9A7BAE009DD920 /* CarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E6CF8E1F9A7BAE009DD920 /* CarModel.m */; };
+		B5E6CF8F1F9A7BAE009DD920 /* CellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E6CF8E1F9A7BAE009DD920 /* CellModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,13 +49,13 @@
 		B5835ACD1F99B931006C7BFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5835AD61F99B9B2006C7BFC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B5835ADE1F99D36A006C7BFC /* Public.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Public.h; sourceTree = "<group>"; };
-		B5835AE51F99D4F3006C7BFC /* TableAView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableAView.h; sourceTree = "<group>"; };
-		B5835AE61F99D4F3006C7BFC /* TableAView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableAView.m; sourceTree = "<group>"; };
+		B5835AE51F99D4F3006C7BFC /* TableSectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableSectionView.h; sourceTree = "<group>"; };
+		B5835AE61F99D4F3006C7BFC /* TableSectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableSectionView.m; sourceTree = "<group>"; };
 		B5835AE81F99D519006C7BFC /* TableSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableSectionModel.h; sourceTree = "<group>"; };
 		B5835AE91F99D519006C7BFC /* TableSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableSectionModel.m; sourceTree = "<group>"; };
 		B5E6CF881F9A6A75009DD920 /* cars_simple.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cars_simple.plist; sourceTree = "<group>"; };
-		B5E6CF8D1F9A7BAE009DD920 /* CarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarModel.h; sourceTree = "<group>"; };
-		B5E6CF8E1F9A7BAE009DD920 /* CarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarModel.m; sourceTree = "<group>"; };
+		B5E6CF8D1F9A7BAE009DD920 /* CellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellModel.h; sourceTree = "<group>"; };
+		B5E6CF8E1F9A7BAE009DD920 /* CellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,8 +145,8 @@
 			children = (
 				B5835AE81F99D519006C7BFC /* TableSectionModel.h */,
 				B5835AE91F99D519006C7BFC /* TableSectionModel.m */,
-				B5E6CF8D1F9A7BAE009DD920 /* CarModel.h */,
-				B5E6CF8E1F9A7BAE009DD920 /* CarModel.m */,
+				B5E6CF8D1F9A7BAE009DD920 /* CellModel.h */,
+				B5E6CF8E1F9A7BAE009DD920 /* CellModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -154,8 +154,8 @@
 		B5835ADC1F99D326006C7BFC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B5835AE51F99D4F3006C7BFC /* TableAView.h */,
-				B5835AE61F99D4F3006C7BFC /* TableAView.m */,
+				B5835AE51F99D4F3006C7BFC /* TableSectionView.h */,
+				B5835AE61F99D4F3006C7BFC /* TableSectionView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -276,9 +276,9 @@
 			files = (
 				B5835AEA1F99D519006C7BFC /* TableSectionModel.m in Sources */,
 				B5835AB61F99B931006C7BFC /* ViewController.m in Sources */,
-				B5835AE71F99D4F3006C7BFC /* TableAView.m in Sources */,
+				B5835AE71F99D4F3006C7BFC /* TableSectionView.m in Sources */,
 				B5835ABC1F99B931006C7BFC /* TableView.xcdatamodeld in Sources */,
-				B5E6CF8F1F9A7BAE009DD920 /* CarModel.m in Sources */,
+				B5E6CF8F1F9A7BAE009DD920 /* CellModel.m in Sources */,
 				B5835AD71F99B9B2006C7BFC /* README.md in Sources */,
 				B5835AB31F99B931006C7BFC /* AppDelegate.m in Sources */,
 				B5835AB01F99B931006C7BFC /* main.m in Sources */,

@@ -6,9 +6,9 @@
 //  Copyright © 2017年 neo. All rights reserved.
 //
 
-#import "TableAView.h"
+#import "TableSectionView.h"
 #import "TableSectionModel.h"
-#import "CarModel.h"
+#import "CellModel.h"
 #import "Public.h"
 
 
@@ -85,24 +85,23 @@
 
 
 //cell的增，删，改，移
--(BOOL)addTableSectionCellWithModel:(CarModel *) model{
+-(BOOL)addTableSectionCellWithModel:(CellModel *) model{
     NSIndexPath * indexPath = self.tableView.indexPathForSelectedRow;
     if (!indexPath) {
         //在没有选中的情况下默认添加最后一行
-        NSInteger row = self.models.count-1;
+        NSInteger section = self.models.count-1;
         TableSectionModel * model = [self.models lastObject];
-        NSInteger section = model.cars.count-1;
+        NSInteger row = model.cells.count;
         indexPath = [NSIndexPath indexPathForRow:row inSection:section];
     }
     
     return [self addTableSectionCellWithModel:model andIndexPath:indexPath];
 }
--(BOOL)addTableSectionCellWithModel:(CarModel *) model andIndexPath:(NSIndexPath *)indexPath{
-    
+-(BOOL)addTableSectionCellWithModel:(CellModel *) model andIndexPath:(NSIndexPath *)indexPath{
     TableSectionModel * sectionModel = self.models[indexPath.section];
-    NSMutableArray * array = [NSMutableArray arrayWithArray:sectionModel.cars];
+    NSMutableArray * array = [NSMutableArray arrayWithArray:sectionModel.cells];
     [array insertObject:model atIndex:indexPath.row];
-    sectionModel.cars = array;
+    sectionModel.cells = array;
     
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
     return YES;
@@ -119,78 +118,99 @@
 }
 -(BOOL)deleteTableSectionCellWithIndexPath:(NSIndexPath *)indexPath{
     TableSectionModel * sectionModel = self.models[indexPath.section];
-    NSMutableArray * array = [NSMutableArray arrayWithArray:sectionModel.cars];
+    NSMutableArray * array = [NSMutableArray arrayWithArray:sectionModel.cells];
+    if (array.count==1) {
+#warning 删除section
+        return YES;
+    }
     [array removeObjectAtIndex:indexPath.row];
-    sectionModel.cars = array;
+    sectionModel.cells = array;
     
     [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationRight];
     return YES;
 }
 
--(BOOL)changeTableSectionCellWithModel:(CarModel *) model andIndexPath:(NSIndexPath *)indexPath{
+-(BOOL)changeTableSectionCellWithModel:(CellModel *) model andIndexPath:(NSIndexPath *)indexPath{
     TableSectionModel * sectionModel = self.models[indexPath.section];
-    NSMutableArray * array = [NSMutableArray arrayWithArray:sectionModel.cars];
+    NSMutableArray * array = [NSMutableArray arrayWithArray:sectionModel.cells];
     [array replaceObjectAtIndex:indexPath.row withObject:model];
-    sectionModel.cars = array;
+    sectionModel.cells = array;
     
     [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
     return YES;
 }
 
 -(BOOL)moveTableSectionCellWithIndexPath:(NSIndexPath *)indexPathA toIndexPath:(NSIndexPath *)indexPathB{
+    //判断是否是同一个section
     if (indexPathA.section==indexPathB.section) {
         TableSectionModel * sectionModel = self.models[indexPathA.section];
-        NSMutableArray * array = [NSMutableArray arrayWithArray:sectionModel.cars];
+        NSMutableArray * array = [NSMutableArray arrayWithArray:sectionModel.cells];
         [array exchangeObjectAtIndex:indexPathA.row withObjectAtIndex:indexPathB.row];
-        sectionModel.cars = array;
+        sectionModel.cells = array;
     }else{
         TableSectionModel * sectionModelA = self.models[indexPathA.section];
         TableSectionModel * sectionModelB = self.models[indexPathB.section];
-        NSMutableArray * arrayA = [NSMutableArray arrayWithArray:sectionModelA.cars];
-        NSMutableArray * arrayB = [NSMutableArray arrayWithArray:sectionModelB.cars];
+        NSMutableArray * arrayA = [NSMutableArray arrayWithArray:sectionModelA.cells];
+        NSMutableArray * arrayB = [NSMutableArray arrayWithArray:sectionModelB.cells];
         
-        CarModel *modelA = arrayA[indexPathA.row];
-        CarModel *modelB = arrayA[indexPathB.row];
+        CellModel *modelA = arrayA[indexPathA.row];
+
         
+        [arrayB insertObject:modelA atIndex:indexPathB.row];
         [arrayA removeObjectAtIndex:indexPathA.row];
         
-        [arrayB insertObject:model atIndex:indexPath.row];
-        
+        sectionModelA.cells = arrayA;
+        sectionModelB.cells = arrayB;
     }
+      [self.tableView moveRowAtIndexPath:indexPathA toIndexPath:indexPathB];
+//    //或使用先增加，再删除的方法
+//    
+//    TableSectionModel * sectionModelA = self.models[indexPathA.section];
+//    NSArray * arrayA = [NSArray arrayWithArray:sectionModelA.cells];
+//    CellModel *modelA = arrayA[indexPathA.row];
+//    
+//    [self deleteTableSectionCellWithIndexPath:indexPathA];
+//    [self addTableSectionCellWithModel:modelA andIndexPath:indexPathB];
     
-   
+    
     
     return YES;
 }
 
 //section的增，删，改，移
--(BOOL)addTableSectionSectionWithModel:(TableSectionModel *) model{
-    return YES;
-}
--(BOOL)addTableSectionSectionWithModel:(TableSectionModel *) model andIndexPath:(NSIndexPath *)indexPath{
-    return YES;
-}
 
--(BOOL)deleteTableSectionSection{
-    return YES;
-}
--(BOOL)deleteTableSectionSectionWithModel:(TableSectionModel *) model andIndexPath:(NSIndexPath *)indexPath{
+-(BOOL)addTableSectionSectionWithModel:(TableSectionModel *) model andIndexSet:(NSIndexSet *)indexSet{
+    
+    
     return YES;
 }
 
 
--(BOOL)changeTableSectionSectionWithModel:(TableSectionModel *) model andIndexPath:(NSIndexPath *)indexPath{
+-(BOOL)deleteTableSectionWithIndexSet:(NSIndexSet *)indexSet{
+    NSMutableArray * array = [NSMutableArray arrayWithArray:self.models];
+    [array removeObjectAtIndex:indexSet.firstIndex];
+    
+    [self.tableView deleteSections:indexSet withRowAnimation:UITableViewRowAnimationLeft];
+    return YES;
+    
+}
+
+
+-(BOOL)changeTableSectionWithModel:(TableSectionModel *) model andIndexSet:(NSIndexSet *)indexSet{
     return YES;
 }
 
--(BOOL)moveTableSectionSectionWithIndexPath:(NSIndexPath *)indexPathA toIndexPath:(NSIndexPath *)indexPathB{
+-(BOOL)moveTableSectionWithSection:(NSInteger)sectionA toSection:(NSInteger)sectionB{
     return YES;
 }
 
 -(BOOL)reloadData{
+    [self.tableView reloadData];
     return YES;
 }
 -(BOOL)reloadDataWithModel:(NSArray *)models{
+    self.models = models;
+    [self reloadData];
     return YES;
 }
 #pragma mark - ============== 方法 ==============
@@ -198,7 +218,7 @@
 //dataSource
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     TableSectionModel * model = self.models[section];
-    return model.cars.count;
+    return model.cells.count;
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return self.models.count;
@@ -217,14 +237,14 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     TableSectionModel * model = self.models[indexPath.section];
-    CarModel * carModel = model.cars[indexPath.row];
+    CellModel * CellModel = model.cells[indexPath.row];
     
     
        // 设置imageView
-    cell.imageView.image = [UIImage imageNamed:carModel.icon];
+    cell.imageView.image = [UIImage imageNamed:CellModel.icon];
     
     // 设置文本
-    cell.textLabel.text = carModel.name;
+    cell.textLabel.text = CellModel.name;
     
     return cell;
 }
@@ -251,7 +271,7 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 
     TableSectionModel * model = self.models[indexPath.section];
-    return [model.cars[indexPath.row] cellHeight];
+    return [model.cells[indexPath.row] cellHeight];
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
     TableSectionModel * model = self.models[section];
@@ -261,6 +281,10 @@
     TableSectionModel * model = self.models[section];
     return model.headerHeight;
 }
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"section=%ld,row=%ld",indexPath.section,indexPath.row);
+}
+
 
 @end
 

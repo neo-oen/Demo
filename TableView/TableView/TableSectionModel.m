@@ -7,7 +7,7 @@
 //
 
 #import "TableSectionModel.h"
-#import "CarModel.h"
+#import "CellModel.h"
 
 
 
@@ -19,35 +19,35 @@
     self = [super init];
     if (self) {
         [self setValuesForKeysWithDictionary:dict];
-        _cars = [CarModel carsWithArray:_cars];//判断属性里有无数组
+        _cells = [CellModel cellsWithArray:_cells];//判断属性里有无数组
         _headerHeight = (arc4random()%10) + 20;
         _footerHeight = (arc4random()%10) + 20;
     }
     return self;
 }
 
-+ (instancetype)carBrandWithDict:(NSDictionary *)dict
++ (instancetype)cellBrandWithDict:(NSDictionary *)dict
 {
     return [[self alloc] initWithDict:dict];
 }
 
-+ (NSArray *)carBrandsWithPath:(NSString *)path
++ (NSArray *)cellBrandsWithPath:(NSString *)path
 {
     NSArray *array = [NSArray arrayWithContentsOfFile:path];
     
     NSMutableArray *arrayM = [NSMutableArray array];
     for (NSDictionary *dict in array) {
-        [arrayM addObject:[self carBrandWithDict:dict]];
+        [arrayM addObject:[self cellBrandWithDict:dict]];
     }
     
     return arrayM;
 }
 
-+(NSArray *)carBrandsWithArray:(NSArray *)array
++(NSArray *)cellBrandsWithArray:(NSArray *)array
 {
     NSMutableArray *arrayM = [NSMutableArray array];
     for (NSDictionary *dict in array) {
-        [arrayM addObject:[self carBrandWithDict:dict]];
+        [arrayM addObject:[self cellBrandWithDict:dict]];
     }
     
     return arrayM;

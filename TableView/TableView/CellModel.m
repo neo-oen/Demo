@@ -1,15 +1,15 @@
 //
-//  CarModel.m
+//  CellModel.m
 //  TableView
 //
 //  Created by neo on 2017/10/21.
 //  Copyright © 2017年 neo. All rights reserved.
 //
 
-#import "CarModel.h"
+#import "CellModel.h"
 
 
-@implementation CarModel
+@implementation CellModel
 
 - (instancetype)initWithDict:(NSDictionary *)dict
 {
@@ -21,28 +21,28 @@
     return self;
 }
 
-+ (instancetype)carWithDict:(NSDictionary *)dict
++ (instancetype)cellWithDict:(NSDictionary *)dict
 {
     return [[self alloc] initWithDict:dict];
 }
 
-+ (NSArray *)carsWithPath:(NSString *)path
++ (NSArray *)cellsWithPath:(NSString *)path
 {
     NSArray *array = [NSArray arrayWithContentsOfFile:path];
     
     NSMutableArray *arrayM = [NSMutableArray array];
     for (NSDictionary *dict in array) {
-        [arrayM addObject:[self carWithDict:dict]];
+        [arrayM addObject:[self cellWithDict:dict]];
     }
     
     return arrayM;
 }
 
-+(NSArray *)carsWithArray:(NSArray *)array
++(NSArray *)cellsWithArray:(NSArray *)array
 {
     NSMutableArray *arrayM = [NSMutableArray array];
     for (NSDictionary *dict in array) {
-        [arrayM addObject:[self carWithDict:dict]];
+        [arrayM addObject:[self cellWithDict:dict]];
     }
     
     return arrayM;
@@ -50,6 +50,6 @@
 
 @end
 
-//@implementation CarModel
+//@implementation CellModel
 //
 //@end
