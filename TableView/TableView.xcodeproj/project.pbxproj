@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D5FEF7C1FB2F936009918B6 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5FEF7B1FB2F936009918B6 /* TableViewCell.m */; };
 		B5835AB01F99B931006C7BFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5835AAF1F99B931006C7BFC /* main.m */; };
 		B5835AB31F99B931006C7BFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5835AB21F99B931006C7BFC /* AppDelegate.m */; };
 		B5835AB61F99B931006C7BFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5835AB51F99B931006C7BFC /* ViewController.m */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D5FEF7A1FB2F936009918B6 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewCell.h; path = TableView/TableViewCell.h; sourceTree = SOURCE_ROOT; };
+		5D5FEF7B1FB2F936009918B6 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewCell.m; path = TableView/TableViewCell.m; sourceTree = SOURCE_ROOT; };
 		B5835AAB1F99B931006C7BFC /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5835AAF1F99B931006C7BFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B5835AB11F99B931006C7BFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -76,6 +79,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D5FEF791FB2F72E009918B6 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5D5FEF7A1FB2F936009918B6 /* TableViewCell.h */,
+				5D5FEF7B1FB2F936009918B6 /* TableViewCell.m */,
+			);
+			name = TableViewCell;
+			path = TableView;
+			sourceTree = "<group>";
+		};
 		B5835AA21F99B931006C7BFC = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				B5D8E0EB1FB220D60099017D /* TableView */,
+				5D5FEF791FB2F72E009918B6 /* TableViewCell */,
 				B5835ADD1F99D32D006C7BFC /* Other */,
 				B5835AD81F99D245006C7BFC /* ViewControl */,
 				B5835AAE1F99B931006C7BFC /* Supporting Files */,
@@ -286,6 +300,7 @@
 				B5835ABC1F99B931006C7BFC /* TableView.xcdatamodeld in Sources */,
 				B5835AD71F99B9B2006C7BFC /* README.md in Sources */,
 				B5835AB31F99B931006C7BFC /* AppDelegate.m in Sources */,
+				5D5FEF7C1FB2F936009918B6 /* TableViewCell.m in Sources */,
 				B5835AB01F99B931006C7BFC /* main.m in Sources */,
 				B5D8E0F61FB220D60099017D /* TableSectionView.m in Sources */,
 				B5D8E0F51FB220D60099017D /* TableSectionModel.m in Sources */,
