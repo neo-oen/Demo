@@ -14,7 +14,7 @@
 
 @property(nonatomic,copy)NSString * name;
 @property(nonatomic,copy)NSString * icon;
-@property(nonatomic,assign)CGFloat cellHeight;
+@property(nonatomic,assign,readonly)CGFloat cellHeight;
 
 - (instancetype)initWithDict:(NSDictionary *)dict;
 + (instancetype)cellWithDict:(NSDictionary *)dict;

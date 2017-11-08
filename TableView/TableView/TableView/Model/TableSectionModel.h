@@ -15,8 +15,8 @@
 @property(nonatomic,copy)NSString * desc;
 @property(nonatomic,copy)NSArray * cells;//列表里有数组
 //给tableview特殊
-@property(nonatomic,assign)CGFloat  headerHeight;
-@property(nonatomic,assign)CGFloat footerHeight;
+@property(nonatomic,assign,readonly)CGFloat  headerHeight;
+@property(nonatomic,assign,readonly)CGFloat footerHeight;
 
 - (instancetype)initWithDict:(NSDictionary *)dict;
 + (instancetype)cellBrandWithDict:(NSDictionary *)dict;

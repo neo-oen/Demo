@@ -16,7 +16,7 @@
     self = [super init];
     if (self) {
         [self setValuesForKeysWithDictionary:dict];
-        self.cellHeight = (arc4random()%20) +30;
+        _cellHeight = (arc4random()%20) +30;
     }
     return self;
 }
