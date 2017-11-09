@@ -14,7 +14,11 @@
 
 @property(nonatomic,copy)NSString * name;
 @property(nonatomic,copy)NSString * icon;
+
+@property(nonatomic,assign,readonly)CGRect  nameLabelFrame;
+@property(nonatomic,assign,readonly)CGRect userImageViewFrame;
 @property(nonatomic,assign,readonly)CGFloat cellHeight;
+
 
 - (instancetype)initWithDict:(NSDictionary *)dict;
 + (instancetype)cellWithDict:(NSDictionary *)dict;

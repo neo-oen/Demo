@@ -11,12 +11,15 @@
 
 @implementation CellModel
 
+
+#pragma mark - ============== 初始化 ==============
 - (instancetype)initWithDict:(NSDictionary *)dict
 {
     self = [super init];
     if (self) {
         [self setValuesForKeysWithDictionary:dict];
-        _cellHeight = (arc4random()%20) +30;
+        //frame和Height都在这里赋值
+        [self getFrameAndHeight];
     }
     return self;
 }
@@ -48,8 +51,21 @@
     return arrayM;
 }
 
+#pragma mark - ============== 方法 ==============
+
+-(void)getFrameAndHeight{
+    _userImageViewFrame = CGRectMake(10, 10, 50, 50);
+    CGSize nameLabelMaxSize = CGSizeMake(MAXFLOAT, MAXFLOAT);
+    
+    CGSize nameLabelSize =[_name boundingRectWithSize:nameLabelMaxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:17]} context:nil].size;
+    
+    _nameLabelFrame.origin = CGPointMake(10+50+10, 50*0.5+10-nameLabelSize.height*0.5);
+    _nameLabelFrame.size = nameLabelSize;
+    
+    _cellHeight = 50+10;
+}
+
+
 @end
 
-//@implementation CellModel
-//
-//@end
+

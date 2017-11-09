@@ -8,6 +8,7 @@
 
 #import "TableSectionView.h"
 #import "TableSectionModel.h"
+#import "TableViewCell.h"
 #import "CellModel.h"
 #import "Public.h"
 
@@ -226,25 +227,20 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     // static 避免多次分配内存
-    static NSString *identifier = @"fdsfdsfds";
+    static NSString *identifier = @"TableViewCell";
     
     // 1. 到缓存池中去找cell
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     
     // 2. 判断是否取到， 如果取不到就实例化新的cell
     if (nil == cell) {
         // 实例化tableViewcell
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        cell = [TableViewCell cellWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     TableSectionModel * model = self.models[indexPath.section];
     CellModel * CellModel = model.cells[indexPath.row];
     
-    
-       // 设置imageView
-    cell.imageView.image = [UIImage imageNamed:CellModel.icon];
-    
-    // 设置文本
-    cell.textLabel.text = CellModel.name;
+    [cell updateTableViewCellWithModel:CellModel];
     
     return cell;
 }
