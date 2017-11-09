@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TableViewCell : UITableViewCell
-
-
-@end
+//@interface TableViewCell : UITableViewCell
+//
+//
+//@end
