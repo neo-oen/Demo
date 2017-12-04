@@ -91,7 +91,7 @@
 -(void)setUpData{
     self.timeLabel.text = _model.time;
     
-   NSString * icon = _model.type==ME?@"me":@"other";
+   NSString * icon = _model.type==ME?@"other":@"me";
     [self.userImageView setImage:[UIImage imageNamed:icon]];
     
     [self.contentButton setTitle:_model.text forState:UIControlStateNormal];

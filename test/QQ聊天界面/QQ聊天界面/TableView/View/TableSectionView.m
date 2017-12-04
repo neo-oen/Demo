@@ -236,6 +236,7 @@
     if (nil == cell) {
         // 实例化tableViewcell
         cell = [TableViewCell cellWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     TableSectionModel * model = self.models[indexPath.section];
     CellModel * cellModel = model.cells[indexPath.row];
@@ -277,7 +278,7 @@
     return model.headerHeight;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"section=%ld,row=%ld",indexPath.section,indexPath.row);
+//    NSLog(@"section=%ld,row=%ld",indexPath.section,indexPath.row);
 }
 
 

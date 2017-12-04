@@ -68,7 +68,7 @@
 -(void)getFrameAndHeight{
 
     _timelFrame = CGRectMake(0, 0, screen_width, 20);
-    if (_timeHidden==YES) {
+    if (self.istimeHiddened==YES) {
         _timelFrame = CGRectMake(0, 0, 0, 0);
     }
     

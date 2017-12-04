@@ -29,3 +29,6 @@ clearbutton 与reghtview
 
 
 懒加载怎么玩
+
+
+time还没写，还有隐藏也没有写，剩下就是自动回复。

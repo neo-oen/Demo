@@ -25,7 +25,7 @@
         
         NSString *path = [[NSBundle mainBundle] pathForResource:@"messages.plist" ofType:nil];
         TableSectionModel * scetionModel = [TableSectionModel cellBrandWithPath:path];
-        _tableView = [TableSectionView TableSectionWithFrame:CGRectMake(0, 0, screen_width, screen_height-40) withStyle:UITableViewStylePlain andModel:@[scetionModel]];
+        _tableView = [TableSectionView TableSectionWithFrame:CGRectMake(0, 20, screen_width, screen_height-60) withStyle:UITableViewStylePlain andModel:@[scetionModel]];
         [self.view addSubview:_tableView];
         //
     }
@@ -43,6 +43,7 @@
 }
 
 
+#pragma mark - ============== 开始 ==============
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -88,13 +89,58 @@
     
 }
 
+-(NSString *)getcurrentTime{
+    
+    NSDate * currentTime = [NSDate date];
+    NSDateFormatter * dateFormatter = [[NSDateFormatter alloc]init];
+    dateFormatter.dateFormat = @"HH:mm";
+    NSString * timeString = [dateFormatter stringFromDate:currentTime];
+    return timeString;
+}
+
+-(void)addDialogWithString:(NSString *)string andType:(Type)type{
+    
+    NSString * timeString = [self getcurrentTime];
+    NSNumber * nType = [[NSNumber alloc]initWithBool:type];
+    
+    NSDictionary * dic = @{@"text":string,@"time":timeString,@"type":nType };
+    
+    NSInteger section = _tableView.models.count-1;
+    TableSectionModel * sectionModel = _tableView.models[section];
+    NSInteger row = sectionModel.cells.count-1;
+    
+    CellModel * lastCellModel = sectionModel.cells[row];
+    
+    //BOOL timeHidden = [ dict[@"time"] isEqualToString:previousCellModel.time];
+    NSString * lastTimeString = lastCellModel.time.length >6 ? [lastCellModel.time substringWithRange:NSMakeRange(3, 5)] : lastCellModel.time;
+    BOOL hiddenTime = [lastTimeString isEqualToString:timeString];
+    CellModel * cellModel = [CellModel cellWithDict:dic andHiddenTime:hiddenTime];
+    
+    [_tableView addTableSectionCellWithModel:cellModel];
+    
+    NSIndexPath *path = [NSIndexPath indexPathForRow:row inSection:section];
+    [_tableView.tableView scrollToRowAtIndexPath:path atScrollPosition:UITableViewScrollPositionTop animated:YES];
+
+    
+}
 #pragma mark - ============== 代理 ==============
 
+
+
+/**
+1.取消第一相应
+2.添加一条
+3.自动回复
+4.清空，_textField
+ */
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
     
     [textField resignFirstResponder];
     
-    
+    [self addDialogWithString:textField.text andType:1];
+    [self addDialogWithString:@"你傻逼" andType:0];
+
+    [_textField setText:@""];
     
     return YES;
 }

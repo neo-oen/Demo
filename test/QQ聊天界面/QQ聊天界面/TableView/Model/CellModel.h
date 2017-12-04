@@ -23,7 +23,7 @@ typedef enum : NSUInteger {
 @property(nonatomic,assign)Type type;
 @property(nonatomic,strong)NSString * icon;
 
-@property(nonatomic,assign)BOOL timeHidden;
+@property(nonatomic,assign,getter =istimeHiddened)BOOL timeHidden;
 
 @property(nonatomic,assign,readonly)CGRect  timelFrame;
 @property(nonatomic,assign,readonly)CGRect textContentFrame;
