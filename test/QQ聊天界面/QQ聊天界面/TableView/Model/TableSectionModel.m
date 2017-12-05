@@ -11,7 +11,6 @@
 
 
 
-
 @implementation TableSectionModel
 
 - (instancetype)initWithDict:(NSDictionary *)dict
@@ -20,7 +19,6 @@
     if (self) {
         [self setValuesForKeysWithDictionary:dict];
         _cells = [CellModel cellsWithArray:_cells];//判断属性里有无数组
-        [self getFrameAndHeight];
     }
     return self;
 }
@@ -30,16 +28,24 @@
     return [[self alloc] initWithDict:dict];
 }
 
-+ (NSArray *)cellBrandsWithPath:(NSString *)path
++ (NSArray *)cellBrandsWithPath:(NSString *)path andDicType:(dicType)type
 {
     NSArray *array = [NSArray arrayWithContentsOfFile:path];
-    
     NSMutableArray *arrayM = [NSMutableArray array];
-    for (NSDictionary *dict in array) {
-        [arrayM addObject:[self cellBrandWithDict:dict]];
+    if (type) {
+        for (NSDictionary *dict in array) {
+            
+            [arrayM addObject:[self cellBrandWithDict:dict]];
+        }
+         return arrayM;
+        
+    }else{
+
+        TableSectionModel * sectionModel = [[self alloc]init];
+        sectionModel.cells = [CellModel cellsWithArray:array];
+        return @[sectionModel];
     }
     
-    return arrayM;
 }
 
 +(NSArray *)cellBrandsWithArray:(NSArray *)array
@@ -52,13 +58,7 @@
     return arrayM;
 }
 
-+(instancetype)cellBrandWithPath:(NSString *)path{
-    NSArray *array = [NSArray arrayWithContentsOfFile:path];
-    TableSectionModel * sectionModel = [[self alloc]init];
-    sectionModel.cells = [CellModel cellsWithArray:array];
-    [sectionModel getFrameAndHeight];
-    return sectionModel;
-}
+
 
 #pragma mark - ============== 方法 ==============
 

@@ -1,15 +1,13 @@
 
 
 
-get方法重命名 Bool变量一般样更改，（建议）
-@property(nonatomic,assign,getter =istimessd)BOOL timeHidden;
+优化tableview的方法：
+在cellForRowAtIndexPath这里面，直接赋值，不做任何运算。
+
+由于init 和initwithXX是有序序关系的，骚后，调试查看下：可能会再走一下init
 
 
-优化tableview 在cellForRowAtIndexPath这里面，直接赋值，不做任何运算。
-
-由于init 和initwithXX是有序序关系的，骚后，调试查看下
-
-修改cell的model，增加cellweight，
+修改cell的model，增加cellweight，和cellmodel 里增加cell属性（弱关联）哪个更好呢
 
 
 修改tableviewcell里的model的set方法，
@@ -32,3 +30,7 @@ clearbutton 与reghtview
 
 
 time还没写，还有隐藏也没有写，剩下就是自动回复。
+
+
+
+写了一个方法来判断NSDictionary里的数据类型
