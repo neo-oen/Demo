@@ -10,6 +10,8 @@
 修改cell的model，增加cellweight，和cellmodel 里增加cell属性（弱关联）哪个更好呢
 
 
+cell里初始化设置要分成，只需要设置一次的，和多少使用的
+
 
 textfilt
 textfilt 的clearbutton 与 reghtview 是不是可以一起显示待定
@@ -30,4 +32,6 @@ id jk = dic[@"sdfd"];
 
 要提供很多，很多有用的方法，最好的就是让方法划一。
 
+
+table说，我知道，我要总高度，你给不了我，你就的先把你的高度给我，我自己加（这个只用于添加的单个cellmodel时候用）
 
