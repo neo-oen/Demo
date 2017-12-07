@@ -39,7 +39,11 @@ typedef NS_ENUM(NSUInteger, dicType) {
 -(void)setFrameWithWidthAndHeight:(CGPoint)widthHeight;
 //连带初始化frame
 
+- (instancetype)initWithDict:(NSDictionary *)dict AndHeight:(CGPoint)widthHeight;
++ (instancetype)cellBrandWithDict:(NSDictionary *)dict AndHeight:(CGPoint)widthHeight;
 
++ (NSArray *)cellBrandsWithPath:(NSString *)path andDicType:(dicType)type AndHeight:(CGPoint)widthHeight;
++ (NSArray *)cellBrandsWithArray:(NSArray *)array AndHeight:(CGPoint)widthHeight;
 
 
 

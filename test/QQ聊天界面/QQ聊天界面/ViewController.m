@@ -24,8 +24,8 @@
     if(!_tableView) {
         
         NSString *path = [[NSBundle mainBundle] pathForResource:@"messages.plist" ofType:nil];
-        TableSectionModel * scetionModel = [TableSectionModel cellBrandWithPath:path];
-        _tableView = [TableSectionView TableSectionWithFrame:CGRectMake(0, 20, screen_width, screen_height-60) withStyle:UITableViewStylePlain andModel:@[scetionModel]];
+        NSArray * models = [TableSectionModel cellBrandsWithPath:path andDicType:diclevel AndHeight:CGPointMake(screen_width, 0)];
+        _tableView = [TableSectionView TableSectionWithFrame:CGRectMake(0, 20, screen_width, screen_height-60) withStyle:UITableViewStylePlain andModel:models];
         [self.view addSubview:_tableView];
         //
     }
@@ -35,8 +35,15 @@
 -(UITextField *)textField
 {
     if(!_textField) {
-        _textField = [[UITextField alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.tableView.frame), screen_width, 40)];
+        _textField = [[UITextField alloc]initWithFrame:CGRectMake(20, CGRectGetMaxY(self.tableView.frame), screen_width-40, 40)];
         _textField.delegate = self;
+        [_textField setBackgroundColor:[UIColor yellowColor]];
+        UIView * view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 30, 50)];
+        [view setBackgroundColor:[UIColor redColor]];
+        _textField.rightView = view;
+        [_textField setRightViewMode:UITextFieldViewModeAlways];
+        [_textField setClearButtonMode:UITextFieldViewModeWhileEditing];
+        
         [self.view addSubview:_textField];
     }
     return _textField;
@@ -114,7 +121,7 @@
     //BOOL timeHidden = [ dict[@"time"] isEqualToString:previousCellModel.time];
     NSString * lastTimeString = lastCellModel.time.length >6 ? [lastCellModel.time substringWithRange:NSMakeRange(3, 5)] : lastCellModel.time;
     BOOL hiddenTime = [lastTimeString isEqualToString:timeString];
-    CellModel * cellModel = [CellModel cellWithDict:dic andHiddenTime:hiddenTime];
+    CellModel * cellModel = [CellModel cellWithDict:dic andHiddenTime:hiddenTime WithWidthAndHeight:CGPointMake(screen_width, 0)];
     
     [_tableView addTableSectionCellWithModel:cellModel];
     
@@ -155,7 +162,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
+}
 
 
 

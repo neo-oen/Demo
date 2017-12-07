@@ -6,6 +6,7 @@
 //  Copyright © 2017年 neo. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #ifndef Public_h
 #define Public_h
 
@@ -50,3 +51,12 @@
 #define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
 
 #endif /* Public_h */
+
+#pragma mark - ============== 扩展项 ==============
+@interface UITextField (UITextFieldRTView)
+
+-(void)addLeftViewWithView:(UIView *)view andViewMode:(UITextFieldViewMode)viewMode;
+-(void)addRightViewWithView:(UIView *)view andViewMode:(UITextFieldViewMode)viewMode;
+-(void)addClearButtonWithViewMode:(UITextFieldViewMode)viewMode;
+
+@end

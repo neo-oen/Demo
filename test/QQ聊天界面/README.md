@@ -10,27 +10,24 @@
 修改cell的model，增加cellweight，和cellmodel 里增加cell属性（弱关联）哪个更好呢
 
 
-修改tableviewcell里的model的set方法，
- tablesectionview 里面需要修改来支持更新hidden
 
-拉伸的xcode图形化操作
+textfilt
+textfilt 的clearbutton 与 reghtview 是不是可以一起显示待定
+不可以，可以看成clearbutton 就是rightView的一种实现；
+两个一齐写的话，clearbutton就不会出现。
 
-我要给textfilt 增加一个扩展，addleftviewwithmode   addrightviewwithmode
-
-clearbutton 与reghtview 
-
-
-通知机制
 
 
 单例模式先不写了，这里的NSNotificationCenter虽然是单例，但是，是已经实例换直接可用的不需要通过，另外一种模式获取地址，或者[NSNotificationCenter defaultCenter]就是他是获取地址的方法，
 
 
-懒加载怎么玩
-
-
-time还没写，还有隐藏也没有写，剩下就是自动回复。
-
-
 
 写了一个方法来判断NSDictionary里的数据类型
+id jk = dic[@"sdfd"];
+[jk class];
+
+
+
+要提供很多，很多有用的方法，最好的就是让方法划一。
+
+

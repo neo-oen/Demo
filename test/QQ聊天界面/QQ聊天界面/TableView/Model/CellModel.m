@@ -21,8 +21,6 @@
     if (self) {
         [self setValuesForKeysWithDictionary:dict];
         self.timeHidden =hiddenTime;
-        //frame和Height都在这里赋值
-        [self getFrameAndHeight];
     }
     return self;
 }
@@ -64,15 +62,70 @@
     return arrayM;
 }
 
+
+//连带着初始化frame
+- (instancetype)initWithDict:(NSDictionary *)dict andHiddenTime:(BOOL)hiddenTime WithWidthAndHeight:(CGPoint)widthHeight{
+    self = [self initWithDict:dict andHiddenTime:hiddenTime];
+    [self setFrameWithWidthAndHeight:widthHeight];
+    return self;
+}
++ (instancetype)cellWithDict:(NSDictionary *)dict andHiddenTime:(BOOL)hiddenTime WithWidthAndHeight:(CGPoint)widthHeight{
+    
+    return [[self alloc]initWithDict:dict andHiddenTime:hiddenTime WithWidthAndHeight:widthHeight];
+}
+
++ (NSArray *)cellsWithPath:(NSString *)path WithWidthAndHeight:(CGPoint)widthHeight{
+    
+    NSArray *array = [NSArray arrayWithContentsOfFile:path];
+    
+    NSMutableArray *arrayM = [NSMutableArray array];
+    for (int i=0; i<array.count; i++) {
+        NSDictionary *dict = array[i];
+        CellModel * previousCellModel = arrayM.lastObject;
+        BOOL timeHidden = [ dict[@"time"] isEqualToString:previousCellModel.time];
+        CellModel * cellModel = [self cellWithDict:dict andHiddenTime:timeHidden WithWidthAndHeight:widthHeight];
+        [arrayM addObject:cellModel];
+    }
+    
+    return arrayM;
+
+    
+}
++ (NSArray *)cellsWithArray:(NSArray *)array WithWidthAndHeight:(CGPoint)widthHeight{
+    
+    NSMutableArray *arrayM = [NSMutableArray array];
+    for (int i=0; i<array.count; i++) {
+        NSDictionary *dict = array[i];
+        CellModel * previousCellModel = arrayM.lastObject;
+        
+        BOOL timeHidden = [ dict[@"time"] isEqualToString:previousCellModel.time];
+        CellModel * cellModel = [self cellWithDict:dict andHiddenTime:timeHidden WithWidthAndHeight:widthHeight];
+        
+        [arrayM addObject:cellModel];
+    }
+    
+    return arrayM;
+}
+
+
+
+
 #pragma mark - ============== 方法 ==============
+
+-(void)setFrameWithWidthAndHeight:(CGPoint)widthHeight{
+    _cellWidth = widthHeight.x;
+    _cellHeight = widthHeight.y;
+    [self getFrameAndHeight];
+}
+
 -(void)getFrameAndHeight{
 
-    _timelFrame = CGRectMake(0, 0, screen_width, 20);
+    _timelFrame = CGRectMake(0, 0, _cellWidth, 20);
     if (self.istimeHiddened==YES) {
         _timelFrame = CGRectMake(0, 0, 0, 0);
     }
     
-    CGSize textContentMaxSize = CGSizeMake(screen_width - 2*margin -50 -40, MAXFLOAT);
+    CGSize textContentMaxSize = CGSizeMake(_cellWidth - 2*margin -50 -40, MAXFLOAT);
     
     CGSize textContentSize =[_text boundingRectWithSize:textContentMaxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:17]} context:nil].size;    
     
@@ -81,8 +134,8 @@
         _textContentFrame = CGRectMake(CGRectGetMaxX(_iconFrame) + margin, CGRectGetMinY(_iconFrame), textContentSize.width + 40, textContentSize.height+ 40);
         
     } else {
-        _iconFrame = CGRectMake(screen_width-margin-50, CGRectGetMaxY(_timelFrame) + margin, 50, 50);
-        _textContentFrame = CGRectMake(screen_width-2*margin-50-textContentSize.width-40, CGRectGetMinY(_iconFrame),textContentSize.width+ 40, textContentSize.height+ 40);
+        _iconFrame = CGRectMake(_cellWidth-margin-50, CGRectGetMaxY(_timelFrame) + margin, 50, 50);
+        _textContentFrame = CGRectMake(_cellWidth-2*margin-50-textContentSize.width-40, CGRectGetMinY(_iconFrame),textContentSize.width+ 40, textContentSize.height+ 40);
     
     }
     

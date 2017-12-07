@@ -13,6 +13,8 @@
 
 @implementation TableSectionModel
 
+
+#pragma mark - ============== 实现方法 ==============
 - (instancetype)initWithDict:(NSDictionary *)dict
 {
     self = [super init];
@@ -58,15 +60,71 @@
     return arrayM;
 }
 
+//连带初始化frame
+- (instancetype)initWithDict:(NSDictionary *)dict AndHeight:(CGPoint)widthHeight{
+    
+    self = [self initWithDict:dict];
+    [self setFrameWithWidthAndHeight:widthHeight];
+    return self;
+    
+}
++ (instancetype)cellBrandWithDict:(NSDictionary *)dict AndHeight:(CGPoint)widthHeight{
+    
+    return [[self alloc]initWithDict:dict AndHeight:widthHeight];
+}
+
++ (NSArray *)cellBrandsWithPath:(NSString *)path andDicType:(dicType)type AndHeight:(CGPoint)widthHeight{
+    
+    NSArray *array = [NSArray arrayWithContentsOfFile:path];
+    NSMutableArray *arrayM = [NSMutableArray array];
+    if (type) {
+        for (NSDictionary *dict in array) {
+            
+           [arrayM addObject:[self cellBrandWithDict:dict AndHeight:widthHeight]];
+        }
+        return arrayM;
+        
+    }else{
+        
+        TableSectionModel * sectionModel = [[self alloc]init];
+        sectionModel.cells = [CellModel cellsWithArray:array WithWidthAndHeight:widthHeight];
+        return @[sectionModel];
+    }
+    
+}
++ (NSArray *)cellBrandsWithArray:(NSArray *)array AndHeight:(CGPoint)widthHeight{
+
+    NSMutableArray *arrayM = [NSMutableArray array];
+    for (NSDictionary *dict in array) {
+        [arrayM addObject:[self cellBrandWithDict:dict AndHeight:widthHeight]];
+    }
+    
+    return arrayM;
+}
+
+
+
 
 
 #pragma mark - ============== 方法 ==============
 
 
+
+
+-(void)setFrameWithWidthAndHeight:(CGPoint)widthHeight{
+    
+    _footerWidth = widthHeight.x;
+    _headerWidth = widthHeight.x;
+    _footerHeight = widthHeight.y;
+    _headerHeight = widthHeight.y;
+    [self getFrameAndHeight];
+    
+}
+
+
 -(void)getFrameAndHeight{
     
-    _headerHeight = 0;
-    _footerHeight = 0;
+
     
     if (_title&&_desc) {
         _headerHeight = (arc4random()%10) + 20;

@@ -25,17 +25,28 @@ typedef enum : NSUInteger {
 
 @property(nonatomic,assign,getter =istimeHiddened)BOOL timeHidden;
 
+@property(nonatomic,assign,readonly)CGFloat cellWidth;
+@property(nonatomic,assign,readonly)CGFloat cellHeight;
+
 @property(nonatomic,assign,readonly)CGRect  timelFrame;
 @property(nonatomic,assign,readonly)CGRect textContentFrame;
 @property(nonatomic,assign,readonly)CGRect iconFrame;
-@property(nonatomic,assign,readonly)CGFloat cellHeight;
 
-
+//只初始化数据
 - (instancetype)initWithDict:(NSDictionary *)dict andHiddenTime:(BOOL)hiddenTime;
 + (instancetype)cellWithDict:(NSDictionary *)dict andHiddenTime:(BOOL)hiddenTime;
 
 + (NSArray *)cellsWithPath:(NSString *)path;
 + (NSArray *)cellsWithArray:(NSArray *)array;
+
+
+-(void)setFrameWithWidthAndHeight:(CGPoint)widthHeight;
+//连带着初始化frame
+- (instancetype)initWithDict:(NSDictionary *)dict andHiddenTime:(BOOL)hiddenTime WithWidthAndHeight:(CGPoint)widthHeight;
++ (instancetype)cellWithDict:(NSDictionary *)dict andHiddenTime:(BOOL)hiddenTime WithWidthAndHeight:(CGPoint)widthHeight;
+
++ (NSArray *)cellsWithPath:(NSString *)path WithWidthAndHeight:(CGPoint)widthHeight;
++ (NSArray *)cellsWithArray:(NSArray *)array WithWidthAndHeight:(CGPoint)widthHeight;
 
 
 @end

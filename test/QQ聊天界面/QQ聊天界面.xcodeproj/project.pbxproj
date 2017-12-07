@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B57985F41FD7210500CE9EE5 /* Public.m in Sources */ = {isa = PBXBuildFile; fileRef = B57985F31FD7210500CE9EE5 /* Public.m */; };
 		B5D8E11B1FB487060099017D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D8E11A1FB487060099017D /* main.m */; };
 		B5D8E11E1FB487060099017D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D8E11D1FB487060099017D /* AppDelegate.m */; };
 		B5D8E1211FB487060099017D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D8E1201FB487060099017D /* ViewController.m */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B57985F31FD7210500CE9EE5 /* Public.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Public.m; sourceTree = "<group>"; };
 		B5D8E1161FB487060099017D /* QQ聊天界面.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QQ聊天界面.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D8E11A1FB487060099017D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B5D8E11C1FB487060099017D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				B5D8E15F1FB4B5C30099017D /* Public.h */,
+				B57985F31FD7210500CE9EE5 /* Public.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				B5D8E15B1FB488E20099017D /* TableViewCell.m in Sources */,
 				B5D8E1611FB4DA010099017D /* README.md in Sources */,
 				B5D8E15A1FB488E20099017D /* TableSectionView.m in Sources */,
+				B57985F41FD7210500CE9EE5 /* Public.m in Sources */,
 				B5D8E11B1FB487060099017D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +490,7 @@
 				B5D8E13D1FB487070099017D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5D8E13E1FB487070099017D /* Build configuration list for PBXNativeTarget "QQ聊天界面UITests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +499,7 @@
 				B5D8E1401FB487070099017D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
