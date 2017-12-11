@@ -6,6 +6,7 @@ cell 分为两部，第一种，原生的，第二种自定义的
 在赋值的时候要增加对数据正确性的判断，避免报错
 关于section的暂时不添加。因为nsindexset
 
+点击headerView,隐藏该组cell。
 
 
 

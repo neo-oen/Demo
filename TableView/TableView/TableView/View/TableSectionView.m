@@ -36,6 +36,8 @@
 //        [_tableView setEditing:NO];
         _tableView.dataSource = self;
         _tableView.delegate = self;
+//        TableViewCell * cell = [TableViewCell cellWithStyle:UITableViewCellStyleDefault reuseIdentifier: @"TableViewCell"];//用来注册cell,在当堆栈里没有cell使用，就会根据reuseId直接调用生成新的。
+//        [_tableView registerClass:cell forCellReuseIdentifier:@"TableViewCell"];
         [self addSubview:_tableView];
     }
     return _tableView;
@@ -245,9 +247,9 @@
     return cell;
 }
 
--(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    return [self.models[section] title] ;
-}
+//-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+//    return [self.models[section] title] ;
+//}
 
 -(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section{
     return [self.models[section] desc];
@@ -280,6 +282,22 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"section=%ld,row=%ld",indexPath.section,indexPath.row);
 }
+
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+    NSString * headerText = [self.models[section] title];
+//    [button setTitle:headerText forState:UIControlStateNormal];
+    
+    NSAttributedString * attributed = [[NSAttributedString alloc]initWithString:headerText attributes:@{@"NSFontAttributeName":[UIFont systemFontOfSize:13],@"NSForegroundColorAttributeName":[UIColor redColor] }];
+    [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [button setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    [button setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+    [button setTitleEdgeInsets:UIEdgeInsetsMake(0, 10, 0, 0)];
+    [button setAttributedTitle:attributed forState:UIControlStateNormal];
+    [button setBackgroundColor:[UIColor yellowColor]];
+    return button;
+}
+
 
 
 @end

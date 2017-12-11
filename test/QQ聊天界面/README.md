@@ -35,3 +35,4 @@ id jk = dic[@"sdfd"];
 
 table说，我知道，我要总高度，你给不了我，你就的先把你的高度给我，我自己加（这个只用于添加的单个cellmodel时候用）
 
+多个cell 也是一个cellmodel
