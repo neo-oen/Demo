@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D5C5D121FE5776C00C09E57 /* TableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5C5D111FE5776C00C09E57 /* TableViewHeaderView.m */; };
 		5DC10A1E1FB425810038B199 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC10A1D1FB425810038B199 /* TableViewCell.m */; };
 		B5835AB01F99B931006C7BFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5835AAF1F99B931006C7BFC /* main.m */; };
 		B5835AB31F99B931006C7BFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5835AB21F99B931006C7BFC /* AppDelegate.m */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D5C5D101FE5776C00C09E57 /* TableViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewHeaderView.h; sourceTree = "<group>"; };
+		5D5C5D111FE5776C00C09E57 /* TableViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewHeaderView.m; sourceTree = "<group>"; };
 		5DC10A1C1FB425810038B199 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		5DC10A1D1FB425810038B199 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		B5835AAB1F99B931006C7BFC /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				B5D8E0F21FB220D60099017D /* TableSectionView.h */,
+				5D5C5D101FE5776C00C09E57 /* TableViewHeaderView.h */,
+				5D5C5D111FE5776C00C09E57 /* TableViewHeaderView.m */,
 				B5D8E0F31FB220D60099017D /* TableSectionView.m */,
 				5DC10A1C1FB425810038B199 /* TableViewCell.h */,
 				5DC10A1D1FB425810038B199 /* TableViewCell.m */,
@@ -288,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5835AB61F99B931006C7BFC /* ViewController.m in Sources */,
+				5D5C5D121FE5776C00C09E57 /* TableViewHeaderView.m in Sources */,
 				B5835ABC1F99B931006C7BFC /* TableView.xcdatamodeld in Sources */,
 				B5835AD71F99B9B2006C7BFC /* README.md in Sources */,
 				B5835AB31F99B931006C7BFC /* AppDelegate.m in Sources */,

@@ -7,7 +7,7 @@ cell 分为两部，第一种，原生的，第二种自定义的
 关于section的暂时不添加。因为nsindexset
 
 点击headerView,隐藏该组cell。
-
+把原先的组名放在一个button上，添加到headerView里。
 
 
 
@@ -18,3 +18,4 @@ cell 分为两部，第一种，原生的，第二种自定义的
 xcode 原有的代码块怎么使用的
 
 
+在谷歌上查看view的介绍。
