@@ -9,6 +9,7 @@
 #import "TableSectionView.h"
 #import "TableSectionModel.h"
 #import "TableViewCell.h"
+#import "TableViewHeaderView.h"
 #import "CellModel.h"
 #import "Public.h"
 
@@ -284,18 +285,18 @@
 }
 
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
-    NSString * headerText = [self.models[section] title];
-//    [button setTitle:headerText forState:UIControlStateNormal];
+    static NSString * identiString = @"headerView";
+    TableViewHeaderView * headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:identiString];
+    if (nil == headerView) {
+        
+        headerView = [TableViewHeaderView viewWithReuseIdentifier:identiString];
+        
+    }
+    [headerView updateTableViewHeaderViewWithModel:self.models[section]];
     
-    NSAttributedString * attributed = [[NSAttributedString alloc]initWithString:headerText attributes:@{@"NSFontAttributeName":[UIFont systemFontOfSize:13],@"NSForegroundColorAttributeName":[UIColor redColor] }];
-    [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    [button setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
-    [button setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
-    [button setTitleEdgeInsets:UIEdgeInsetsMake(0, 10, 0, 0)];
-    [button setAttributedTitle:attributed forState:UIControlStateNormal];
-    [button setBackgroundColor:[UIColor yellowColor]];
-    return button;
+    
+    
+    return headerView;
 }
 
 

@@ -178,11 +178,11 @@
 			isa = PBXGroup;
 			children = (
 				B5D8E0F21FB220D60099017D /* TableSectionView.h */,
-				5D5C5D101FE5776C00C09E57 /* TableViewHeaderView.h */,
-				5D5C5D111FE5776C00C09E57 /* TableViewHeaderView.m */,
 				B5D8E0F31FB220D60099017D /* TableSectionView.m */,
 				5DC10A1C1FB425810038B199 /* TableViewCell.h */,
 				5DC10A1D1FB425810038B199 /* TableViewCell.m */,
+				5D5C5D101FE5776C00C09E57 /* TableViewHeaderView.h */,
+				5D5C5D111FE5776C00C09E57 /* TableViewHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";

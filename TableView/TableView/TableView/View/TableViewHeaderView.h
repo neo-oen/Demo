@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TableSectionModel.h"
 
 @interface TableViewHeaderView : UITableViewHeaderFooterView
+
+@property(nonatomic,strong)UIButton * contextButton;
+@property(nonatomic,strong)TableSectionModel * model;
+
+-(instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier;
++(instancetype)viewWithReuseIdentifier:(NSString *)reuseIdentifier;
+
+-(void)updateTableViewHeaderViewWithModel:(TableSectionModel *) model;
 
 @end
