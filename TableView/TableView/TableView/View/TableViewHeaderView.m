@@ -8,9 +8,8 @@
 
 #import "TableViewHeaderView.h"
 
+
 @interface TableViewHeaderView ()
-
-
 
 @end
 
@@ -29,14 +28,14 @@
 {
     if(!_contextButton) {
         _contextButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        
         [_contextButton.titleLabel setFont:[UIFont systemFontOfSize:20]];
         [_contextButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         [_contextButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
         [_contextButton setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
         [_contextButton setTitleEdgeInsets:UIEdgeInsetsMake(0, 10, 0, 0)];
         [_contextButton setBackgroundColor:[UIColor yellowColor]];
-        [self addSubview:_contextButton];
+        [_contextButton addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchDown];
+        [self.contentView addSubview:_contextButton];
     }
     return _contextButton;
 }
@@ -48,7 +47,7 @@
     if (self = [super initWithReuseIdentifier:reuseIdentifier]) {
         
     }
-    
+    [self setBackgroundColor:[UIColor redColor]];
     return self;
     
 }
@@ -65,7 +64,7 @@
 
 #pragma mark - ============== 接口 ==============
 -(void)updateTableViewHeaderViewWithModel:(TableSectionModel *)model{
-    _model = model;
+    self.model = model;
     [self setUpData];
 }
 
@@ -78,12 +77,22 @@
 }
 
 -(void)setUpData{
-    [self.contextButton setTitle:_model.title forState:UIControlStateNormal];
+    
+    [self.contextButton setTitle:self.model.title forState:UIControlStateNormal];
     
 }
 
 -(void)setUpFrame{
-    [self.contextButton setFrame:self.frame];
+    [self.contextButton setFrame:self.contentView.frame];
+    
+}
+
+-(void)buttonClick:(UIButton *) button{
+    
+    if(self.buttonCA){
+        self.buttonCA(self.tag);
+    }
+    
 }
 #pragma mark - ============== 代理 ==============
 

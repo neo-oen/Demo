@@ -305,10 +305,12 @@
     if (nil == headerView) {
         
         headerView = [TableViewHeaderView viewWithReuseIdentifier:identiString];
-        
     }
     [headerView updateTableViewHeaderViewWithModel:self.models[section]];
-    
+    headerView.tag = section;
+    headerView.buttonCA = ^(NSInteger section) {
+        NSLog(@"%li",section);
+    };
     
     
     return headerView;
