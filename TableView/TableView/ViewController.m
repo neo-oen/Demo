@@ -64,8 +64,8 @@
     [_tableView addTableSectionCellWithModel:cell ];
 }
 -(void)delectFuction{
-    NSIndexSet * indexSet = [NSIndexSet indexSetWithIndex:1];
-    [_tableView deleteTableSectionWithIndexSet:indexSet];
+
+    [_tableView deleteTableSectionCell];
 
 }
 -(void)changeFuction{

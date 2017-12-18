@@ -124,7 +124,7 @@
     TableSectionModel * sectionModel = self.models[indexPath.section];
     NSMutableArray * array = [NSMutableArray arrayWithArray:sectionModel.cells];
     if (array.count==1) {
-#warning 删除section
+        [self deleteTableSectionWithIndexSet:[NSIndexSet indexSetWithIndex:indexPath.section]];
         return YES;
     }
     [array removeObjectAtIndex:indexPath.row];
@@ -162,9 +162,11 @@
         
         [arrayB insertObject:modelA atIndex:indexPathB.row];
         [arrayA removeObjectAtIndex:indexPathA.row];
-        
         sectionModelA.cells = arrayA;
         sectionModelB.cells = arrayB;
+        if (arrayA.count == 0) {
+        [self deleteTableSectionWithIndexSet:[NSIndexSet indexSetWithIndex:indexPathA.section]];
+        }
     }
       [self.tableView moveRowAtIndexPath:indexPathA toIndexPath:indexPathB];
 //    //或使用先增加，再删除的方法
@@ -184,16 +186,18 @@
 //section的增，删，改，移
 
 -(BOOL)addTableSectionSectionWithModel:(TableSectionModel *) model andIndexSet:(NSIndexSet *)indexSet{
-    
-    
+    NSMutableArray *array = [NSMutableArray arrayWithArray:self.models];
+    [array insertObject:model atIndex:indexSet.lastIndex];
+    self.models = array;
+    [self.tableView insertSections:indexSet withRowAnimation:UITableViewRowAnimationLeft];
     return YES;
 }
 
 
 -(BOOL)deleteTableSectionWithIndexSet:(NSIndexSet *)indexSet{
     NSMutableArray * array = [NSMutableArray arrayWithArray:self.models];
-    [array removeObjectAtIndex:indexSet.firstIndex];
-    
+    [array removeObjectAtIndex:indexSet.lastIndex];
+    self.models = array;
     [self.tableView deleteSections:indexSet withRowAnimation:UITableViewRowAnimationLeft];
     return YES;
     
@@ -201,10 +205,20 @@
 
 
 -(BOOL)changeTableSectionWithModel:(TableSectionModel *) model andIndexSet:(NSIndexSet *)indexSet{
+    NSMutableArray * array = [NSMutableArray arrayWithArray:self.models];
+    [array replaceObjectAtIndex:indexSet.lastIndex withObject:model];
+    self.models = array;
+    [self.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationLeft];
+    
     return YES;
 }
 
 -(BOOL)moveTableSectionWithSection:(NSInteger)sectionA toSection:(NSInteger)sectionB{
+    NSMutableArray * array = [NSMutableArray arrayWithArray:self.models];
+    [array exchangeObjectAtIndex:sectionA withObjectAtIndex:sectionB];
+    self.models = array;
+    [self.tableView moveSection:sectionA toSection:sectionB];
+    
     return YES;
 }
 
@@ -286,6 +300,7 @@
 
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     static NSString * identiString = @"headerView";
+    
     TableViewHeaderView * headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:identiString];
     if (nil == headerView) {
         
