@@ -35,13 +35,14 @@
 @property(nonatomic,assign,readonly)CGFloat  footerHeight;
 
 
--(void)setFrameWithRange:(CGPoint)widthHeight;
+-(void)setFrameWithRange:(CGSize)size;
+-(void)setFrameExtendWithRange:(CGSize)size;
 //连带初始化frame
 
-- (instancetype)initWithDict:(NSDictionary *)dict AndRange:(CGPoint)widthHeight;
-+ (instancetype)cellBrandWithDict:(NSDictionary *)dict AndRange:(CGPoint)widthHeight;
+- (instancetype)initWithDict:(NSDictionary *)dict AndRange:(CGSize)size;
++ (instancetype)cellBrandWithDict:(NSDictionary *)dict AndRange:(CGSize)size;
 
-+ (NSArray *)cellBrandsWithArray:(NSArray *)array AndRange:(CGPoint)widthHeight;
-+ (NSArray *)cellBrandsWithPath:(NSString *)path andDicType:(DicType)type AndRange:(CGPoint)widthHeight;
++ (NSArray *)cellBrandsWithArray:(NSArray *)array AndRange:(CGSize)size;
++ (NSArray *)cellBrandsWithPath:(NSString *)path andDicType:(DicType)type AndRange:(CGSize)size;
 
 @end

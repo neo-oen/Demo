@@ -57,39 +57,39 @@
 
 //连带初始化frame
 
-- (instancetype)initWithDict:(NSDictionary *)dict AndRange:(CGPoint)widthHeight{
+- (instancetype)initWithDict:(NSDictionary *)dict AndRange:(CGSize)size{
     
     self = [self initWithDict:dict];
-    [self setFrameWithRange:widthHeight];
+    [self setFrameWithRange:size];
     return self;
     
 }
-+ (instancetype)cellWithDict:(NSDictionary *)dict AndRange:(CGPoint)widthHeight{
++ (instancetype)cellWithDict:(NSDictionary *)dict AndRange:(CGSize)size{
     
-    return [[self alloc]initWithDict:dict AndRange:widthHeight];
+    return [[self alloc]initWithDict:dict AndRange:size];
 }
 
-+ (NSArray *)cellsWithPath:(NSString *)path AndRange:(CGPoint)widthHeight{
++ (NSArray *)cellsWithPath:(NSString *)path AndRange:(CGSize)size{
     
     NSArray *array = [NSArray arrayWithContentsOfFile:path];
     
     NSMutableArray *arrayM = [NSMutableArray array];
     for (NSDictionary *dict in array) {
-        [arrayM addObject:[self cellWithDict:dict AndRange:widthHeight]];
+        [arrayM addObject:[self cellWithDict:dict AndRange:size]];
     }
     
     return arrayM;
 }
 
 
- + (NSArray *)cellsWithPath:(NSString *)path AndDicType:(DicType)type AndRange:(CGPoint)widthHeight{
+ + (NSArray *)cellsWithPath:(NSString *)path AndDicType:(DicType)type AndRange:(CGSize)size{
  
  NSArray *array = [NSArray arrayWithContentsOfFile:path];
  NSMutableArray *arrayM = [NSMutableArray array];
  if (type) {
  for (NSDictionary *dict in array) {
  
- [arrayM addObject:[self cellWithDict:dict AndRange:widthHeight]];
+ [arrayM addObject:[self cellWithDict:dict AndRange:size]];
  }
  
  }
@@ -97,10 +97,10 @@
  }
 
 
-+ (NSArray *)cellsWithArray:(NSArray *)array AndRange:(CGPoint)widthHeight{
++ (NSArray *)cellsWithArray:(NSArray *)array AndRange:(CGSize)size{
     NSMutableArray *arrayM = [NSMutableArray array];
     for (NSDictionary *dict in array) {
-        [arrayM addObject:[self cellWithDict:dict AndRange:widthHeight]];
+        [arrayM addObject:[self cellWithDict:dict AndRange:size]];
     }
     
     return arrayM;
@@ -108,10 +108,10 @@
 
 
 #pragma mark - ============== 接口 ==============
--(void)setFrameWithRange:(CGPoint)widthHeight{
+-(void)setFrameWithRange:(CGSize)size{
     
-    _cellWidth = widthHeight.x;
-    _cellHeight = widthHeight.y;
+    _cellWidth = size.width;
+    _cellHeight = size.height;
     [self getFrame];
     
 }

@@ -37,13 +37,13 @@ typedef NS_ENUM(NSUInteger, DicType) {
 @property(nonatomic,assign,readonly)CGRect  nameLabelFrame;
 @property(nonatomic,assign,readonly)CGRect userImageViewFrame;
 
--(void)setFrameWithRange:(CGPoint)widthHeight;
+-(void)setFrameWithRange:(CGSize)size;
 //连带初始化frame
 
-- (instancetype)initWithDict:(NSDictionary *)dict AndRange:(CGPoint)widthHeight;
-+ (instancetype)cellWithDict:(NSDictionary *)dict AndRange:(CGPoint)widthHeight;
+- (instancetype)initWithDict:(NSDictionary *)dict AndRange:(CGSize)size;
++ (instancetype)cellWithDict:(NSDictionary *)dict AndRange:(CGSize)size;
 
-+ (NSArray *)cellsWithPath:(NSString *)path AndDicType:(DicType)type AndRange:(CGPoint)widthHeight;
-+ (NSArray *)cellsWithArray:(NSArray *)array AndRange:(CGPoint)widthHeight;
++ (NSArray *)cellsWithPath:(NSString *)path AndDicType:(DicType)type AndRange:(CGSize)size;
++ (NSArray *)cellsWithArray:(NSArray *)array AndRange:(CGSize)size;
 
 @end

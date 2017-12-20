@@ -21,7 +21,7 @@
     self = [super init];
     if (self) {
         [self setValuesForKeysWithDictionary:dict];
-        _cells = [CellModel cellsWithArray:_cells AndRange:CGPointMake(_headerWidth, _headerHeight)];//判断属性里有无数组
+        _cells = [CellModel cellsWithArray:_cells ];//判断属性里有无数组
         _cellHidden = YES;
     }
     return self;
@@ -35,25 +35,25 @@
 
 
 
- + (NSArray *)cellBrandsWithPath:(NSString *)path andDicType:(DicType)type
- {
- NSArray *array = [NSArray arrayWithContentsOfFile:path];
- NSMutableArray *arrayM = [NSMutableArray array];
- if (type) {
- for (NSDictionary *dict in array) {
- 
- [arrayM addObject:[self cellBrandWithDict:dict]];
- }
- return arrayM;
- 
- }else{
- 
- TableSectionModel * sectionModel = [[self alloc]init];
- sectionModel.cells = [CellModel cellsWithArray:array];
- return @[sectionModel];
- }
- 
- }
++ (NSArray *)cellBrandsWithPath:(NSString *)path andDicType:(DicType)type
+{
+    NSArray *array = [NSArray arrayWithContentsOfFile:path];
+    NSMutableArray *arrayM = [NSMutableArray array];
+    if (type) {
+        for (NSDictionary *dict in array) {
+            
+            [arrayM addObject:[self cellBrandWithDict:dict]];
+        }
+        return arrayM;
+        
+    }else{
+        
+        TableSectionModel * sectionModel = [[self alloc]init];
+        sectionModel.cells = [CellModel cellsWithArray:array];
+        return @[sectionModel];
+    }
+    
+}
 
 
 +(NSArray *)cellBrandsWithArray:(NSArray *)array
@@ -68,44 +68,55 @@
 
 //连带初始化frame
 
-- (instancetype)initWithDict:(NSDictionary *)dict AndRange:(CGPoint)widthHeight{
+- (instancetype)initWithDict:(NSDictionary *)dict AndRange:(CGSize)size{
     
-    self = [self initWithDict:dict];
-    [self setFrameWithRange:widthHeight];
-    return self;
+//    self = [super init];
+//    if (self) {
+//        [self setValuesForKeysWithDictionary:dict];
+//        _cells = [CellModel cellsWithArray:_cells AndRange:size];//判断属性里有无数组
+//        _cellHidden = YES;
+//    }
+//    [self setFrameWithRange:size];
+//    return self;
+    
+        self = [self initWithDict:dict];
+
+        [self setFrameExtendWithRange:size];
+    
+        return  self;
     
 }
-+ (instancetype)cellBrandWithDict:(NSDictionary *)dict AndRange:(CGPoint)widthHeight{
++ (instancetype)cellBrandWithDict:(NSDictionary *)dict AndRange:(CGSize)size{
     
-    return [[self alloc]initWithDict:dict AndRange:widthHeight];
+    return [[self alloc]initWithDict:dict AndRange:size];
 }
 
 
 
 //需要时打开
- + (NSArray *)cellBrandsWithPath:(NSString *)path andDicType:(DicType)type AndRange:(CGPoint)widthHeight{
- 
- NSArray *array = [NSArray arrayWithContentsOfFile:path];
- NSMutableArray *arrayM = [NSMutableArray array];
- if (type) {
- for (NSDictionary *dict in array) {
- 
- [arrayM addObject:[self cellBrandWithDict:dict AndRange:widthHeight]];
- }
- return arrayM;
- 
- }else{
- 
-     TableSectionModel * sectionModel = [[self alloc]init];
-     sectionModel.cells = [CellModel cellsWithArray:array AndRange:(CGPoint)widthHeight];
-     return @[sectionModel];
- }
- 
- }
-+ (NSArray *)cellBrandsWithArray:(NSArray *)array AndRange:(CGPoint)widthHeight{
++ (NSArray *)cellBrandsWithPath:(NSString *)path andDicType:(DicType)type AndRange:(CGSize)size{
+    
+    NSArray *array = [NSArray arrayWithContentsOfFile:path];
+    NSMutableArray *arrayM = [NSMutableArray array];
+    if (type) {
+        for (NSDictionary *dict in array) {
+            
+            [arrayM addObject:[self cellBrandWithDict:dict AndRange:size]];
+        }
+        return arrayM;
+        
+    }else{
+        
+        TableSectionModel * sectionModel = [[self alloc]init];
+        sectionModel.cells = [CellModel cellsWithArray:array AndRange:size];
+        return @[sectionModel];
+    }
+    
+}
++ (NSArray *)cellBrandsWithArray:(NSArray *)array AndRange:(CGSize)size{
     NSMutableArray *arrayM = [NSMutableArray array];
     for (NSDictionary *dict in array) {
-        [arrayM addObject:[self cellBrandWithDict:dict AndRange:widthHeight]];
+        [arrayM addObject:[self cellBrandWithDict:dict AndRange:size]];
     }
     
     return arrayM;
@@ -116,13 +127,24 @@
 
 #pragma mark - ============== 方法 ==============
 
-
--(void)setFrameWithRange:(CGPoint)widthHeight{
+-(void)setFrameExtendWithRange:(CGSize)size{
     
-    _headerWidth = widthHeight.x;
-    _headerHeight = widthHeight.y;
-    _footerWidth = widthHeight.x;
-    _footerHeight = widthHeight.y;
+    for (CellModel * model in self.cells) {
+        [model setFrameWithRange:size];
+    }
+    _headerWidth = size.width;
+    _headerHeight = size.height;
+    _footerWidth = size.width;
+    _footerHeight = size.height;
+    [self getFrame];
+}
+
+-(void)setFrameWithRange:(CGSize)size{
+    
+    _headerWidth = size.width;
+    _headerHeight = size.height;
+    _footerWidth = size.width;
+    _footerHeight = size.height;
     [self getFrame];
     
 }
@@ -140,8 +162,12 @@
 }
 
 -(NSString *)description{
-    return [NSString stringWithFormat:@"brandTitle=%@-brandDesc=%@-cells=%@",_title,_desc,_cells];
+    
+    return [NSString stringWithFormat:@"brandTitle=%@,brandDesc=%@,cells=%@,andTitleFrame=%@",_title,_desc,_cells,NSStringFromCGSize(CGSizeMake(_headerWidth, _headerHeight))];
 }
 
 
 @end
+
+
+
