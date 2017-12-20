@@ -19,7 +19,7 @@
     self = [super init];
     if (self) {
         [self setValuesForKeysWithDictionary:dict];
-        _cells = [CellModel cellsWithArray:_cells];//判断属性里有无数组
+        _friends = [CellModel cellsWithArray:_friends];//判断属性里有无数组
         _headerHeight = 10 + 20;
         _footerHeight = (arc4random()%10) + 20;
         _cellHidden = YES;

@@ -21,8 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSString * path = [[NSBundle mainBundle]pathForResource:@"cars_simple.plist" ofType:nil];
-    NSArray * array = [TableSectionModel cellBrandsWithPath:path];
     CGRect frame = CGRectMake(5, 50, screen_width-10, 200);
+    NSArray * array = [TableSectionModel cellBrandsWithPath:path andDicType:1 AndRange:CGPointMake(frame.size.width, frame.size.height)];
+    NSLog(@"%@",array);
     _tableView = [TableSectionView TableSectionWithFrame:frame withStyle:UITableViewStylePlain andModel:array];
     [self.view addSubview:_tableView];
     

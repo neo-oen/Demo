@@ -14,6 +14,8 @@
 
 @property(nonatomic,copy)NSString * name;
 @property(nonatomic,copy)NSString * icon;
+@property(nonatomic,copy)NSString * intro;
+@property(nonatomic,strong)NSNumber * vip;
 
 @property(nonatomic,assign,readonly)CGRect  nameLabelFrame;
 @property(nonatomic,assign,readonly)CGRect userImageViewFrame;

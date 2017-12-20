@@ -11,9 +11,9 @@
 #import <UIKit/UIKit.h>
 @interface TableSectionModel : NSObject
 
-@property(nonatomic,copy)NSString * title;
-@property(nonatomic,copy)NSString * desc;
-@property(nonatomic,copy)NSArray * cells;//列表里有数组
+@property(nonatomic,copy)NSString * name;
+@property(nonatomic,strong)NSNumber * online;
+@property(nonatomic,strong)NSArray * friends;//列表里有数组
 //给tableview特殊
 @property(nonatomic,assign,readonly)CGFloat  headerHeight;
 @property(nonatomic,assign,readonly)CGFloat footerHeight;

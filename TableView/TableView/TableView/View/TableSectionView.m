@@ -238,7 +238,7 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     TableSectionModel * model = self.models[section];
     
-    return model.cellHiddenState?0:model.cells.count;
+    return model.iscellHiddened?0:model.cells.count;
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return self.models.count;
@@ -314,6 +314,7 @@
         NSLog(@"%li",section);
         TableSectionModel * model = self.models[section];
         model.cellHidden = !model.cellHidden;
+        NSLog(@"%i",model.cellHidden);
         [self changeTableSectionWithModel:model andIndexSet:[NSIndexSet indexSetWithIndex:section]];
         
     };
