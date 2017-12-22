@@ -10,6 +10,7 @@
 
 
 @interface TableViewHeaderView ()
+@property(nonatomic,strong)UIImage * image;
 
 @end
 
@@ -29,15 +30,33 @@
     if(!_contextButton) {
         _contextButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [_contextButton.titleLabel setFont:[UIFont systemFontOfSize:20]];
-        [_contextButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [_contextButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_contextButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
         [_contextButton setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
         [_contextButton setTitleEdgeInsets:UIEdgeInsetsMake(0, 10, 0, 0)];
-        [_contextButton setBackgroundColor:[UIColor yellowColor]];
+        [_contextButton setImageEdgeInsets:UIEdgeInsetsMake(0, 10, 0, 0)];
+        [_contextButton setTitleEdgeInsets:UIEdgeInsetsMake(0, 10, 0, 0)];
         [_contextButton addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchDown];
         [self.contentView addSubview:_contextButton];
     }
     return _contextButton;
+}
+-(UILabel *)onlineLabel
+{
+    if(!_onlineLabel) {
+        _onlineLabel = [[UILabel alloc] init];
+        [_onlineLabel setFont:[UIFont systemFontOfSize:20]];
+        [self.contextButton addSubview:_onlineLabel];
+    }
+    return _onlineLabel;
+}
+-(UIImage *)image
+{
+    if(!_image) {
+        _image = [UIImage  imageNamed:@"buddy_header_arrow.png"];
+        [_contextButton setImage:_image forState:UIControlStateNormal];
+    }
+    return _image;
 }
 #pragma mark - ============== 初始化 ==============
 
@@ -77,13 +96,16 @@
 
 -(void)setUpData{
     
-    [self.contextButton setTitle:self.model.title forState:UIControlStateNormal];
+    [self.contextButton setTitle:self.model.name forState:UIControlStateNormal];
+    [self.onlineLabel setText:[NSString stringWithFormat:@"%@/%ld",_model.online,_model.friends.count]];
+    
+    
     
 }
 
 -(void)setUpFrame{
-    [self.contextButton setFrame:self.contentView.frame];
-    
+    [self.contextButton setFrame:self.model.headerButtonFrame];
+    [self.onlineLabel setFrame:self.model.onlineLabelFrame];
 }
 
 -(void)buttonClick:(UIButton *) button{

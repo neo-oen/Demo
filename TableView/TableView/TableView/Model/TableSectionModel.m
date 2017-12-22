@@ -21,7 +21,8 @@
     self = [super init];
     if (self) {
         [self setValuesForKeysWithDictionary:dict];
-        _cells = [CellModel cellsWithArray:_cells ];//判断属性里有无数组
+        _cars = [CellModel cellsWithArray:_cars ];//判断属性里有无数组
+        _cells = _cars;
         _cellHidden = YES;
     }
     return self;
@@ -168,6 +169,7 @@
 
 
 @end
+
 
 
 

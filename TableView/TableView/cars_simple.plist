@@ -3,7 +3,7 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>cells</key>
+		<key>cars</key>
 		<array>
 			<dict>
 				<key>name</key>
@@ -42,7 +42,7 @@
 		<string>高端大方上档次，世界一流品牌</string>
 	</dict>
 	<dict>
-		<key>cells</key>
+		<key>cars</key>
 		<array>
 			<dict>
 				<key>name</key>
@@ -99,7 +99,7 @@
 		<string>牛逼哄哄，哎哟，好像不错</string>
 	</dict>
 	<dict>
-		<key>cells</key>
+		<key>cars</key>
 		<array>
 			<dict>
 				<key>name</key>
@@ -144,7 +144,7 @@
 		<string>老牌汽车，复古风</string>
 	</dict>
 	<dict>
-		<key>cells</key>
+		<key>cars</key>
 		<array>
 			<dict>
 				<key>name</key>
@@ -207,7 +207,7 @@
 		<string>优雅高贵，你值得拥有</string>
 	</dict>
 	<dict>
-		<key>cells</key>
+		<key>cars</key>
 		<array>
 			<dict>
 				<key>name</key>

@@ -24,6 +24,7 @@ typedef NS_ENUM(NSInteger, TableViewCellStyle) {
 //@property(nonatomic,copy)<#AnswerClick#>Action <#answer#>CA ;//向view类外，索要非本类的工作的接口
 @property(nonatomic,strong)UIImageView * userImageView;
 @property(nonatomic,strong)UILabel * nameLabel;
+@property(nonatomic,strong)UILabel * subNameLabel;
 @property(nonatomic,strong)CellModel * model;//向本类输入资源的接口
 //资源是model的时候
 +(instancetype)cellWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier;//初始化视图的方法

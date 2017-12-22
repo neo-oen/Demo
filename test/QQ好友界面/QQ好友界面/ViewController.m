@@ -35,8 +35,9 @@
 -(NSArray *)models
 {
     if(!_models) {
+        
         NSString * path = [[NSBundle mainBundle]pathForResource:@"friends.plist" ofType:nil];
-        _models = [TableSectionModel cellBrandsWithPath:path];
+        _models = [TableSectionModel cellBrandsWithPath:path AndDicType:doubleDic AndRange:CGSizeMake(screen_width, screen_height)];
         
     }
     return _models;

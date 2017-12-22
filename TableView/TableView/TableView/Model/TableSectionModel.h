@@ -16,6 +16,7 @@
 @property(nonatomic,copy)NSString * title;
 @property(nonatomic,copy)NSString * desc;
 @property(nonatomic,copy)NSArray * cells;//列表里有数组
+@property(nonatomic,copy)NSArray * cars;//列表里有数组
 
 @property(nonatomic,assign,getter =iscellHiddened)BOOL cellHidden;//这样的值主要是由外界设置上的，不由字典里获取
 

@@ -238,7 +238,7 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     TableSectionModel * model = self.models[section];
     
-    return model.cellHiddenState?0:model.cells.count;
+    return model.cells.count;
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return self.models.count;
@@ -248,18 +248,21 @@
     // static 避免多次分配内存
     static NSString *identifier = @"TableViewCell";
     
-    // 1. 到缓存池中去找cell
-    TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    
-    // 2. 判断是否取到， 如果取不到就实例化新的cell
-    if (nil == cell) {
-        // 实例化tableViewcell
-        cell = [TableViewCell cellWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-    }
+//    // 1. 到缓存池中去找cell
+//    TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+//    
+//    // 2. 判断是否取到， 如果取不到就实例化新的cell
+//    if (nil == cell) {
+//        // 实例化tableViewcell
+//        cell = [TableViewCell cellWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+//    }
     TableSectionModel * model = self.models[indexPath.section];
-    CellModel * CellModel = model.cells[indexPath.row];
+    CellModel * cellModel = model.cells[indexPath.row];
+//
+//    [cell updateTableViewCellWithModel:cellModel];
+    UITableViewCell * cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
+    [cell.textLabel setText:cellModel.name];
     
-    [cell updateTableViewCellWithModel:CellModel];
     
     return cell;
 }
@@ -268,9 +271,6 @@
 //    return [self.models[section] title] ;
 //}
 
--(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section{
-    return [self.models[section] desc];
-}
 
 
 -(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -288,10 +288,7 @@
     TableSectionModel * model = self.models[indexPath.section];
     return [model.cells[indexPath.row] cellHeight];
 }
--(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    TableSectionModel * model = self.models[section];
-    return model.footerHeight;
-}
+
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     TableSectionModel * model = self.models[section];
     return model.headerHeight;

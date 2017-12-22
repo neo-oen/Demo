@@ -32,12 +32,20 @@
 {
     if(!_nameLabel) {
         _nameLabel = [[UILabel alloc] init];
-        [_nameLabel setFont:[UIFont systemFontOfSize:17]];
+        [_nameLabel setFont:[UIFont systemFontOfSize:16]];
         [self.contentView addSubview:_nameLabel];
     }
     return _nameLabel;
 }
-
+-(UILabel *)subNameLabel
+{
+    if(!_subNameLabel) {
+        _subNameLabel = [[UILabel alloc] init];
+        [_subNameLabel setFont:[UIFont systemFontOfSize:11]];
+        [self.contentView addSubview:_subNameLabel];
+    }
+    return _subNameLabel;
+}
 
 #pragma mark - ============== 初始化 ==============
 
@@ -74,12 +82,14 @@
 
 -(void)setUpData{
     self.nameLabel.text = _model.name;
+    self.subNameLabel.text = _model.intro;
     [self.userImageView setImage:[UIImage imageNamed:_model.icon]];
     
 }
 
 -(void)setUpFrame{
     self.nameLabel.frame = self.model.nameLabelFrame;
+    self.subNameLabel.frame = self.model.subLabelFrame;
     self.userImageView.frame = _model.userImageViewFrame;
 }
 

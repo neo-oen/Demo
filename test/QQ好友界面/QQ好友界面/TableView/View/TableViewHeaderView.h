@@ -14,6 +14,7 @@ typedef void (^ButtonClickAction)();
 @interface TableViewHeaderView : UITableViewHeaderFooterView
 
 @property(nonatomic,strong)UIButton * contextButton;
+@property(nonatomic,strong)UILabel * onlineLabel;
 @property(nonatomic,strong)TableSectionModel * model;
 @property(nonatomic,copy)ButtonClickAction buttonCA ;//向view类外，索要非本类的工作的接口
 
