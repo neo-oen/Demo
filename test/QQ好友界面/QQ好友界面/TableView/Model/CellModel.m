@@ -113,7 +113,6 @@
 -(void)setFrameWithRange:(CGSize)size{
     
     _cellWidth = size.width;
-    _cellHeight = size.height;
     [self getFrame];
     
 }
@@ -128,7 +127,7 @@
 -(void)getFrame{
     
     
-    if (_cellWidth&& _cellHeight) {
+
         _userImageViewFrame = CGRectMake(0, 0, 50, 50);
         
        _nameLabelFrame.size = [_name boundingRectWithSize:CGSizeMake(_cellWidth - 50 -10, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:16]} context:nil].size;
@@ -136,7 +135,7 @@
        _subLabelFrame.size = [_intro boundingRectWithSize:CGSizeMake(_cellWidth -50 -10, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:11]} context:nil].size;
         _subLabelFrame.origin = CGPointMake(50+10, CGRectGetMaxY(_nameLabelFrame) + 5);
         _cellHeight = CGRectGetMaxY(_subLabelFrame)>CGRectGetMaxY(_userImageViewFrame)?CGRectGetMaxY(_subLabelFrame):CGRectGetMaxY(_userImageViewFrame);
-    }
+
     
 }
 

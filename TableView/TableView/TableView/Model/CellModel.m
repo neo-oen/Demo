@@ -111,7 +111,7 @@
 -(void)setFrameWithRange:(CGSize)size{
     
     _cellWidth = size.width;
-    _cellHeight = size.height;
+
     [self getFrame];
     
 }
@@ -124,7 +124,6 @@
 -(void)getFrame{
     
     
-    if (_cellWidth&& _cellHeight) {
         _userImageViewFrame = CGRectMake(10, 10, 50, 50);
         CGSize nameLabelMaxSize = CGSizeMake(_cellWidth, MAXFLOAT);
         
@@ -134,7 +133,6 @@
         _nameLabelFrame.size = nameLabelSize;
         
         _cellHeight = 50+10;
-    }
     
 }
 

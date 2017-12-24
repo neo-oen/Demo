@@ -24,6 +24,7 @@
         [self setValuesForKeysWithDictionary:dict];
         _friends = [CellModel cellsWithArray:_friends];//判断属性里有无数组
         _cells = _friends;
+        _cellHidden = YES;
     }
     return self;
 }
@@ -129,7 +130,6 @@
 -(void)setFrameWithRange:(CGSize)size{
     
     _headerWidth = size.width;
-    _headerHeight = size.height;
     [self getFrame];
     
 }
@@ -153,7 +153,7 @@
 -(void)getFrame{
     
     
-    if (_headerHeight&& _headerWidth) {
+
         _headerButtonFrame = CGRectMake(0, 0, _headerWidth, 30);
         NSString * string =  [NSString stringWithFormat:@"%@/%ld",self.online,self.friends.count];
         
@@ -161,7 +161,7 @@
         
         _onlineLabelFrame.origin = CGPointMake(_headerWidth - _onlineLabelFrame.size.width, 0);
         
-    }
+    _headerHeight = 40;
     
 }
 

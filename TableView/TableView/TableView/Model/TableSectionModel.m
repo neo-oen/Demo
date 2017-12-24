@@ -134,9 +134,7 @@
         [model setFrameWithRange:size];
     }
     _headerWidth = size.width;
-    _headerHeight = size.height;
     _footerWidth = size.width;
-    _footerHeight = size.height;
     [self getFrame];
 }
 
@@ -153,12 +151,12 @@
 -(void)getFrame{
     
     
-    if (_headerWidth&& _headerHeight) {
+
         _headerHeight = 10 + 20;
-    }
-    if (_footerWidth&& _footerHeight) {
+
+
         _footerHeight = (arc4random()%10) + 20;
-    }
+
     
 }
 

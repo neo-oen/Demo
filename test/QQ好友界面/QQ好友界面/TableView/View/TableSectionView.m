@@ -31,9 +31,9 @@
     if(!_tableView) {
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height) style:_style];
     //是否等宽高
-        [_tableView setRowHeight:30];
-        [_tableView setSectionFooterHeight:30];
-        [_tableView setSectionHeaderHeight:30];
+//        [_tableView setRowHeight:30];
+//        [_tableView setSectionFooterHeight:30];
+//        [_tableView setSectionHeaderHeight:30];
 //        [_tableView setEditing:NO];
         _tableView.dataSource = self;
         _tableView.delegate = self;
@@ -238,7 +238,7 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     TableSectionModel * model = self.models[section];
     
-    return model.cells.count;
+    return model.cellHidden ? 0: model.cells.count;
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return self.models.count;
@@ -248,29 +248,22 @@
     // static 避免多次分配内存
     static NSString *identifier = @"TableViewCell";
     
-//    // 1. 到缓存池中去找cell
-//    TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-//    
-//    // 2. 判断是否取到， 如果取不到就实例化新的cell
-//    if (nil == cell) {
-//        // 实例化tableViewcell
-//        cell = [TableViewCell cellWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-//    }
+    // 1. 到缓存池中去找cell
+    TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    
+    // 2. 判断是否取到， 如果取不到就实例化新的cell
+    if (nil == cell) {
+        // 实例化tableViewcell
+        cell = [TableViewCell cellWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+    }
     TableSectionModel * model = self.models[indexPath.section];
     CellModel * cellModel = model.cells[indexPath.row];
 //
-//    [cell updateTableViewCellWithModel:cellModel];
-    UITableViewCell * cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
-    [cell.textLabel setText:cellModel.name];
+    [cell updateTableViewCellWithModel:cellModel];
     
     
     return cell;
 }
-
-//-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-//    return [self.models[section] title] ;
-//}
-
 
 
 -(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -306,11 +299,12 @@
         headerView = [TableViewHeaderView viewWithReuseIdentifier:identiString];
     }
         [headerView updateTableViewHeaderViewWithModel:self.models[section]];
-
-    headerView.buttonCA = ^() {
+    [headerView transformImage];
+    headerView.buttonCA = ^(TableViewHeaderView * headerView) {
         NSLog(@"%li",section);
         TableSectionModel * model = self.models[section];
-        model.cellHidden = !model.cellHidden;
+        model.cellHidden = !model.cellHidden;        
+        [headerView transformImage];
         [self changeTableSectionWithModel:model andIndexSet:[NSIndexSet indexSetWithIndex:section]];
         
     };

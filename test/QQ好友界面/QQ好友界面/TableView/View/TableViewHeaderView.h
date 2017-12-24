@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "TableSectionModel.h"
 
-typedef void (^ButtonClickAction)();
+
 
 @interface TableViewHeaderView : UITableViewHeaderFooterView
+
+typedef void (^ButtonClickAction)(TableViewHeaderView * headerView);
 
 @property(nonatomic,strong)UIButton * contextButton;
 @property(nonatomic,strong)UILabel * onlineLabel;
@@ -23,5 +25,8 @@ typedef void (^ButtonClickAction)();
 +(instancetype)viewWithReuseIdentifier:(NSString *)reuseIdentifier;
 
 -(void)updateTableViewHeaderViewWithModel:(TableSectionModel *) model;
+
+-(void)transformImage;
+
 
 @end

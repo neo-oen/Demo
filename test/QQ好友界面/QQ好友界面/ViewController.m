@@ -24,7 +24,7 @@
 {
     if(!_tableView) {
         
-        _tableView = [TableSectionView TableSectionWithFrame:CGRectMake(0, 0, screen_width, screen_height)
+        _tableView = [TableSectionView TableSectionWithFrame:CGRectMake(0, 30, screen_width, screen_height)
                                                    withStyle:UITableViewStylePlain
                                                     andModel:self.models];
         [self.view addSubview:_tableView];

@@ -23,7 +23,6 @@
 		5D33B93F1FE91DA300E4355D /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D33B93E1FE91DA300E4355D /* friends.plist */; };
 		5D33B9421FE91E2A00E4355D /* Public.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D33B9411FE91E2A00E4355D /* Public.m */; };
 		5D33B9441FE91E5D00E4355D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 5D33B9431FE91E5D00E4355D /* README.md */; };
-		5D669F5B1FEBAB8E00003EBC /* buddy_header_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D669F5A1FEBAB8E00003EBC /* buddy_header_arrow.png */; };
 		5DF3AAD81FECAB1900C59DF1 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF3AAD71FECAB1900C59DF1 /* NSArray+Log.m */; };
 /* End PBXBuildFile section */
 
@@ -75,7 +74,6 @@
 		5D33B9401FE91E2A00E4355D /* Public.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Public.h; sourceTree = "<group>"; };
 		5D33B9411FE91E2A00E4355D /* Public.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Public.m; sourceTree = "<group>"; };
 		5D33B9431FE91E5D00E4355D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		5D669F5A1FEBAB8E00003EBC /* buddy_header_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buddy_header_arrow.png; sourceTree = "<group>"; };
 		5DF3AAD61FECAB1900C59DF1 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		5DF3AAD71FECAB1900C59DF1 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,7 +140,6 @@
 		5D33B8F41FE91B0A00E4355D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5D669F5A1FEBAB8E00003EBC /* buddy_header_arrow.png */,
 				5D33B93E1FE91DA300E4355D /* friends.plist */,
 				5D33B8F71FE91B0A00E4355D /* AppDelegate.h */,
 				5D33B8F81FE91B0A00E4355D /* AppDelegate.m */,
@@ -350,7 +347,6 @@
 				5D33B9011FE91B0A00E4355D /* Assets.xcassets in Resources */,
 				5D33B93F1FE91DA300E4355D /* friends.plist in Resources */,
 				5D33B8FF1FE91B0A00E4355D /* Main.storyboard in Resources */,
-				5D669F5B1FEBAB8E00003EBC /* buddy_header_arrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
