@@ -36,6 +36,7 @@ typedef NS_ENUM(NSUInteger, DicType) {
 
 @property(nonatomic,assign,readonly)CGRect  nameLabelFrame;
 @property(nonatomic,assign,readonly)CGRect userImageViewFrame;
+@property(nonatomic,assign,readonly)CGRect LineViewFrame;
 
 -(void)setFrameWithRange:(CGSize)size;
 //连带初始化frame

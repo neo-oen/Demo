@@ -102,6 +102,7 @@
     
     [self.contextButton setTitle:self.model.name forState:UIControlStateNormal];
     [self.onlineLabel setText:[NSString stringWithFormat:@"%@/%ld",_model.online,_model.friends.count]];
+    [self transformImage];
     
     
     

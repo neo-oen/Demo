@@ -8,5 +8,3 @@ cell 分为两部，第一种，原生的，第二种自定义的
 第二步 tableSectionView 和 view 分离
 
 
-model里
-    _<#name#>Height = size.height;删除

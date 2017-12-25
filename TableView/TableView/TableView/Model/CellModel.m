@@ -124,15 +124,16 @@
 -(void)getFrame{
     
     
-        _userImageViewFrame = CGRectMake(10, 10, 50, 50);
-        CGSize nameLabelMaxSize = CGSizeMake(_cellWidth, MAXFLOAT);
-        
-        CGSize nameLabelSize =[_name boundingRectWithSize:nameLabelMaxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:17]} context:nil].size;
-        
-        _nameLabelFrame.origin = CGPointMake(10+50+10, 50*0.5+10-nameLabelSize.height*0.5);
-        _nameLabelFrame.size = nameLabelSize;
-        
-        _cellHeight = 50+10;
+    _userImageViewFrame = CGRectMake(10, 5, 50, 50);
+    CGSize nameLabelMaxSize = CGSizeMake(_cellWidth, MAXFLOAT);
+    
+    CGSize nameLabelSize =[_name boundingRectWithSize:nameLabelMaxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:17]} context:nil].size;
+    
+    _nameLabelFrame.origin = CGPointMake(10+50+10, 50*0.5+10-nameLabelSize.height*0.5);
+    _nameLabelFrame.size = nameLabelSize;
+    _cellHeight = 50+10;
+    _LineViewFrame = CGRectMake(0, _cellHeight - 2, _cellWidth, 2);
+    
     
 }
 

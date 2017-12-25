@@ -13,6 +13,4 @@ model
 
 
 
-model里面自动增加一个cells属性，cells =xxxs 方便后面使用 可以扩大使用的范围，看你怎么想了
 
-把tableView真的Demo化

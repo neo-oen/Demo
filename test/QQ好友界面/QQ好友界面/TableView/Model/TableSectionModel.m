@@ -161,7 +161,7 @@
         
         _onlineLabelFrame.origin = CGPointMake(_headerWidth - _onlineLabelFrame.size.width, 0);
         
-    _headerHeight = 40;
+    _headerHeight = 30;
     
 }
 

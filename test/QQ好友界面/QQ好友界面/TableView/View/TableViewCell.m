@@ -84,6 +84,12 @@
     self.nameLabel.text = _model.name;
     self.subNameLabel.text = _model.intro;
     [self.userImageView setImage:[UIImage imageNamed:_model.icon]];
+    if ([_model.vip isEqual:@1] ) {
+        [self.nameLabel setTextColor:[UIColor redColor]];
+    }else{
+        [self.nameLabel setTextColor:[UIColor blackColor]];
+
+    }
     
 }
 

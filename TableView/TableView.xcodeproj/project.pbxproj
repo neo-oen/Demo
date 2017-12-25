@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D1B17141FEA419900F6B7A1 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1B17131FEA419900F6B7A1 /* NSArray+Log.m */; };
 		5D5C5D121FE5776C00C09E57 /* TableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5C5D111FE5776C00C09E57 /* TableViewHeaderView.m */; };
 		5DC10A1E1FB425810038B199 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC10A1D1FB425810038B199 /* TableViewCell.m */; };
+		5DC154CD1FF10983002DDCC6 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC154CB1FF10983002DDCC6 /* NSArray+Log.m */; };
 		B5835AB01F99B931006C7BFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5835AAF1F99B931006C7BFC /* main.m */; };
 		B5835AB31F99B931006C7BFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5835AB21F99B931006C7BFC /* AppDelegate.m */; };
 		B5835AB61F99B931006C7BFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5835AB51F99B931006C7BFC /* ViewController.m */; };
@@ -36,12 +36,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5D1B17121FEA419900F6B7A1 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
-		5D1B17131FEA419900F6B7A1 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 		5D5C5D101FE5776C00C09E57 /* TableViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewHeaderView.h; sourceTree = "<group>"; };
 		5D5C5D111FE5776C00C09E57 /* TableViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewHeaderView.m; sourceTree = "<group>"; };
 		5DC10A1C1FB425810038B199 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		5DC10A1D1FB425810038B199 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		5DC154CA1FF10983002DDCC6 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		5DC154CB1FF10983002DDCC6 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		5DC154CC1FF10983002DDCC6 /* Public.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Public.h; sourceTree = "<group>"; };
 		B5835AAB1F99B931006C7BFC /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5835AAF1F99B931006C7BFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B5835AB11F99B931006C7BFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,7 +58,6 @@
 		B5835ACB1F99B931006C7BFC /* TableViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewUITests.m; sourceTree = "<group>"; };
 		B5835ACD1F99B931006C7BFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5835AD61F99B9B2006C7BFC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B5835ADE1F99D36A006C7BFC /* Public.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Public.h; sourceTree = "<group>"; };
 		B5D8E0ED1FB220D60099017D /* CellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellModel.h; sourceTree = "<group>"; };
 		B5D8E0EE1FB220D60099017D /* CellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellModel.m; sourceTree = "<group>"; };
 		B5D8E0EF1FB220D60099017D /* TableSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableSectionModel.h; sourceTree = "<group>"; };
@@ -85,6 +85,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5DC154C91FF10983002DDCC6 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				5DC154CA1FF10983002DDCC6 /* NSArray+Log.h */,
+				5DC154CB1FF10983002DDCC6 /* NSArray+Log.m */,
+				5DC154CC1FF10983002DDCC6 /* Public.h */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
 		B5835AA21F99B931006C7BFC = {
 			isa = PBXGroup;
 			children = (
@@ -108,8 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				B5D8E0EB1FB220D60099017D /* TableView */,
-				B5835ADD1F99D32D006C7BFC /* Other */,
 				B5835AD81F99D245006C7BFC /* ViewControl */,
+				5DC154C91FF10983002DDCC6 /* Others */,
 				B5835AAE1F99B931006C7BFC /* Supporting Files */,
 			);
 			path = TableView;
@@ -118,6 +128,7 @@
 		B5835AAE1F99B931006C7BFC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B5E6CF881F9A6A75009DD920 /* cars_simple.plist */,
 				B5835AB11F99B931006C7BFC /* AppDelegate.h */,
 				B5835AB21F99B931006C7BFC /* AppDelegate.m */,
 				B5835AB71F99B931006C7BFC /* Main.storyboard */,
@@ -146,17 +157,6 @@
 				B5835AB51F99B931006C7BFC /* ViewController.m */,
 			);
 			name = ViewControl;
-			sourceTree = "<group>";
-		};
-		B5835ADD1F99D32D006C7BFC /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				5D1B17121FEA419900F6B7A1 /* NSArray+Log.h */,
-				5D1B17131FEA419900F6B7A1 /* NSArray+Log.m */,
-				B5835ADE1F99D36A006C7BFC /* Public.h */,
-				B5E6CF881F9A6A75009DD920 /* cars_simple.plist */,
-			);
-			name = Other;
 			sourceTree = "<group>";
 		};
 		B5D8E0EB1FB220D60099017D /* TableView */ = {
@@ -303,7 +303,7 @@
 				B5835AD71F99B9B2006C7BFC /* README.md in Sources */,
 				B5835AB31F99B931006C7BFC /* AppDelegate.m in Sources */,
 				5DC10A1E1FB425810038B199 /* TableViewCell.m in Sources */,
-				5D1B17141FEA419900F6B7A1 /* NSArray+Log.m in Sources */,
+				5DC154CD1FF10983002DDCC6 /* NSArray+Log.m in Sources */,
 				B5835AB01F99B931006C7BFC /* main.m in Sources */,
 				B5D8E0F61FB220D60099017D /* TableSectionView.m in Sources */,
 				B5D8E0F51FB220D60099017D /* TableSectionModel.m in Sources */,

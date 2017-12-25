@@ -299,7 +299,6 @@
         headerView = [TableViewHeaderView viewWithReuseIdentifier:identiString];
     }
         [headerView updateTableViewHeaderViewWithModel:self.models[section]];
-    [headerView transformImage];
     headerView.buttonCA = ^(TableViewHeaderView * headerView) {
         NSLog(@"%li",section);
         TableSectionModel * model = self.models[section];

@@ -12,7 +12,7 @@
 
 
 @interface TableViewCell()
-
+@property(nonatomic,strong)UIView * lineView;
 
 
 @end
@@ -36,6 +36,15 @@
         [self.contentView addSubview:_nameLabel];
     }
     return _nameLabel;
+}
+-(UIView *)lineView
+{
+    if(!_lineView) {
+        _lineView = [[UIView alloc] init];
+        [_lineView setBackgroundColor:[UIColor redColor]];
+        [self.contentView addSubview:_lineView];
+    }
+    return _lineView;
 }
 
 
@@ -81,6 +90,7 @@
 -(void)setUpFrame{
     self.nameLabel.frame = self.model.nameLabelFrame;
     self.userImageView.frame = _model.userImageViewFrame;
+    self.lineView.frame = _model.LineViewFrame;
 }
 
 #pragma mark - ============== 接口 ==============
