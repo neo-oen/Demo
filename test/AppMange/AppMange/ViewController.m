@@ -31,7 +31,20 @@
     _models = [TableSectionModel cellBrandsWithPath:path andDicType:singleDic AndRange:CGSizeMake(screen_width-60, 0)];
     _table = [TableSectionView TableSectionWithFrame:CGRectMake(30, 40, screen_width-60, 500) withStyle:UITableViewStylePlain andModel:_models];
     [self.view addSubview:_table];
+//    _table addConstraint:<#(nonnull NSLayoutConstraint *)#>
+    NSLayoutConstraint * sd = [NSLayoutConstraint constraintWithItem:<#(nonnull id)#>
+                                                           attribute:<#(NSLayoutAttribute)#>
+                                                           relatedBy:<#(NSLayoutRelation)#>
+                                                              toItem:<#(nullable id)#>
+                                                           attribute:<#(NSLayoutAttribute)#>
+                                                          multip  lier:<#(CGFloat)#>
+                                                            constant:<#(CGFloat)#>]
     
+    
+    NSLayoutConstraint * fd = [NSLayoutConstraint constraintsWithVisualFormat:<#(nonnull NSString *)#>
+                                                                      options:<#(NSLayoutFormatOptions)#>
+                                                                      metrics:<#(nullable NSDictionary<NSString *,id> *)#>
+                                                                        views:<#(nonnull NSDictionary<NSString *,id> *)#>
 }
 
 

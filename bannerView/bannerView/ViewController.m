@@ -22,8 +22,16 @@
 -(BannerView *)bannerView
 {
     if(!_bannerView) {
-        _bannerView = [BannerView bannerWithFrame:CGRectMake(0, 0,screen_width , 200) updateWithModels:self.bannerModels andTime:3] ;
+        
+        _bannerView = [BannerView bannerWithFrame:CGRectMake(0, 20, screen_width, 200) updateWithModels:self.bannerModels andTime:3];
+//        _bannerView = [BannerView bannerAutoLayoutWithModels:self.bannerModels andTime:3] ;
         [self.view addSubview:_bannerView];
+//        [_bannerView mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.top.left.mas_equalTo(20);
+//            make.right.mas_equalTo(-20);
+//            make.height.mas_equalTo(200);
+//        }];
+        
     }
     return _bannerView;
 }
@@ -42,6 +50,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.bannerView;
+    UIView *view1 = [[UIView alloc]init];
+//    [view1 setFrame:CGRectMake(20, 250, 200, 50)];
+    [view1 setBackgroundColor:[UIColor redColor]];
+    [self.view addSubview:view1];
+    [view1 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(_bannerView.mas_bottom).offset(200);
+        make.left.mas_equalTo(20);
+        make.right.mas_equalTo(-20);
+        make.width.mas_equalTo(200);
+        make.height.mas_equalTo(50);
+    }];
 }
 
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D67BC5B1FF3895B00F3235A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5D67BC5A1FF3895B00F3235A /* Podfile */; };
 		B584A97C1F8C790A00BABAF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B584A97B1F8C790A00BABAF1 /* main.m */; };
 		B584A97F1F8C790A00BABAF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B584A97E1F8C790A00BABAF1 /* AppDelegate.m */; };
 		B584A9821F8C790A00BABAF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B584A9811F8C790A00BABAF1 /* ViewController.m */; };
@@ -19,6 +20,7 @@
 		B584A9AA1F8C7B0D00BABAF1 /* BannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B584A9A91F8C7B0D00BABAF1 /* BannerView.m */; };
 		B584A9AD1F8C7BD100BABAF1 /* BannerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B584A9AC1F8C7BD100BABAF1 /* BannerModel.m */; };
 		B584A9B01F8CA09300BABAF1 /* BannerImage.plist in Resources */ = {isa = PBXBuildFile; fileRef = B584A9AF1F8CA09300BABAF1 /* BannerImage.plist */; };
+		C43413B5D1160FD022B53D7C /* Pods_bannerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B51B89EBDD24D8C969E5896 /* Pods_bannerView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C123D059B166FC82F7F652A /* Pods-bannerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bannerView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bannerView/Pods-bannerView.debug.xcconfig"; sourceTree = "<group>"; };
+		5D67BC5A1FF3895B00F3235A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		8B51B89EBDD24D8C969E5896 /* Pods_bannerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bannerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B584A9771F8C790A00BABAF1 /* bannerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bannerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B584A97B1F8C790A00BABAF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B584A97D1F8C790A00BABAF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +58,7 @@
 		B584A9AC1F8C7BD100BABAF1 /* BannerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerModel.m; sourceTree = "<group>"; };
 		B584A9AE1F8C7DE300BABAF1 /* Public.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Public.h; sourceTree = "<group>"; };
 		B584A9AF1F8CA09300BABAF1 /* BannerImage.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BannerImage.plist; sourceTree = "<group>"; };
+		B8325E82F0729101FE9EA575 /* Pods-bannerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bannerView.release.xcconfig"; path = "Pods/Target Support Files/Pods-bannerView/Pods-bannerView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C43413B5D1160FD022B53D7C /* Pods_bannerView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,9 +84,12 @@
 			isa = PBXGroup;
 			children = (
 				B584A9A21F8C79CB00BABAF1 /* README.md */,
+				5D67BC5A1FF3895B00F3235A /* Podfile */,
 				B584A9791F8C790A00BABAF1 /* bannerView */,
 				B584A9961F8C790A00BABAF1 /* bannerViewUITests */,
 				B584A9781F8C790A00BABAF1 /* Products */,
+				F27E40B5BB1639E7F0F52E84 /* Pods */,
+				D2B2A35F23ABA110BB938718 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,6 +174,23 @@
 			name = ViewControl;
 			sourceTree = "<group>";
 		};
+		D2B2A35F23ABA110BB938718 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B51B89EBDD24D8C969E5896 /* Pods_bannerView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F27E40B5BB1639E7F0F52E84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C123D059B166FC82F7F652A /* Pods-bannerView.debug.xcconfig */,
+				B8325E82F0729101FE9EA575 /* Pods-bannerView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -171,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B584A99C1F8C790A00BABAF1 /* Build configuration list for PBXNativeTarget "bannerView" */;
 			buildPhases = (
+				95672CFE5D61A204DE50DC37 /* [CP] Check Pods Manifest.lock */,
 				B584A9731F8C790A00BABAF1 /* Sources */,
 				B584A9741F8C790A00BABAF1 /* Frameworks */,
 				B584A9751F8C790A00BABAF1 /* Resources */,
+				62B680DAB1345F52257D55D8 /* [CP] Embed Pods Frameworks */,
+				EF21CD428919141BC7E84F35 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D67BC5B1FF3895B00F3235A /* Podfile in Resources */,
 				B584A9B01F8CA09300BABAF1 /* BannerImage.plist in Resources */,
 				B584A98D1F8C790A00BABAF1 /* LaunchScreen.storyboard in Resources */,
 				B584A98A1F8C790A00BABAF1 /* Assets.xcassets in Resources */,
@@ -263,6 +294,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62B680DAB1345F52257D55D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-bannerView/Pods-bannerView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bannerView/Pods-bannerView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95672CFE5D61A204DE50DC37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bannerView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF21CD428919141BC7E84F35 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bannerView/Pods-bannerView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B584A9731F8C790A00BABAF1 /* Sources */ = {
@@ -409,6 +494,7 @@
 		};
 		B584A99D1F8C790A00BABAF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C123D059B166FC82F7F652A /* Pods-bannerView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5P46D56G7P;
@@ -416,11 +502,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yaqiang.XinLang.bannerView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Debug;
 		};
 		B584A99E1F8C790A00BABAF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8325E82F0729101FE9EA575 /* Pods-bannerView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5P46D56G7P;
@@ -428,6 +516,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yaqiang.XinLang.bannerView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Release;
 		};
@@ -474,6 +563,7 @@
 				B584A99E1F8C790A00BABAF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B584A99F1F8C790A00BABAF1 /* Build configuration list for PBXNativeTarget "bannerViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +572,7 @@
 				B584A9A11F8C790A00BABAF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

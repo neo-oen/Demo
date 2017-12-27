@@ -23,6 +23,8 @@ typedef void (^BannerClickAction)(NSString * ImageUrl);
 @property(assign)NSInteger timeInt;
 
 + (BannerView *)bannerWithFrame:(CGRect)frame updateWithModels:(NSArray *)models andTime:(NSInteger)time;
+
++ (BannerView *)bannerAutoLayoutWithModels:(NSArray *)models andTime:(NSInteger)time;
 - (void)updateBannerViewWith:(NSArray *)models;//加载资源
 
 -(BOOL)addBanner:(NSString *) title;//视图的输入接口，通过她来调用视图的某些功能

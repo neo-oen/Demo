@@ -68,7 +68,11 @@
     return bannerView;
 }
 
-
++(BannerView *)bannerAutoLayoutWithModels:(NSArray *)models andTime:(NSInteger)time{
+    BannerView * bannerView = [[self alloc]init];
+    bannerView.timeInt = time;
+    return bannerView;
+}
 
 #pragma mark - ============== 更新视图 ==============
 /**
@@ -124,7 +128,7 @@
     [self.pageControl setCurrentPage: setWidth/sWidth];
 }
     
--(void)makeTimer{
+-(void)makeTimer{ 
     
         _time = [NSTimer scheduledTimerWithTimeInterval:_timeInt
                                                       target:self
@@ -163,6 +167,13 @@
     [self makeTimer];
 }
 
+#pragma mark - ============== 设置 ==============
+
+-(void)layoutSubviews{
+    [super layoutSubviews];
+    [self updateBannerViewWith:_models];
+
+}
 
 @end
 
