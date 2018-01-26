@@ -15,6 +15,9 @@
 四，白马非马
     你要马，给你什么样的马（白马，黑马））都行，而你要白马，给你，黑马就不行。
 
-改成支持自动布局
-自动布局masonry
-1.必须在addSubview后
+
+/Users/neo/Desktop/demo/Demo/bannerView/bannerView/BannerView1.m:116:36: Assigning to 'id<UICollectionViewDataSource> _Nullable' from incompatible type 'BannerView1 *const __strong'
+没有写DataSource
+
+
+1,拖动的时候取消，结束后开始，买没有做（暂时不做）

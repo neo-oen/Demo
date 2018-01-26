@@ -11,6 +11,7 @@
 #import "BannerModel.h"
 #import "Public.h"
 
+
 @interface ViewController ()
 @property(nonatomic,strong)BannerView * bannerView;
 @property(nonatomic,strong)NSArray * bannerModels ;
@@ -23,14 +24,14 @@
 {
     if(!_bannerView) {
         
-        _bannerView = [BannerView bannerWithFrame:CGRectMake(0, 20, screen_width, 200) updateWithModels:self.bannerModels andTime:3];
-//        _bannerView = [BannerView bannerAutoLayoutWithModels:self.bannerModels andTime:3] ;
+//        _bannerView = [BannerView1 bannerWithFrame:CGRectMake(0, 20, screen_width, 200) updateWithModels:self.bannerModels andTime:3];
+        _bannerView = [BannerView bannerAutoLayoutWithModels:self.bannerModels andTime:3 andBannerViewStyle:UIBannerViewStyleCollection] ;
         [self.view addSubview:_bannerView];
-//        [_bannerView mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.top.left.mas_equalTo(20);
-//            make.right.mas_equalTo(-20);
-//            make.height.mas_equalTo(200);
-//        }];
+        [_bannerView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.left.mas_equalTo(20);
+            make.right.mas_equalTo(-20);
+            make.height.mas_equalTo(200);
+        }];
         
     }
     return _bannerView;
@@ -50,9 +51,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.bannerView;
-    UIView *view1 = [[UIView alloc]init];
+    UIButton *view1 = [UIButton buttonWithType:UIButtonTypeCustom];
 //    [view1 setFrame:CGRectMake(20, 250, 200, 50)];
     [view1 setBackgroundColor:[UIColor redColor]];
+    [view1 addTarget:self action:@selector(buttonClick) forControlEvents:UIControlEventTouchDown];
     [self.view addSubview:view1];
     [view1 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(_bannerView.mas_bottom).offset(200);
@@ -67,6 +69,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - ============== 方法 ==============
+
+-(void)buttonClick{
+    [self.bannerView changeNextPicture];
 }
 
 

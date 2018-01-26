@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 #import "CellModel.h"
-#import "Public.h"
 
 typedef NS_ENUM(NSInteger, TableViewCellStyle) {
     TableViewCellStyleDefault,

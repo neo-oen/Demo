@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5D67BC5B1FF3895B00F3235A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5D67BC5A1FF3895B00F3235A /* Podfile */; };
+		B5648C76200311BD00D7469C /* BannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5648C75200311BD00D7469C /* BannerView.m */; };
+		B5648C792003170900D7469C /* BannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5648C782003170900D7469C /* BannerCell.m */; };
+		B5648C7D200321BB00D7469C /* BannerLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B5648C7C200321BB00D7469C /* BannerLayout.m */; };
 		B584A97C1F8C790A00BABAF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B584A97B1F8C790A00BABAF1 /* main.m */; };
 		B584A97F1F8C790A00BABAF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B584A97E1F8C790A00BABAF1 /* AppDelegate.m */; };
 		B584A9821F8C790A00BABAF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B584A9811F8C790A00BABAF1 /* ViewController.m */; };
@@ -17,7 +20,6 @@
 		B584A98D1F8C790A00BABAF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B584A98B1F8C790A00BABAF1 /* LaunchScreen.storyboard */; };
 		B584A9981F8C790A00BABAF1 /* bannerViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B584A9971F8C790A00BABAF1 /* bannerViewUITests.m */; };
 		B584A9A31F8C79CB00BABAF1 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B584A9A21F8C79CB00BABAF1 /* README.md */; };
-		B584A9AA1F8C7B0D00BABAF1 /* BannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B584A9A91F8C7B0D00BABAF1 /* BannerView.m */; };
 		B584A9AD1F8C7BD100BABAF1 /* BannerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B584A9AC1F8C7BD100BABAF1 /* BannerModel.m */; };
 		B584A9B01F8CA09300BABAF1 /* BannerImage.plist in Resources */ = {isa = PBXBuildFile; fileRef = B584A9AF1F8CA09300BABAF1 /* BannerImage.plist */; };
 		C43413B5D1160FD022B53D7C /* Pods_bannerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B51B89EBDD24D8C969E5896 /* Pods_bannerView.framework */; };
@@ -35,8 +37,14 @@
 
 /* Begin PBXFileReference section */
 		2C123D059B166FC82F7F652A /* Pods-bannerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bannerView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bannerView/Pods-bannerView.debug.xcconfig"; sourceTree = "<group>"; };
-		5D67BC5A1FF3895B00F3235A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		5D67BC5A1FF3895B00F3235A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8B51B89EBDD24D8C969E5896 /* Pods_bannerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bannerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5648C74200311BD00D7469C /* BannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerView.h; sourceTree = "<group>"; };
+		B5648C75200311BD00D7469C /* BannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerView.m; sourceTree = "<group>"; };
+		B5648C772003170900D7469C /* BannerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerCell.h; sourceTree = "<group>"; };
+		B5648C782003170900D7469C /* BannerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerCell.m; sourceTree = "<group>"; };
+		B5648C7B200321BB00D7469C /* BannerLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerLayout.h; sourceTree = "<group>"; };
+		B5648C7C200321BB00D7469C /* BannerLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerLayout.m; sourceTree = "<group>"; };
 		B584A9771F8C790A00BABAF1 /* bannerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bannerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B584A97B1F8C790A00BABAF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B584A97D1F8C790A00BABAF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,8 +60,6 @@
 		B584A9971F8C790A00BABAF1 /* bannerViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bannerViewUITests.m; sourceTree = "<group>"; };
 		B584A9991F8C790A00BABAF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B584A9A21F8C79CB00BABAF1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B584A9A81F8C7B0D00BABAF1 /* BannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerView.h; sourceTree = "<group>"; };
-		B584A9A91F8C7B0D00BABAF1 /* BannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerView.m; sourceTree = "<group>"; };
 		B584A9AB1F8C7BD100BABAF1 /* BannerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerModel.h; sourceTree = "<group>"; };
 		B584A9AC1F8C7BD100BABAF1 /* BannerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerModel.m; sourceTree = "<group>"; };
 		B584A9AE1F8C7DE300BABAF1 /* Public.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Public.h; sourceTree = "<group>"; };
@@ -80,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5648C7A2003218F00D7469C /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				B5648C7B200321BB00D7469C /* BannerLayout.h */,
+				B5648C7C200321BB00D7469C /* BannerLayout.m */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
 		B584A96E1F8C790A00BABAF1 = {
 			isa = PBXGroup;
 			children = (
@@ -141,8 +156,11 @@
 		B584A9A41F8C7A3200BABAF1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B584A9A81F8C7B0D00BABAF1 /* BannerView.h */,
-				B584A9A91F8C7B0D00BABAF1 /* BannerView.m */,
+				B5648C7A2003218F00D7469C /* Layout */,
+				B5648C74200311BD00D7469C /* BannerView.h */,
+				B5648C75200311BD00D7469C /* BannerView.m */,
+				B5648C772003170900D7469C /* BannerCell.h */,
+				B5648C782003170900D7469C /* BannerCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -356,8 +374,10 @@
 			files = (
 				B584A9881F8C790A00BABAF1 /* bannerView.xcdatamodeld in Sources */,
 				B584A9821F8C790A00BABAF1 /* ViewController.m in Sources */,
-				B584A9AA1F8C7B0D00BABAF1 /* BannerView.m in Sources */,
+				B5648C76200311BD00D7469C /* BannerView.m in Sources */,
 				B584A9A31F8C79CB00BABAF1 /* README.md in Sources */,
+				B5648C7D200321BB00D7469C /* BannerLayout.m in Sources */,
+				B5648C792003170900D7469C /* BannerCell.m in Sources */,
 				B584A97F1F8C790A00BABAF1 /* AppDelegate.m in Sources */,
 				B584A9AD1F8C7BD100BABAF1 /* BannerModel.m in Sources */,
 				B584A97C1F8C790A00BABAF1 /* main.m in Sources */,

@@ -11,7 +11,6 @@
 #import "TableViewCell.h"
 #import "TableViewHeaderView.h"
 #import "CellModel.h"
-#import "Public.h"
 
 
 
@@ -61,6 +60,13 @@
     TableSectionView * TableSectionView = [[self alloc]initWithFrame:frame];
     TableSectionView.style = style;
     [TableSectionView updateTableSectionViewWithModel:models];
+    return TableSectionView;
+}
+//自动布局的方法
++(TableSectionView *)TableSectionWithStyle:(UITableViewStyle)style andModel:(NSArray *)models{
+    
+    TableSectionView * TableSectionView = [[self alloc]init];
+    TableSectionView.style = style;
     return TableSectionView;
 }
 
@@ -278,9 +284,9 @@
 //    return [self.models[section] title] ;
 //}
 
--(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section{
-    return [self.models[section] desc];
-}
+//-(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section{
+//    return [self.models[section] desc];
+//}
 
 
 -(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -307,7 +313,7 @@
     return model.headerHeight;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"section=%ld,row=%ld",indexPath.section,indexPath.row);
+//    NSLog(@"section=%ld,row=%ld",indexPath.section,indexPath.row);
 }
 
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
@@ -333,10 +339,35 @@
     return headerView;
 }
 
+#pragma mark - ============== 设置 ==============
 
+-(void)layoutSubviews{
+    
+    [super layoutSubviews];
+    [self updateTableSectionViewWithModel:self.models];
+    
+}
 
 @end
 
 
+
+/*
+ +(TableSectionView *)TableSectionWithFrame:(CGRect)frame withStyle:(UITableViewStyle)style andModel:(NSArray *)models{
+ 
+ TableSectionView * TableSectionView = [[self alloc]initWithFrame:frame];
+ TableSectionView.style = style;
+ [TableSectionView updateTableSectionViewWithModel:models];
+ return TableSectionView;
+ }
+ 
+
+- (void)updateTableSectionViewWithModel:(NSArray *)models{
+    
+    self.tableView;
+    _models = models;
+    
+}
+*/
 
 

@@ -1,0 +1,6 @@
+framework module Pods________ {
+  umbrella header "Pods-主流框架纯代码-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -25,6 +25,7 @@ typedef NS_ENUM(NSInteger, UITableSectionViewStyle) {
 @property(nonatomic,strong)NSArray * models;//向本类输入资源的接口
 
 + (TableSectionView *)TableSectionWithFrame:(CGRect)frame withStyle:(UITableViewStyle)style andModel:(NSArray *)models;//初始化视图的方法
++(TableSectionView *)TableSectionWithStyle:(UITableViewStyle)style andModel:(NSArray *)models;
 - (void)updateTableSectionViewWithModel:(NSArray *)models;//加载资源
 
 //cell的增，删，改，移

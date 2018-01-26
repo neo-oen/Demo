@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35FC1CCF626005942063277A /* Pods_Navgation__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6026AEE2B6B9B3FCBF30F3D7 /* Pods_Navgation__.framework */; };
+		B507E411200DDACF0000B599 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B507E410200DDACF0000B599 /* main.m */; };
+		B507E414200DDACF0000B599 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B507E413200DDACF0000B599 /* AppDelegate.m */; };
+		B507E41D200DDACF0000B599 /* Navgation__.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B507E41B200DDACF0000B599 /* Navgation__.xcdatamodeld */; };
+		B507E41F200DDACF0000B599 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B507E41E200DDACF0000B599 /* Assets.xcassets */; };
+		B507E422200DDACF0000B599 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B507E420200DDACF0000B599 /* LaunchScreen.storyboard */; };
+		B507E42D200DDAD00000B599 /* Navgation__UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B507E42C200DDAD00000B599 /* Navgation__UITests.m */; };
+		B507E446200DDC660000B599 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = B507E444200DDC660000B599 /* NSArray+Log.m */; };
+		B507E449200DDF3B0000B599 /* BascViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B507E448200DDF3B0000B599 /* BascViewController.m */; };
+		B507E454200DE7870000B599 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B507E452200DE7870000B599 /* Podfile */; };
+		B507E455200DE7870000B599 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B507E453200DE7870000B599 /* README.md */; };
+		B50ED0C9200EFB2600F02A4B /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50ED0C8200EFB2600F02A4B /* TableViewController.m */; };
+		B50ED0CC200F0AC300F02A4B /* ManViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50ED0CB200F0AC300F02A4B /* ManViewController.m */; };
+		B50ED0E82011DA9A00F02A4B /* tableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B50ED0E72011DA9A00F02A4B /* tableView.xib */; };
+		B50ED0EE2011E2BE00F02A4B /* TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B50ED0ED2011E2BE00F02A4B /* TableView.m */; };
+		B50ED0F02011E7EC00F02A4B /* tableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B50ED0EF2011E7EC00F02A4B /* tableViewCell.xib */; };
+		B50ED0F32011E80A00F02A4B /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B50ED0F22011E80A00F02A4B /* TableViewCell.m */; };
+		B50ED0F62011EDF400F02A4B /* CellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B50ED0F52011EDF400F02A4B /* CellModel.m */; };
+		B5C3E9242015CAC6002BD045 /* EditManViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E9232015CAC6002BD045 /* EditManViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B507E429200DDAD00000B599 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B507E404200DDACF0000B599 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B507E40B200DDACF0000B599;
+			remoteInfo = "Navgation使用";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5366CA277661A3FC44A6BDAB /* Pods-Navgation使用.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Navgation使用.release.xcconfig"; path = "Pods/Target Support Files/Pods-Navgation使用/Pods-Navgation使用.release.xcconfig"; sourceTree = "<group>"; };
+		6026AEE2B6B9B3FCBF30F3D7 /* Pods_Navgation__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Navgation__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B507E40C200DDACF0000B599 /* Navgation使用.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Navgation使用.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B507E410200DDACF0000B599 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B507E412200DDACF0000B599 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B507E413200DDACF0000B599 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B507E41C200DDACF0000B599 /* Navgation__.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Navgation__.xcdatamodel; sourceTree = "<group>"; };
+		B507E41E200DDACF0000B599 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B507E421200DDACF0000B599 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B507E423200DDACF0000B599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B507E428200DDAD00000B599 /* Navgation使用UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Navgation使用UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B507E42C200DDAD00000B599 /* Navgation__UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Navgation__UITests.m; sourceTree = "<group>"; };
+		B507E42E200DDAD00000B599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B507E441200DDC660000B599 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B507E443200DDC660000B599 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		B507E444200DDC660000B599 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		B507E447200DDF3B0000B599 /* BascViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BascViewController.h; path = ../Views/BascViewController.h; sourceTree = "<group>"; };
+		B507E448200DDF3B0000B599 /* BascViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BascViewController.m; path = ../Views/BascViewController.m; sourceTree = "<group>"; };
+		B507E452200DE7870000B599 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B507E453200DE7870000B599 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B50ED0C7200EFB2600F02A4B /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		B50ED0C8200EFB2600F02A4B /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		B50ED0CA200F0AC300F02A4B /* ManViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManViewController.h; sourceTree = "<group>"; };
+		B50ED0CB200F0AC300F02A4B /* ManViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManViewController.m; sourceTree = "<group>"; };
+		B50ED0E72011DA9A00F02A4B /* tableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tableView.xib; sourceTree = "<group>"; };
+		B50ED0EC2011E2BE00F02A4B /* TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableView.h; sourceTree = "<group>"; };
+		B50ED0ED2011E2BE00F02A4B /* TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableView.m; sourceTree = "<group>"; };
+		B50ED0EF2011E7EC00F02A4B /* tableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tableViewCell.xib; sourceTree = "<group>"; };
+		B50ED0F12011E80A00F02A4B /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		B50ED0F22011E80A00F02A4B /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		B50ED0F42011EDF400F02A4B /* CellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellModel.h; sourceTree = "<group>"; };
+		B50ED0F52011EDF400F02A4B /* CellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellModel.m; sourceTree = "<group>"; };
+		B5C3E9222015CAC6002BD045 /* EditManViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditManViewController.h; sourceTree = "<group>"; };
+		B5C3E9232015CAC6002BD045 /* EditManViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditManViewController.m; sourceTree = "<group>"; };
+		E0794EC9C10E89FD74F180CE /* Pods-Navgation使用.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Navgation使用.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Navgation使用/Pods-Navgation使用.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B507E409200DDACF0000B599 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35FC1CCF626005942063277A /* Pods_Navgation__.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B507E425200DDAD00000B599 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49B5850C52C7E18BD5956964 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6026AEE2B6B9B3FCBF30F3D7 /* Pods_Navgation__.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78422E2BB49F3B7D83376A60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0794EC9C10E89FD74F180CE /* Pods-Navgation使用.debug.xcconfig */,
+				5366CA277661A3FC44A6BDAB /* Pods-Navgation使用.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B507E403200DDACF0000B599 = {
+			isa = PBXGroup;
+			children = (
+				B507E452200DE7870000B599 /* Podfile */,
+				B507E453200DE7870000B599 /* README.md */,
+				B507E40E200DDACF0000B599 /* Navgation使用 */,
+				B507E42B200DDAD00000B599 /* Navgation使用UITests */,
+				B507E40D200DDACF0000B599 /* Products */,
+				78422E2BB49F3B7D83376A60 /* Pods */,
+				49B5850C52C7E18BD5956964 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B507E40D200DDACF0000B599 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B507E40C200DDACF0000B599 /* Navgation使用.app */,
+				B507E428200DDAD00000B599 /* Navgation使用UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B507E40E200DDACF0000B599 /* Navgation使用 */ = {
+			isa = PBXGroup;
+			children = (
+				B507E43D200DDC660000B599 /* Controllers */,
+				B507E43E200DDC660000B599 /* Models */,
+				B507E43F200DDC660000B599 /* Others */,
+				B507E445200DDC660000B599 /* Views */,
+				B507E40F200DDACF0000B599 /* Supporting Files */,
+			);
+			path = "Navgation使用";
+			sourceTree = "<group>";
+		};
+		B507E40F200DDACF0000B599 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B507E412200DDACF0000B599 /* AppDelegate.h */,
+				B507E413200DDACF0000B599 /* AppDelegate.m */,
+				B507E41E200DDACF0000B599 /* Assets.xcassets */,
+				B507E420200DDACF0000B599 /* LaunchScreen.storyboard */,
+				B507E423200DDACF0000B599 /* Info.plist */,
+				B507E41B200DDACF0000B599 /* Navgation__.xcdatamodeld */,
+				B507E410200DDACF0000B599 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B507E42B200DDAD00000B599 /* Navgation使用UITests */ = {
+			isa = PBXGroup;
+			children = (
+				B507E42C200DDAD00000B599 /* Navgation__UITests.m */,
+				B507E42E200DDAD00000B599 /* Info.plist */,
+			);
+			path = "Navgation使用UITests";
+			sourceTree = "<group>";
+		};
+		B507E43D200DDC660000B599 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B507E447200DDF3B0000B599 /* BascViewController.h */,
+				B507E448200DDF3B0000B599 /* BascViewController.m */,
+				B50ED0C7200EFB2600F02A4B /* TableViewController.h */,
+				B50ED0C8200EFB2600F02A4B /* TableViewController.m */,
+				B50ED0CA200F0AC300F02A4B /* ManViewController.h */,
+				B50ED0CB200F0AC300F02A4B /* ManViewController.m */,
+				B5C3E9222015CAC6002BD045 /* EditManViewController.h */,
+				B5C3E9232015CAC6002BD045 /* EditManViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B507E43E200DDC660000B599 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B50ED0F42011EDF400F02A4B /* CellModel.h */,
+				B50ED0F52011EDF400F02A4B /* CellModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B507E43F200DDC660000B599 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				B507E440200DDC660000B599 /* PrefixHeader */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		B507E440200DDC660000B599 /* PrefixHeader */ = {
+			isa = PBXGroup;
+			children = (
+				B507E441200DDC660000B599 /* PrefixHeader.pch */,
+				B507E442200DDC660000B599 /* Tools */,
+			);
+			path = PrefixHeader;
+			sourceTree = "<group>";
+		};
+		B507E442200DDC660000B599 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B507E443200DDC660000B599 /* NSArray+Log.h */,
+				B507E444200DDC660000B599 /* NSArray+Log.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		B507E445200DDC660000B599 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B50ED0E72011DA9A00F02A4B /* tableView.xib */,
+				B50ED0EC2011E2BE00F02A4B /* TableView.h */,
+				B50ED0ED2011E2BE00F02A4B /* TableView.m */,
+				B50ED0EF2011E7EC00F02A4B /* tableViewCell.xib */,
+				B50ED0F12011E80A00F02A4B /* TableViewCell.h */,
+				B50ED0F22011E80A00F02A4B /* TableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B507E40B200DDACF0000B599 /* Navgation使用 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B507E431200DDAD00000B599 /* Build configuration list for PBXNativeTarget "Navgation使用" */;
+			buildPhases = (
+				9F675B359AE0B94E5099EA57 /* [CP] Check Pods Manifest.lock */,
+				B507E408200DDACF0000B599 /* Sources */,
+				B507E409200DDACF0000B599 /* Frameworks */,
+				B507E40A200DDACF0000B599 /* Resources */,
+				CE34EA9764A460374DB8ABE4 /* [CP] Embed Pods Frameworks */,
+				2FFAC450CC0BC4A319B14F8D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Navgation使用";
+			productName = "Navgation使用";
+			productReference = B507E40C200DDACF0000B599 /* Navgation使用.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B507E427200DDAD00000B599 /* Navgation使用UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B507E434200DDAD00000B599 /* Build configuration list for PBXNativeTarget "Navgation使用UITests" */;
+			buildPhases = (
+				B507E424200DDAD00000B599 /* Sources */,
+				B507E425200DDAD00000B599 /* Frameworks */,
+				B507E426200DDAD00000B599 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B507E42A200DDAD00000B599 /* PBXTargetDependency */,
+			);
+			name = "Navgation使用UITests";
+			productName = "Navgation使用UITests";
+			productReference = B507E428200DDAD00000B599 /* Navgation使用UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B507E404200DDACF0000B599 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = neo;
+				TargetAttributes = {
+					B507E40B200DDACF0000B599 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5P46D56G7P;
+						ProvisioningStyle = Automatic;
+					};
+					B507E427200DDAD00000B599 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5P46D56G7P;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B507E40B200DDACF0000B599;
+					};
+				};
+			};
+			buildConfigurationList = B507E407200DDACF0000B599 /* Build configuration list for PBXProject "Navgation使用" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B507E403200DDACF0000B599;
+			productRefGroup = B507E40D200DDACF0000B599 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B507E40B200DDACF0000B599 /* Navgation使用 */,
+				B507E427200DDAD00000B599 /* Navgation使用UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B507E40A200DDACF0000B599 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B507E454200DE7870000B599 /* Podfile in Resources */,
+				B50ED0F02011E7EC00F02A4B /* tableViewCell.xib in Resources */,
+				B50ED0E82011DA9A00F02A4B /* tableView.xib in Resources */,
+				B507E422200DDACF0000B599 /* LaunchScreen.storyboard in Resources */,
+				B507E41F200DDACF0000B599 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B507E426200DDAD00000B599 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FFAC450CC0BC4A319B14F8D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Navgation使用/Pods-Navgation使用-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F675B359AE0B94E5099EA57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Navgation使用-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE34EA9764A460374DB8ABE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Navgation使用/Pods-Navgation使用-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD+DK/MBProgressHUD_DK.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD_DK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Navgation使用/Pods-Navgation使用-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B507E408200DDACF0000B599 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50ED0EE2011E2BE00F02A4B /* TableView.m in Sources */,
+				B50ED0F62011EDF400F02A4B /* CellModel.m in Sources */,
+				B507E455200DE7870000B599 /* README.md in Sources */,
+				B50ED0CC200F0AC300F02A4B /* ManViewController.m in Sources */,
+				B50ED0F32011E80A00F02A4B /* TableViewCell.m in Sources */,
+				B507E449200DDF3B0000B599 /* BascViewController.m in Sources */,
+				B507E446200DDC660000B599 /* NSArray+Log.m in Sources */,
+				B5C3E9242015CAC6002BD045 /* EditManViewController.m in Sources */,
+				B507E41D200DDACF0000B599 /* Navgation__.xcdatamodeld in Sources */,
+				B507E414200DDACF0000B599 /* AppDelegate.m in Sources */,
+				B50ED0C9200EFB2600F02A4B /* TableViewController.m in Sources */,
+				B507E411200DDACF0000B599 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B507E424200DDAD00000B599 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B507E42D200DDAD00000B599 /* Navgation__UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B507E42A200DDAD00000B599 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B507E40B200DDACF0000B599 /* Navgation使用 */;
+			targetProxy = B507E429200DDAD00000B599 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B507E420200DDACF0000B599 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B507E421200DDACF0000B599 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B507E42F200DDAD00000B599 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B507E430200DDAD00000B599 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B507E432200DDAD00000B599 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0794EC9C10E89FD74F180CE /* Pods-Navgation使用.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5P46D56G7P;
+				GCC_PREFIX_HEADER = "./$(PROJECT_NAME)/Others/PrefixHeader/PrefixHeader.pch";
+				INFOPLIST_FILE = "Navgation使用/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yaqiang.Navgation--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B507E433200DDAD00000B599 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5366CA277661A3FC44A6BDAB /* Pods-Navgation使用.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5P46D56G7P;
+				GCC_PREFIX_HEADER = "./$(PROJECT_NAME)/Others/PrefixHeader/PrefixHeader.pch";
+				INFOPLIST_FILE = "Navgation使用/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yaqiang.Navgation--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B507E435200DDAD00000B599 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5P46D56G7P;
+				INFOPLIST_FILE = "Navgation使用UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yaqiang.Navgation--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Navgation使用";
+			};
+			name = Debug;
+		};
+		B507E436200DDAD00000B599 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5P46D56G7P;
+				INFOPLIST_FILE = "Navgation使用UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yaqiang.Navgation--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Navgation使用";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B507E407200DDACF0000B599 /* Build configuration list for PBXProject "Navgation使用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B507E42F200DDAD00000B599 /* Debug */,
+				B507E430200DDAD00000B599 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B507E431200DDAD00000B599 /* Build configuration list for PBXNativeTarget "Navgation使用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B507E432200DDAD00000B599 /* Debug */,
+				B507E433200DDAD00000B599 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B507E434200DDAD00000B599 /* Build configuration list for PBXNativeTarget "Navgation使用UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B507E435200DDAD00000B599 /* Debug */,
+				B507E436200DDAD00000B599 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B507E41B200DDACF0000B599 /* Navgation__.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B507E41C200DDACF0000B599 /* Navgation__.xcdatamodel */,
+			);
+			currentVersion = B507E41C200DDACF0000B599 /* Navgation__.xcdatamodel */;
+			path = Navgation__.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B507E404200DDACF0000B599 /* Project object */;
+}

@@ -8,3 +8,10 @@ cell 分为两部，第一种，原生的，第二种自定义的
 第二步 tableSectionView 和 view 分离
 
 
+给tableVIew 自动布局化 和pch
+
+
+标致车后面多了一个footVeiw查一下啥问题
+
+可能后面要重写这个啦，用自动布局重写。
+放弃现在的

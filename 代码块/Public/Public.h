@@ -5,6 +5,7 @@
 //  Created by neo on 2017/10/10.
 //  Copyright © 2017年 neo. All rights reserved.
 //
+#ifdef __OBJC__
 
 #ifndef Public_h
 #define Public_h
@@ -50,3 +51,24 @@
 #define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
 
 #endif /* Public_h */
+
+
+#ifdef DEBUG
+
+#define MYLog(...) NSLog(__VA_ARGS__)
+
+#else
+
+#define MYLog(...)
+
+#endif
+
+
+
+
+
+
+
+
+
+#endif/* oc类的都在这个里面 */

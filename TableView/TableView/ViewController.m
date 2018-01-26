@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "TableSectionView.h"
 #import "TableSectionModel.h"
-#import "Public.h"
 
 @interface ViewController ()
 @property(nonatomic,strong) TableSectionView * tableView;
@@ -26,7 +25,6 @@
     NSLog(@"%@",array);
     _tableView = [TableSectionView TableSectionWithFrame:frame withStyle:UITableViewStylePlain andModel:array];
     [self.view addSubview:_tableView];
-    
     
     
     

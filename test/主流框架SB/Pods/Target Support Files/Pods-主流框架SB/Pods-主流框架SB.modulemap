@@ -1,0 +1,6 @@
+framework module Pods_____SB {
+  umbrella header "Pods-主流框架SB-umbrella.h"
+
+  export *
+  module * { export * }
+}
