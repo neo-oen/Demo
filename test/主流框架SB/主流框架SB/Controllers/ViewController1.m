@@ -10,13 +10,24 @@
 #import "TestView.h"
 
 @interface ViewController1 ()
-@property (weak, nonatomic) IBOutlet UIButton *button;
 @property (weak, nonatomic) IBOutlet TestView *textView;
 
 @end
 
 @implementation ViewController1
 
+#pragma mark - ============== 懒加载 ==============
+
+#pragma mark - ============== 初始化 ==============
+#pragma mark - ============== 接口 ==============
+#pragma mark - ============== 方法 ==============
+- (IBAction)buttonClick:(UIButton *)sender {
+    _textView.transform = CGAffineTransformMakeScale(2, 1);
+    
+    
+}
+#pragma mark - ============== 代理 ==============
+#pragma mark - ============== 设置 ==============
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
