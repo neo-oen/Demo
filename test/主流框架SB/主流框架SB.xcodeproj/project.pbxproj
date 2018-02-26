@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		54C64441CCE7A3EA0CB92078 /* Pods_____SB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCAB202E248075068E4D50E4 /* Pods_____SB.framework */; };
+		5DA530E0204400CF00E88F05 /* TestTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA530DF204400CF00E88F05 /* TestTouchView.m */; };
 		B5C3E9782019A11B002BD045 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E9772019A11B002BD045 /* main.m */; };
 		B5C3E97B2019A11B002BD045 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E97A2019A11B002BD045 /* AppDelegate.m */; };
 		B5C3E9842019A11B002BD045 /* ____SB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E9822019A11B002BD045 /* ____SB.xcdatamodeld */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5DA530DE204400CF00E88F05 /* TestTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTouchView.h; sourceTree = "<group>"; };
+		5DA530DF204400CF00E88F05 /* TestTouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTouchView.m; sourceTree = "<group>"; };
 		6933E878C09001F1AA743DB3 /* Pods-主流框架SB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-主流框架SB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-主流框架SB/Pods-主流框架SB.debug.xcconfig"; sourceTree = "<group>"; };
 		B5C3E9732019A11B002BD045 /* 主流框架SB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "主流框架SB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C3E9772019A11B002BD045 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -220,6 +223,8 @@
 				B5D397B82024506D00178B04 /* TestView3.m */,
 				B5D397C020298DB000178B04 /* TestView4.h */,
 				B5D397C120298DB000178B04 /* TestView4.m */,
+				5DA530DE204400CF00E88F05 /* TestTouchView.h */,
+				5DA530DF204400CF00E88F05 /* TestTouchView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -402,6 +407,7 @@
 				B5D397B3201B05E800178B04 /* ViewController1.m in Sources */,
 				B5C3E9A72019A723002BD045 /* NSArray+Log.m in Sources */,
 				B5D397B62021845300178B04 /* TestView2.m in Sources */,
+				5DA530E0204400CF00E88F05 /* TestTouchView.m in Sources */,
 				B5C3E9842019A11B002BD045 /* ____SB.xcdatamodeld in Sources */,
 				B5D397C220298DB000178B04 /* TestView4.m in Sources */,
 				B5D397B92024506D00178B04 /* TestView3.m in Sources */,

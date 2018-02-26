@@ -37,7 +37,6 @@
     [path addClip];
     
     [self.image drawInRect:CGRectMake(30, 30, 150, 150)];
-    NSData * asd ;
 
 
 }
@@ -79,7 +78,6 @@
     [path addClip];
     
     [self.image drawInRect:CGRectMake(30, 30, 150, 150)];
-    NSData * asd ;
     
     
 }
