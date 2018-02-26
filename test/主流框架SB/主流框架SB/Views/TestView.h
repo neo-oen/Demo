@@ -10,4 +10,6 @@
 
 @interface TestView : UIView
 
+@property(nonatomic,assign)CGFloat  radian;
+
 @end

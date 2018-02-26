@@ -8,9 +8,11 @@
 
 #import "ViewController1.h"
 #import "TestView.h"
+#import "TestView2.h"
 
 @interface ViewController1 ()
 @property (weak, nonatomic) IBOutlet TestView *textView;
+@property (weak, nonatomic) IBOutlet TestView2 *textView2;
 
 @end
 
@@ -25,6 +27,12 @@
     _textView.transform = CGAffineTransformMakeScale(2, 1);
     
     
+}
+- (IBAction)sliderSlid:(UISlider *)sender {
+    
+    _textView.radian = sender.value * 2 * M_PI;
+    
+    _textView2.radian = sender.value * 2 * M_PI;
 }
 #pragma mark - ============== 代理 ==============
 #pragma mark - ============== 设置 ==============
@@ -47,5 +55,6 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 @end

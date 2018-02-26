@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zvx-N3-OFt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zvx-N3-OFt">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -54,9 +54,30 @@
                                     <action selector="buttonClick:" destination="IUG-aD-iFS" eventType="touchUpInside" id="3fn-MW-EUa"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="D7m-Jd-Kma">
+                                <rect key="frame" x="85" y="318" width="204" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="zyd-3m-5pb"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderSlid:" destination="IUG-aD-iFS" eventType="valueChanged" id="EiK-oZ-j33"/>
+                                </connections>
+                            </slider>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jWc-8I-AI1" customClass="TestView2">
+                                <rect key="frame" x="87" y="93.5" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="0HZ-ge-L45"/>
+                                    <constraint firstAttribute="width" constant="200" id="gl3-fK-db5"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.45221458669999998" blue="0.44078999610000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="jWc-8I-AI1" firstAttribute="centerY" secondItem="zJQ-r7-vpH" secondAttribute="centerY" constant="-140" id="BJo-DT-5zg"/>
+                            <constraint firstItem="D7m-Jd-Kma" firstAttribute="centerY" secondItem="zJQ-r7-vpH" secondAttribute="centerY" id="GcP-Re-uuU"/>
+                            <constraint firstItem="jWc-8I-AI1" firstAttribute="centerX" secondItem="zJQ-r7-vpH" secondAttribute="centerX" id="REY-5m-iI6"/>
+                            <constraint firstItem="D7m-Jd-Kma" firstAttribute="centerX" secondItem="zJQ-r7-vpH" secondAttribute="centerX" id="Smo-BJ-bzi"/>
                             <constraint firstItem="fCX-Tb-7pa" firstAttribute="trailing" secondItem="zJQ-r7-vpH" secondAttribute="trailingMargin" constant="10" id="dNb-5u-wwP"/>
                             <constraint firstItem="h9m-dw-9Bk" firstAttribute="top" secondItem="fCX-Tb-7pa" secondAttribute="bottom" constant="8" id="iUc-FF-tfO"/>
                         </constraints>
@@ -64,6 +85,7 @@
                     <navigationItem key="navigationItem" id="Kza-ES-eJv"/>
                     <connections>
                         <outlet property="textView" destination="fCX-Tb-7pa" id="d65-Gi-8ax"/>
+                        <outlet property="textView2" destination="jWc-8I-AI1" id="i0W-0J-O3x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GIT-eu-FkB" userLabel="First Responder" sceneMemberID="firstResponder"/>

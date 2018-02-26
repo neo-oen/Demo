@@ -23,6 +23,10 @@
 		B5C3E9D42019BCC8002BD045 /* four.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C3E9D32019BCC8002BD045 /* four.storyboard */; };
 		B5C3E9D72019C5C0002BD045 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E9D62019C5C0002BD045 /* TestView.m */; };
 		B5D397B3201B05E800178B04 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D397B2201B05E800178B04 /* ViewController1.m */; };
+		B5D397B62021845300178B04 /* TestView2.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D397B52021845300178B04 /* TestView2.m */; };
+		B5D397B92024506D00178B04 /* TestView3.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D397B82024506D00178B04 /* TestView3.m */; };
+		B5D397C220298DB000178B04 /* TestView4.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D397C120298DB000178B04 /* TestView4.m */; };
+		B5D397C5202E005700178B04 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D397C4202E005700178B04 /* ViewController3.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,14 @@
 		B5C3E9D62019C5C0002BD045 /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
 		B5D397B1201B05E800178B04 /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
 		B5D397B2201B05E800178B04 /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		B5D397B42021845300178B04 /* TestView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView2.h; sourceTree = "<group>"; };
+		B5D397B52021845300178B04 /* TestView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView2.m; sourceTree = "<group>"; };
+		B5D397B72024506D00178B04 /* TestView3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView3.h; sourceTree = "<group>"; };
+		B5D397B82024506D00178B04 /* TestView3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView3.m; sourceTree = "<group>"; };
+		B5D397C020298DB000178B04 /* TestView4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView4.h; sourceTree = "<group>"; };
+		B5D397C120298DB000178B04 /* TestView4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView4.m; sourceTree = "<group>"; };
+		B5D397C3202E005700178B04 /* ViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
+		B5D397C4202E005700178B04 /* ViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
 		DEE783A4297524BFDB08EA75 /* Pods-主流框架SB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-主流框架SB.release.xcconfig"; path = "Pods/Target Support Files/Pods-主流框架SB/Pods-主流框架SB.release.xcconfig"; sourceTree = "<group>"; };
 		FCAB202E248075068E4D50E4 /* Pods_____SB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_____SB.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -156,6 +168,8 @@
 				B5D397B1201B05E800178B04 /* ViewController1.h */,
 				B5D397B2201B05E800178B04 /* ViewController1.m */,
 				B5C3E9CF2019BCA8002BD045 /* two.storyboard */,
+				B5D397C3202E005700178B04 /* ViewController3.h */,
+				B5D397C4202E005700178B04 /* ViewController3.m */,
 				B5C3E9D12019BCBA002BD045 /* three.storyboard */,
 				B5C3E9D32019BCC8002BD045 /* four.storyboard */,
 			);
@@ -200,6 +214,12 @@
 			children = (
 				B5C3E9D52019C5C0002BD045 /* TestView.h */,
 				B5C3E9D62019C5C0002BD045 /* TestView.m */,
+				B5D397B42021845300178B04 /* TestView2.h */,
+				B5D397B52021845300178B04 /* TestView2.m */,
+				B5D397B72024506D00178B04 /* TestView3.h */,
+				B5D397B82024506D00178B04 /* TestView3.m */,
+				B5D397C020298DB000178B04 /* TestView4.h */,
+				B5D397C120298DB000178B04 /* TestView4.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -381,10 +401,14 @@
 				B5C3E9AB2019A740002BD045 /* README.md in Sources */,
 				B5D397B3201B05E800178B04 /* ViewController1.m in Sources */,
 				B5C3E9A72019A723002BD045 /* NSArray+Log.m in Sources */,
+				B5D397B62021845300178B04 /* TestView2.m in Sources */,
 				B5C3E9842019A11B002BD045 /* ____SB.xcdatamodeld in Sources */,
+				B5D397C220298DB000178B04 /* TestView4.m in Sources */,
+				B5D397B92024506D00178B04 /* TestView3.m in Sources */,
 				B5C3E97B2019A11B002BD045 /* AppDelegate.m in Sources */,
 				B5C3E9D72019C5C0002BD045 /* TestView.m in Sources */,
 				B5C3E9782019A11B002BD045 /* main.m in Sources */,
+				B5D397C5202E005700178B04 /* ViewController3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

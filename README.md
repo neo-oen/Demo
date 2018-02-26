@@ -21,3 +21,9 @@ tableView应该将会是一个很不好写的扩展
 
 
 
+
+这里还要有给结构，就是那些地方调用了啥方法，的记录
+
+Navgation使用 
+
+使用了数据持久化的，nsuserdefault，和nskeyAchieve.归解档，navagation的功能

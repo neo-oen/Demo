@@ -9,34 +9,48 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
-        <scene sceneID="AFr-H1-Kwo">
+        <!--View Controller3-->
+        <scene sceneID="Fgi-W9-CkP">
             <objects>
-                <tableViewController id="QVP-Je-QLc" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Bck-py-2pd">
+                <viewController id="cDT-v3-ayP" customClass="ViewController3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NYr-it-3Qe"/>
+                        <viewControllerLayoutGuide type="bottom" id="UnE-jb-Ibn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1R7-yF-yQf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zIo-dm-3Zh">
+                                <rect key="frame" x="87" y="233.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="C6v-os-EQS"/>
+                                    <constraint firstAttribute="height" constant="200" id="DXX-Ev-o3t"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jA7-cT-uPt">
+                                <rect key="frame" x="164" y="507" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="cDT-v3-ayP" eventType="touchUpInside" id="vtR-YG-OIf"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="J2l-EL-j7B">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J2l-EL-j7B" id="ZLL-gn-8Dx">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="QVP-Je-QLc" id="tB0-7f-3oo"/>
-                            <outlet property="delegate" destination="QVP-Je-QLc" id="tba-kd-aII"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="asm-WE-ynm"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HrB-OJ-2Ps" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstItem="zIo-dm-3Zh" firstAttribute="centerX" secondItem="1R7-yF-yQf" secondAttribute="centerX" id="agJ-nS-aWs"/>
+                            <constraint firstItem="zIo-dm-3Zh" firstAttribute="centerY" secondItem="1R7-yF-yQf" secondAttribute="centerY" id="fDi-7w-5MB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dNH-Ct-e33"/>
+                    <connections>
+                        <outlet property="imageView" destination="zIo-dm-3Zh" id="IaP-PZ-6vy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wnH-1x-i6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-473" y="263"/>
+            <point key="canvasLocation" x="-462" y="262"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ii0-al-WhZ">
@@ -47,7 +61,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="QVP-Je-QLc" kind="relationship" relationship="rootViewController" id="HwY-29-2R0"/>
+                        <segue destination="cDT-v3-ayP" kind="relationship" relationship="rootViewController" id="Xvp-ns-AOP"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u8L-BJ-K3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
