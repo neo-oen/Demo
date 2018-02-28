@@ -8,7 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		54C64441CCE7A3EA0CB92078 /* Pods_____SB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCAB202E248075068E4D50E4 /* Pods_____SB.framework */; };
+		5D37A5AF20465EC700005BE3 /* CollectionViewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D37A5AE20465EC700005BE3 /* CollectionViewController4.m */; };
+		5D37A5B32046652E00005BE3 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D37A5B12046652E00005BE3 /* CollectionViewCell.m */; };
+		5D37A5B42046652E00005BE3 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A5B22046652E00005BE3 /* CollectionViewCell.xib */; };
+		5D37A5B62046674800005BE3 /* product.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D37A5B52046674800005BE3 /* product.plist */; };
+		5D37A5B92046736000005BE3 /* ProjuctModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D37A5B82046736000005BE3 /* ProjuctModel.m */; };
+		5D37A5BD2046749200005BE3 /* CollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D37A5BC2046749200005BE3 /* CollectionViewLayout.m */; };
 		5DA530E0204400CF00E88F05 /* TestTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA530DF204400CF00E88F05 /* TestTouchView.m */; };
+		5DE0F4E92046936500A85817 /* SwipLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE0F4E82046936500A85817 /* SwipLockViewController.m */; };
+		5DE0F4EC20469B0600A85817 /* SwipLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE0F4EB20469B0600A85817 /* SwipLockView.m */; };
 		B5C3E9782019A11B002BD045 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E9772019A11B002BD045 /* main.m */; };
 		B5C3E97B2019A11B002BD045 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E97A2019A11B002BD045 /* AppDelegate.m */; };
 		B5C3E9842019A11B002BD045 /* ____SB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E9822019A11B002BD045 /* ____SB.xcdatamodeld */; };
@@ -41,8 +49,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D37A5AD20465EC700005BE3 /* CollectionViewController4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController4.h; sourceTree = "<group>"; };
+		5D37A5AE20465EC700005BE3 /* CollectionViewController4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController4.m; sourceTree = "<group>"; };
+		5D37A5B02046652E00005BE3 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		5D37A5B12046652E00005BE3 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		5D37A5B22046652E00005BE3 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		5D37A5B52046674800005BE3 /* product.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = product.plist; sourceTree = "<group>"; };
+		5D37A5B72046736000005BE3 /* ProjuctModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjuctModel.h; path = "主流框架SB/Others/ProjuctModel.h"; sourceTree = SOURCE_ROOT; };
+		5D37A5B82046736000005BE3 /* ProjuctModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjuctModel.m; path = "主流框架SB/Others/ProjuctModel.m"; sourceTree = SOURCE_ROOT; };
+		5D37A5BB2046749200005BE3 /* CollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewLayout.h; sourceTree = "<group>"; };
+		5D37A5BC2046749200005BE3 /* CollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewLayout.m; sourceTree = "<group>"; };
 		5DA530DE204400CF00E88F05 /* TestTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTouchView.h; sourceTree = "<group>"; };
 		5DA530DF204400CF00E88F05 /* TestTouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTouchView.m; sourceTree = "<group>"; };
+		5DE0F4E72046936500A85817 /* SwipLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipLockViewController.h; sourceTree = "<group>"; };
+		5DE0F4E82046936500A85817 /* SwipLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipLockViewController.m; sourceTree = "<group>"; };
+		5DE0F4EA20469B0600A85817 /* SwipLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipLockView.h; sourceTree = "<group>"; };
+		5DE0F4EB20469B0600A85817 /* SwipLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipLockView.m; sourceTree = "<group>"; };
 		6933E878C09001F1AA743DB3 /* Pods-主流框架SB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-主流框架SB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-主流框架SB/Pods-主流框架SB.debug.xcconfig"; sourceTree = "<group>"; };
 		B5C3E9732019A11B002BD045 /* 主流框架SB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "主流框架SB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C3E9772019A11B002BD045 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -99,6 +121,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D37A5BA2046743B00005BE3 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				5D37A5BB2046749200005BE3 /* CollectionViewLayout.h */,
+				5D37A5BC2046749200005BE3 /* CollectionViewLayout.m */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
 		6DECF32B97508D6CC1322B65 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +206,10 @@
 				B5D397C4202E005700178B04 /* ViewController3.m */,
 				B5C3E9D12019BCBA002BD045 /* three.storyboard */,
 				B5C3E9D32019BCC8002BD045 /* four.storyboard */,
+				5D37A5AD20465EC700005BE3 /* CollectionViewController4.h */,
+				5D37A5AE20465EC700005BE3 /* CollectionViewController4.m */,
+				5DE0F4E72046936500A85817 /* SwipLockViewController.h */,
+				5DE0F4E82046936500A85817 /* SwipLockViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -182,6 +217,8 @@
 		B5C3E99F2019A723002BD045 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5D37A5B72046736000005BE3 /* ProjuctModel.h */,
+				5D37A5B82046736000005BE3 /* ProjuctModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -190,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				B5C3E9A12019A723002BD045 /* PrefixHeader */,
+				5D37A5B52046674800005BE3 /* product.plist */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -215,6 +253,7 @@
 		B5C3E9A62019A723002BD045 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5D37A5BA2046743B00005BE3 /* Layout */,
 				B5C3E9D52019C5C0002BD045 /* TestView.h */,
 				B5C3E9D62019C5C0002BD045 /* TestView.m */,
 				B5D397B42021845300178B04 /* TestView2.h */,
@@ -225,6 +264,11 @@
 				B5D397C120298DB000178B04 /* TestView4.m */,
 				5DA530DE204400CF00E88F05 /* TestTouchView.h */,
 				5DA530DF204400CF00E88F05 /* TestTouchView.m */,
+				5D37A5B02046652E00005BE3 /* CollectionViewCell.h */,
+				5D37A5B12046652E00005BE3 /* CollectionViewCell.m */,
+				5D37A5B22046652E00005BE3 /* CollectionViewCell.xib */,
+				5DE0F4EA20469B0600A85817 /* SwipLockView.h */,
+				5DE0F4EB20469B0600A85817 /* SwipLockView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -325,12 +369,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D37A5B62046674800005BE3 /* product.plist in Resources */,
 				B5C3E9892019A11B002BD045 /* LaunchScreen.storyboard in Resources */,
 				B5C3E9862019A11B002BD045 /* Assets.xcassets in Resources */,
 				B5C3E9D02019BCA8002BD045 /* two.storyboard in Resources */,
 				B5C3E9D42019BCC8002BD045 /* four.storyboard in Resources */,
 				B5C3E9D22019BCBA002BD045 /* three.storyboard in Resources */,
 				B5C3E9AA2019A740002BD045 /* Podfile in Resources */,
+				5D37A5B42046652E00005BE3 /* CollectionViewCell.xib in Resources */,
 				B5C3E9CE2019BC93002BD045 /* one.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,14 +452,20 @@
 				B5C3E9AB2019A740002BD045 /* README.md in Sources */,
 				B5D397B3201B05E800178B04 /* ViewController1.m in Sources */,
 				B5C3E9A72019A723002BD045 /* NSArray+Log.m in Sources */,
+				5D37A5B92046736000005BE3 /* ProjuctModel.m in Sources */,
 				B5D397B62021845300178B04 /* TestView2.m in Sources */,
 				5DA530E0204400CF00E88F05 /* TestTouchView.m in Sources */,
+				5DE0F4EC20469B0600A85817 /* SwipLockView.m in Sources */,
+				5D37A5BD2046749200005BE3 /* CollectionViewLayout.m in Sources */,
 				B5C3E9842019A11B002BD045 /* ____SB.xcdatamodeld in Sources */,
 				B5D397C220298DB000178B04 /* TestView4.m in Sources */,
+				5DE0F4E92046936500A85817 /* SwipLockViewController.m in Sources */,
+				5D37A5AF20465EC700005BE3 /* CollectionViewController4.m in Sources */,
 				B5D397B92024506D00178B04 /* TestView3.m in Sources */,
 				B5C3E97B2019A11B002BD045 /* AppDelegate.m in Sources */,
 				B5C3E9D72019C5C0002BD045 /* TestView.m in Sources */,
 				B5C3E9782019A11B002BD045 /* main.m in Sources */,
+				5D37A5B32046652E00005BE3 /* CollectionViewCell.m in Sources */,
 				B5D397C5202E005700178B04 /* ViewController3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
