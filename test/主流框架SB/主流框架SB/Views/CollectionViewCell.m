@@ -8,6 +8,11 @@
 
 #import "CollectionViewCell.h"
 
+@interface CollectionViewCell ()
+
+@property(nonatomic,copy)NSString * key;
+
+@end
 @implementation CollectionViewCell
 
 #pragma mark - ============== 懒加载 ==============
@@ -24,6 +29,7 @@
         [self.iamgeView setImage:[UIImage imageNamed:product.image]];
     }
     
+    self.key = product.key;
 }
 #pragma mark - ============== 代理 ==============
 #pragma mark - ============== 设置 ==============
@@ -39,7 +45,7 @@
 
     if (CGRectContainsPoint(self.iamgeView.frame, locPoint)) {
         if (self.imageCA) {
-           BOOL sd = self.imageCA(nil);
+           BOOL sd = self.imageCA(_key);
             NSLog(@"%i",sd);
         }
     }

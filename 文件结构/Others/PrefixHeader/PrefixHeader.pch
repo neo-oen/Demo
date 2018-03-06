@@ -32,6 +32,8 @@
 #define X    frame.origin.x
 #define Y    frame.origin.y
 
+//计算计算弧度，180'->3.14
+#define angle2radian(x) ((x) / 180.0 * M_PI)
 
 #pragma mark - ============== 方法 ==============
 

@@ -22,16 +22,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "&#x4e3b;&#x6d41;&#x6846;&#x67b6;SB/Views/TestView.m"
-            timestampString = "539593799.698235"
+            filePath = "&#x4e3b;&#x6d41;&#x6846;&#x67b6;SB/Controllers/CollectionViewController4.m"
+            timestampString = "541579478.008878"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "-setRadian:"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "-collectionView:numberOfItemsInSection:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,13 +41,45 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "&#x4e3b;&#x6d41;&#x6846;&#x67b6;SB/Views/TestView.m"
-            timestampString = "539593799.698235"
+            filePath = "&#x4e3b;&#x6d41;&#x6846;&#x67b6;SB/Controllers/CollectionViewController4.m"
+            timestampString = "541684008.227738"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "-drawRect:"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "-collectionView:cellForItemAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x4e3b;&#x6d41;&#x6846;&#x67b6;SB/Controllers/CollectionViewController4.m"
+            timestampString = "541684008.82093"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "-collectionView:cellForItemAtIndexPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x4e3b;&#x6d41;&#x6846;&#x67b6;SB/Controllers/CollectionViewController4.m"
+            timestampString = "541684009.398999"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "-collectionView:cellForItemAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

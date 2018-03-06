@@ -35,7 +35,6 @@
    CGFloat y = rect.size.height/2;
     
     [_image drawAtPoint:CGPointMake(1, 1)];
-    UIBezierPath * sdf;
     UIBezierPath * path = [UIBezierPath bezierPath];
     
     [path addArcWithCenter:CGPointMake(x, y) radius:80 startAngle:0 endAngle:2*M_PI clockwise:YES];

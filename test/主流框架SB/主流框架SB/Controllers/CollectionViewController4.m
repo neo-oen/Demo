@@ -8,6 +8,7 @@
 
 #import "CollectionViewController4.h"
 #import "CollectionViewCell.h"
+#import "CollectionViewLayout.h"
 #import "ProjuctModel.h"
 #import "SwipLockViewController.h"
 
@@ -60,7 +61,8 @@ static NSString * const reuseIdentifier = @"CellIdentifier";
     
     cell.product = model;
     cell.imageCA = ^BOOL(NSString *key) {
-        SwipLockViewController * viewController = [[SwipLockViewController alloc]init];
+        
+        id viewController = [[NSClassFromString(key) alloc]init];
         [self.navigationController pushViewController:viewController animated:YES];
         return YES;
     };
@@ -105,7 +107,7 @@ static NSString * const reuseIdentifier = @"CellIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UICollectionViewFlowLayout * flowLayout = [[UICollectionViewFlowLayout alloc]init];
+    CollectionViewLayout * flowLayout = [[CollectionViewLayout alloc]init];
 
     [flowLayout setSectionInset:UIEdgeInsetsMake(5, 10, 20, 30)];
     [flowLayout setMinimumLineSpacing:10];
@@ -115,7 +117,6 @@ static NSString * const reuseIdentifier = @"CellIdentifier";
     
     self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, screen_width, screen_height) collectionViewLayout:flowLayout];
     [self.collectionView setBackgroundColor:[UIColor whiteColor]];
-
     
     // Register cell classes
     UINib *nib = [UINib nibWithNibName:@"CollectionViewCell" bundle:nil];

@@ -26,6 +26,9 @@
 #define screen_width [UIScreen mainScreen].bounds.size.width
 #define screen_height [UIScreen mainScreen].bounds.size.height
 
+//计算计算弧度，180'->3.14
+#define angle2radian(x) ((x) / 180.0 * M_PI)
+
 //取view的坐标及长宽
 #define W    frame.size.width
 #define H    frame.size.height
