@@ -38,6 +38,8 @@
 #pragma mark - ============== 设置 ==============
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UIButton * button;
+    [button sizeToFit];
     // Do any additional setup after loading the view.
 }
 
@@ -56,5 +58,11 @@
 }
 */
 
++(void)load{
+    
+}
++(void)initialize{
+    
+}
 
 @end

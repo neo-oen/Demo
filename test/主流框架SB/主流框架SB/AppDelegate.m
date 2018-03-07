@@ -21,15 +21,28 @@
     
  
     UINavigationController * navigationController1 = [[UIStoryboard storyboardWithName:@"one" bundle:nil] instantiateInitialViewController];
+    navigationController1.tabBarItem = [[UITabBarItem alloc]initWithTitle:nil image:[UIImage imageNamed:@"TabBar1"] selectedImage:[UIImage imageNamed:@"TabBar1Sel"]];
+ 
     UINavigationController * navigationController2 = [[UIStoryboard storyboardWithName:@"two" bundle:nil] instantiateInitialViewController];
+        navigationController2.tabBarItem = [[UITabBarItem alloc]initWithTitle:nil image:[UIImage imageNamed:@"TabBar2"] selectedImage:[UIImage imageNamed:@"TabBar2Sel"]];
     UINavigationController * navigationController3 = [[UIStoryboard storyboardWithName:@"three" bundle:nil] instantiateInitialViewController];
+   navigationController3.tabBarItem = [[UITabBarItem alloc]initWithTitle:nil image:[UIImage imageNamed:@"TabBar3"] selectedImage:[UIImage imageNamed:@"TabBar3Sel"]];
     UINavigationController * navigationController4 = [[UIStoryboard storyboardWithName:@"four" bundle:nil] instantiateInitialViewController];
+    navigationController4.tabBarItem = [[UITabBarItem alloc]initWithTitle:nil image:[UIImage imageNamed:@"TabBar4"] selectedImage:[UIImage imageNamed:@"TabBar4Sel"]];
 
-
-    UITabBarController * tabBarController = [[UITabBarController alloc] init];
+    UITabBarController * tabBarController = [[UIStoryboard storyboardWithName:@"TabBarStoryboard" bundle:nil] instantiateInitialViewController];
+    
+//    UITabBarItem * bar1 = [[UITabBarItem alloc]initWithTitle:nil image:[UIImage imageNamed:@"TabBar1"] selectedImage:[UIImage imageNamed:@"TabBar1Sel"]];
+//    UITabBarItem * bar2 = [[UITabBarItem alloc]initWithTitle:nil image:[UIImage imageNamed:@"TabBar2"] selectedImage:[UIImage imageNamed:@"TabBar2Sel"]];
+//    UITabBarItem * bar3 = [[UITabBarItem alloc]initWithTitle:nil image:[UIImage imageNamed:@"TabBar3"] selectedImage:[UIImage imageNamed:@"TabBar3Sel"]];
+//    UITabBarItem * bar4 = [[UITabBarItem alloc]initWithTitle:nil image:[UIImage imageNamed:@"TabBar4"] selectedImage:[UIImage imageNamed:@"TabBar4Sel"]];
+//    
+    
     [tabBarController setViewControllers:@[navigationController1,navigationController2,navigationController3,navigationController4]];
     
-
+//    [tabBarController.view setTintColor:[UIColor blackColor]];
+////    [tabBarController.tabBar setTintColor:[UIColor blackColor]];
+//    
     [self.window setRootViewController:tabBarController];
     
     [self.window makeKeyAndVisible];
