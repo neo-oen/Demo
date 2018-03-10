@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  主流框架纯代码
+//  主流框架SB
 //
 //  Created by neo on 2018/1/25.
 //  Copyright © 2018年 neo. All rights reserved.
@@ -17,7 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
     WYQTabBarController * tabBarController = [[WYQTabBarController alloc] init];
@@ -25,8 +25,6 @@
     [self.window setRootViewController:tabBarController];
     
     [self.window makeKeyAndVisible];
-    
-    
     
     return YES;
 }
@@ -69,7 +67,7 @@
     // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
     @synchronized (self) {
         if (_persistentContainer == nil) {
-            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"_______"];
+            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"____SB"];
             [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
                 if (error != nil) {
                     // Replace this implementation with code to handle the error appropriately.

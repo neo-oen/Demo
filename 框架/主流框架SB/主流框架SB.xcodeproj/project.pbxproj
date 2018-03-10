@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		54C64441CCE7A3EA0CB92078 /* Pods_____SB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCAB202E248075068E4D50E4 /* Pods_____SB.framework */; };
-		B5C3E9782019A11B002BD045 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E9772019A11B002BD045 /* main.m */; };
-		B5C3E97B2019A11B002BD045 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E97A2019A11B002BD045 /* AppDelegate.m */; };
+		5DE170282053C58D00B48028 /* one.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE170022053C58D00B48028 /* one.storyboard */; };
+		5DE170292053C58D00B48028 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE170062053C58D00B48028 /* TestView.m */; };
+		5DE1702A2053C58D00B48028 /* two.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE170092053C58D00B48028 /* two.storyboard */; };
+		5DE1702B2053C58D00B48028 /* three.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE1700E2053C58D00B48028 /* three.storyboard */; };
+		5DE1702C2053C58D00B48028 /* four.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE170132053C58D00B48028 /* four.storyboard */; };
+		5DE1702D2053C58D00B48028 /* WYQTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE170182053C58D00B48028 /* WYQTabBarController.m */; };
+		5DE1702E2053C58D00B48028 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE1701D2053C58D00B48028 /* NSArray+Log.m */; };
+		5DE1702F2053C58D00B48028 /* RDVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE170202053C58D00B48028 /* RDVTabBar.m */; };
+		5DE170302053C58D00B48028 /* RDVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE170222053C58D00B48028 /* RDVTabBarController.m */; };
+		5DE170312053C58D00B48028 /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE170242053C58D00B48028 /* RDVTabBarItem.m */; };
+		5DE170332053C59E00B48028 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE170322053C59E00B48028 /* main.m */; };
+		5DE170362053C5A600B48028 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE170352053C5A600B48028 /* AppDelegate.m */; };
 		B5C3E9842019A11B002BD045 /* ____SB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E9822019A11B002BD045 /* ____SB.xcdatamodeld */; };
 		B5C3E9862019A11B002BD045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C3E9852019A11B002BD045 /* Assets.xcassets */; };
 		B5C3E9892019A11B002BD045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C3E9872019A11B002BD045 /* LaunchScreen.storyboard */; };
 		B5C3E9942019A11B002BD045 /* ____SBUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E9932019A11B002BD045 /* ____SBUITests.m */; };
-		B5C3E9A72019A723002BD045 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E9A52019A723002BD045 /* NSArray+Log.m */; };
 		B5C3E9AA2019A740002BD045 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B5C3E9A82019A740002BD045 /* Podfile */; };
 		B5C3E9AB2019A740002BD045 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E9A92019A740002BD045 /* README.md */; };
-		B5C3E9CE2019BC93002BD045 /* one.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C3E9CD2019BC93002BD045 /* one.storyboard */; };
-		B5C3E9D02019BCA8002BD045 /* two.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C3E9CF2019BCA8002BD045 /* two.storyboard */; };
-		B5C3E9D22019BCBA002BD045 /* three.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C3E9D12019BCBA002BD045 /* three.storyboard */; };
-		B5C3E9D42019BCC8002BD045 /* four.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C3E9D32019BCC8002BD045 /* four.storyboard */; };
-		B5C3E9D72019C5C0002BD045 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E9D62019C5C0002BD045 /* TestView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +39,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5DE170022053C58D00B48028 /* one.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = one.storyboard; sourceTree = "<group>"; };
+		5DE170052053C58D00B48028 /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
+		5DE170062053C58D00B48028 /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
+		5DE170092053C58D00B48028 /* two.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = two.storyboard; sourceTree = "<group>"; };
+		5DE1700E2053C58D00B48028 /* three.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = three.storyboard; sourceTree = "<group>"; };
+		5DE170132053C58D00B48028 /* four.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = four.storyboard; sourceTree = "<group>"; };
+		5DE170172053C58D00B48028 /* WYQTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYQTabBarController.h; sourceTree = "<group>"; };
+		5DE170182053C58D00B48028 /* WYQTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYQTabBarController.m; sourceTree = "<group>"; };
+		5DE1701C2053C58D00B48028 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		5DE1701D2053C58D00B48028 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		5DE1701F2053C58D00B48028 /* RDVTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBar.h; sourceTree = "<group>"; };
+		5DE170202053C58D00B48028 /* RDVTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBar.m; sourceTree = "<group>"; };
+		5DE170212053C58D00B48028 /* RDVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarController.h; sourceTree = "<group>"; };
+		5DE170222053C58D00B48028 /* RDVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarController.m; sourceTree = "<group>"; };
+		5DE170232053C58D00B48028 /* RDVTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarItem.h; sourceTree = "<group>"; };
+		5DE170242053C58D00B48028 /* RDVTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarItem.m; sourceTree = "<group>"; };
+		5DE170262053C58D00B48028 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		5DE170322053C59E00B48028 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5DE170342053C5A600B48028 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5DE170352053C5A600B48028 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6933E878C09001F1AA743DB3 /* Pods-主流框架SB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-主流框架SB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-主流框架SB/Pods-主流框架SB.debug.xcconfig"; sourceTree = "<group>"; };
 		B5C3E9732019A11B002BD045 /* 主流框架SB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "主流框架SB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5C3E9772019A11B002BD045 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B5C3E9792019A11B002BD045 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B5C3E97A2019A11B002BD045 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B5C3E9832019A11B002BD045 /* ____SB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "____SB.xcdatamodel"; sourceTree = "<group>"; };
 		B5C3E9852019A11B002BD045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5C3E9882019A11B002BD045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,17 +68,8 @@
 		B5C3E98F2019A11B002BD045 /* 主流框架SBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "主流框架SBUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C3E9932019A11B002BD045 /* ____SBUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____SBUITests.m"; sourceTree = "<group>"; };
 		B5C3E9952019A11B002BD045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5C3E9A22019A723002BD045 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		B5C3E9A42019A723002BD045 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
-		B5C3E9A52019A723002BD045 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 		B5C3E9A82019A740002BD045 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		B5C3E9A92019A740002BD045 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B5C3E9CD2019BC93002BD045 /* one.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = one.storyboard; sourceTree = "<group>"; };
-		B5C3E9CF2019BCA8002BD045 /* two.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = two.storyboard; sourceTree = "<group>"; };
-		B5C3E9D12019BCBA002BD045 /* three.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = three.storyboard; sourceTree = "<group>"; };
-		B5C3E9D32019BCC8002BD045 /* four.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = four.storyboard; sourceTree = "<group>"; };
-		B5C3E9D52019C5C0002BD045 /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
-		B5C3E9D62019C5C0002BD045 /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
 		DEE783A4297524BFDB08EA75 /* Pods-主流框架SB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-主流框架SB.release.xcconfig"; path = "Pods/Target Support Files/Pods-主流框架SB/Pods-主流框架SB.release.xcconfig"; sourceTree = "<group>"; };
 		FCAB202E248075068E4D50E4 /* Pods_____SB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_____SB.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -81,6 +93,216 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5DE16FFF2053C58D00B48028 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5DE170002053C58D00B48028 /* Classify */,
+				5DE170072053C58D00B48028 /* Classify 2 */,
+				5DE1700C2053C58D00B48028 /* Classify 3 */,
+				5DE170112053C58D00B48028 /* Classify 4 */,
+				5DE170162053C58D00B48028 /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5DE170002053C58D00B48028 /* Classify */ = {
+			isa = PBXGroup;
+			children = (
+				5DE170012053C58D00B48028 /* Controllers */,
+				5DE170032053C58D00B48028 /* Models */,
+				5DE170042053C58D00B48028 /* Views */,
+			);
+			path = Classify;
+			sourceTree = "<group>";
+		};
+		5DE170012053C58D00B48028 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5DE170022053C58D00B48028 /* one.storyboard */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5DE170032053C58D00B48028 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5DE170042053C58D00B48028 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5DE170052053C58D00B48028 /* TestView.h */,
+				5DE170062053C58D00B48028 /* TestView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5DE170072053C58D00B48028 /* Classify 2 */ = {
+			isa = PBXGroup;
+			children = (
+				5DE170082053C58D00B48028 /* Controllers */,
+				5DE1700A2053C58D00B48028 /* Models */,
+				5DE1700B2053C58D00B48028 /* Views */,
+			);
+			path = "Classify 2";
+			sourceTree = "<group>";
+		};
+		5DE170082053C58D00B48028 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5DE170092053C58D00B48028 /* two.storyboard */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5DE1700A2053C58D00B48028 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5DE1700B2053C58D00B48028 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5DE1700C2053C58D00B48028 /* Classify 3 */ = {
+			isa = PBXGroup;
+			children = (
+				5DE1700D2053C58D00B48028 /* Controllers */,
+				5DE1700F2053C58D00B48028 /* Models */,
+				5DE170102053C58D00B48028 /* Views */,
+			);
+			path = "Classify 3";
+			sourceTree = "<group>";
+		};
+		5DE1700D2053C58D00B48028 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5DE1700E2053C58D00B48028 /* three.storyboard */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5DE1700F2053C58D00B48028 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5DE170102053C58D00B48028 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5DE170112053C58D00B48028 /* Classify 4 */ = {
+			isa = PBXGroup;
+			children = (
+				5DE170122053C58D00B48028 /* Controllers */,
+				5DE170142053C58D00B48028 /* Models */,
+				5DE170152053C58D00B48028 /* Views */,
+			);
+			path = "Classify 4";
+			sourceTree = "<group>";
+		};
+		5DE170122053C58D00B48028 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5DE170132053C58D00B48028 /* four.storyboard */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5DE170142053C58D00B48028 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5DE170152053C58D00B48028 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5DE170162053C58D00B48028 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5DE170172053C58D00B48028 /* WYQTabBarController.h */,
+				5DE170182053C58D00B48028 /* WYQTabBarController.m */,
+				5DE170322053C59E00B48028 /* main.m */,
+				5DE170342053C5A600B48028 /* AppDelegate.h */,
+				5DE170352053C5A600B48028 /* AppDelegate.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5DE170192053C58D00B48028 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				5DE1701A2053C58D00B48028 /* Classes */,
+				5DE170252053C58D00B48028 /* PrefixHeader */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		5DE1701A2053C58D00B48028 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5DE1701B2053C58D00B48028 /* NSarray */,
+				5DE1701E2053C58D00B48028 /* TabBar */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5DE1701B2053C58D00B48028 /* NSarray */ = {
+			isa = PBXGroup;
+			children = (
+				5DE1701C2053C58D00B48028 /* NSArray+Log.h */,
+				5DE1701D2053C58D00B48028 /* NSArray+Log.m */,
+			);
+			path = NSarray;
+			sourceTree = "<group>";
+		};
+		5DE1701E2053C58D00B48028 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				5DE1701F2053C58D00B48028 /* RDVTabBar.h */,
+				5DE170202053C58D00B48028 /* RDVTabBar.m */,
+				5DE170212053C58D00B48028 /* RDVTabBarController.h */,
+				5DE170222053C58D00B48028 /* RDVTabBarController.m */,
+				5DE170232053C58D00B48028 /* RDVTabBarItem.h */,
+				5DE170242053C58D00B48028 /* RDVTabBarItem.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		5DE170252053C58D00B48028 /* PrefixHeader */ = {
+			isa = PBXGroup;
+			children = (
+				5DE170262053C58D00B48028 /* PrefixHeader.pch */,
+				5DE170272053C58D00B48028 /* Tools */,
+			);
+			path = PrefixHeader;
+			sourceTree = "<group>";
+		};
+		5DE170272053C58D00B48028 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		6DECF32B97508D6CC1322B65 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,10 +336,8 @@
 		B5C3E9752019A11B002BD045 /* 主流框架SB */ = {
 			isa = PBXGroup;
 			children = (
-				B5C3E99E2019A723002BD045 /* Controllers */,
-				B5C3E99F2019A723002BD045 /* Models */,
-				B5C3E9A02019A723002BD045 /* Others */,
-				B5C3E9A62019A723002BD045 /* Views */,
+				5DE16FFF2053C58D00B48028 /* Classes */,
+				5DE170192053C58D00B48028 /* Others */,
 				B5C3E9762019A11B002BD045 /* Supporting Files */,
 			);
 			path = "主流框架SB";
@@ -126,13 +346,10 @@
 		B5C3E9762019A11B002BD045 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B5C3E9792019A11B002BD045 /* AppDelegate.h */,
-				B5C3E97A2019A11B002BD045 /* AppDelegate.m */,
 				B5C3E9852019A11B002BD045 /* Assets.xcassets */,
 				B5C3E9872019A11B002BD045 /* LaunchScreen.storyboard */,
 				B5C3E98A2019A11B002BD045 /* Info.plist */,
 				B5C3E9822019A11B002BD045 /* ____SB.xcdatamodeld */,
-				B5C3E9772019A11B002BD045 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -144,59 +361,6 @@
 				B5C3E9952019A11B002BD045 /* Info.plist */,
 			);
 			path = "主流框架SBUITests";
-			sourceTree = "<group>";
-		};
-		B5C3E99E2019A723002BD045 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				B5C3E9CD2019BC93002BD045 /* one.storyboard */,
-				B5C3E9CF2019BCA8002BD045 /* two.storyboard */,
-				B5C3E9D12019BCBA002BD045 /* three.storyboard */,
-				B5C3E9D32019BCC8002BD045 /* four.storyboard */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		B5C3E99F2019A723002BD045 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		B5C3E9A02019A723002BD045 /* Others */ = {
-			isa = PBXGroup;
-			children = (
-				B5C3E9A12019A723002BD045 /* PrefixHeader */,
-			);
-			path = Others;
-			sourceTree = "<group>";
-		};
-		B5C3E9A12019A723002BD045 /* PrefixHeader */ = {
-			isa = PBXGroup;
-			children = (
-				B5C3E9A22019A723002BD045 /* PrefixHeader.pch */,
-				B5C3E9A32019A723002BD045 /* Tools */,
-			);
-			path = PrefixHeader;
-			sourceTree = "<group>";
-		};
-		B5C3E9A32019A723002BD045 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				B5C3E9A42019A723002BD045 /* NSArray+Log.h */,
-				B5C3E9A52019A723002BD045 /* NSArray+Log.m */,
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
-		B5C3E9A62019A723002BD045 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				B5C3E9D52019C5C0002BD045 /* TestView.h */,
-				B5C3E9D62019C5C0002BD045 /* TestView.m */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		C879BFFB2F9D2D4265C8BA3B /* Pods */ = {
@@ -297,11 +461,11 @@
 			files = (
 				B5C3E9892019A11B002BD045 /* LaunchScreen.storyboard in Resources */,
 				B5C3E9862019A11B002BD045 /* Assets.xcassets in Resources */,
-				B5C3E9D02019BCA8002BD045 /* two.storyboard in Resources */,
-				B5C3E9D42019BCC8002BD045 /* four.storyboard in Resources */,
-				B5C3E9D22019BCBA002BD045 /* three.storyboard in Resources */,
+				5DE1702A2053C58D00B48028 /* two.storyboard in Resources */,
+				5DE1702C2053C58D00B48028 /* four.storyboard in Resources */,
+				5DE1702B2053C58D00B48028 /* three.storyboard in Resources */,
 				B5C3E9AA2019A740002BD045 /* Podfile in Resources */,
-				B5C3E9CE2019BC93002BD045 /* one.storyboard in Resources */,
+				5DE170282053C58D00B48028 /* one.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,12 +537,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DE1702E2053C58D00B48028 /* NSArray+Log.m in Sources */,
+				5DE170312053C58D00B48028 /* RDVTabBarItem.m in Sources */,
 				B5C3E9AB2019A740002BD045 /* README.md in Sources */,
-				B5C3E9A72019A723002BD045 /* NSArray+Log.m in Sources */,
+				5DE170302053C58D00B48028 /* RDVTabBarController.m in Sources */,
+				5DE170362053C5A600B48028 /* AppDelegate.m in Sources */,
+				5DE1702F2053C58D00B48028 /* RDVTabBar.m in Sources */,
+				5DE1702D2053C58D00B48028 /* WYQTabBarController.m in Sources */,
+				5DE170292053C58D00B48028 /* TestView.m in Sources */,
+				5DE170332053C59E00B48028 /* main.m in Sources */,
 				B5C3E9842019A11B002BD045 /* ____SB.xcdatamodeld in Sources */,
-				B5C3E97B2019A11B002BD045 /* AppDelegate.m in Sources */,
-				B5C3E9D72019C5C0002BD045 /* TestView.m in Sources */,
-				B5C3E9782019A11B002BD045 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

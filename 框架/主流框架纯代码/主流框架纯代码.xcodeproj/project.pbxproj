@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DE16FBD2053BEB600B48028 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE16FB92053BEB600B48028 /* NSArray+Log.m */; };
+		5DE16FC52053BF7100B48028 /* RDVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE16FC02053BF7100B48028 /* RDVTabBar.m */; };
+		5DE16FC62053BF7100B48028 /* RDVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE16FC22053BF7100B48028 /* RDVTabBarController.m */; };
+		5DE16FC72053BF7100B48028 /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE16FC42053BF7100B48028 /* RDVTabBarItem.m */; };
+		5DE16FCA2053C00500B48028 /* WYQTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE16FC92053C00500B48028 /* WYQTabBarController.m */; };
 		95ED0119DFC86DA6B766A9F4 /* Pods________.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFAAD0374AD7C1067199FD96 /* Pods________.framework */; };
 		B5C3E93620198DB3002BD045 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E93520198DB3002BD045 /* main.m */; };
 		B5C3E93920198DB3002BD045 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E93820198DB3002BD045 /* AppDelegate.m */; };
@@ -14,7 +19,6 @@
 		B5C3E94420198DB3002BD045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C3E94320198DB3002BD045 /* Assets.xcassets */; };
 		B5C3E94720198DB3002BD045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C3E94520198DB3002BD045 /* LaunchScreen.storyboard */; };
 		B5C3E95220198DB3002BD045 /* _______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E95120198DB3002BD045 /* _______UITests.m */; };
-		B5C3E965201993A9002BD045 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E963201993A9002BD045 /* NSArray+Log.m */; };
 		B5C3E9682019940F002BD045 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B5C3E9662019940F002BD045 /* Podfile */; };
 		B5C3E9692019940F002BD045 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E9672019940F002BD045 /* README.md */; };
 /* End PBXBuildFile section */
@@ -32,23 +36,31 @@
 /* Begin PBXFileReference section */
 		0619251463A7826A98D04C11 /* Pods-主流框架纯代码.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-主流框架纯代码.release.xcconfig"; path = "Pods/Target Support Files/Pods-主流框架纯代码/Pods-主流框架纯代码.release.xcconfig"; sourceTree = "<group>"; };
 		0DB6BC6AC2A7EEB855D5849D /* Pods-主流框架纯代码.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-主流框架纯代码.debug.xcconfig"; path = "Pods/Target Support Files/Pods-主流框架纯代码/Pods-主流框架纯代码.debug.xcconfig"; sourceTree = "<group>"; };
+		5DE16FB82053BEB600B48028 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		5DE16FB92053BEB600B48028 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		5DE16FBB2053BEB600B48028 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		5DE16FBF2053BF7100B48028 /* RDVTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBar.h; sourceTree = "<group>"; };
+		5DE16FC02053BF7100B48028 /* RDVTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBar.m; sourceTree = "<group>"; };
+		5DE16FC12053BF7100B48028 /* RDVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarController.h; sourceTree = "<group>"; };
+		5DE16FC22053BF7100B48028 /* RDVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarController.m; sourceTree = "<group>"; };
+		5DE16FC32053BF7100B48028 /* RDVTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDVTabBarItem.h; sourceTree = "<group>"; };
+		5DE16FC42053BF7100B48028 /* RDVTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarItem.m; sourceTree = "<group>"; };
+		5DE16FC82053C00500B48028 /* WYQTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYQTabBarController.h; sourceTree = "<group>"; };
+		5DE16FC92053C00500B48028 /* WYQTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYQTabBarController.m; sourceTree = "<group>"; };
 		B5C3E93120198DB3002BD045 /* 主流框架纯代码.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "主流框架纯代码.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5C3E93520198DB3002BD045 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B5C3E93720198DB3002BD045 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B5C3E93820198DB3002BD045 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B5C3E94120198DB3002BD045 /* _______.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = _______.xcdatamodel; sourceTree = "<group>"; };
+		B5C3E93520198DB3002BD045 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../main.m; sourceTree = "<group>"; };
+		B5C3E93720198DB3002BD045 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
+		B5C3E93820198DB3002BD045 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
+		B5C3E94120198DB3002BD045 /* _______.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "_______.xcdatamodel"; sourceTree = "<group>"; };
 		B5C3E94320198DB3002BD045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5C3E94620198DB3002BD045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5C3E94820198DB3002BD045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5C3E94D20198DB3002BD045 /* 主流框架纯代码UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "主流框架纯代码UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5C3E95120198DB3002BD045 /* _______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _______UITests.m; sourceTree = "<group>"; };
+		B5C3E95120198DB3002BD045 /* _______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_______UITests.m"; sourceTree = "<group>"; };
 		B5C3E95320198DB3002BD045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5C3E960201993A9002BD045 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		B5C3E962201993A9002BD045 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
-		B5C3E963201993A9002BD045 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 		B5C3E9662019940F002BD045 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		B5C3E9672019940F002BD045 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		CFAAD0374AD7C1067199FD96 /* Pods________.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods________.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFAAD0374AD7C1067199FD96 /* Pods________.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods________.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +89,114 @@
 				0619251463A7826A98D04C11 /* Pods-主流框架纯代码.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		5DE16FAF2053BE0700B48028 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5DE16FB02053BE0700B48028 /* Classify */,
+				5DE16FB42053BE0700B48028 /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5DE16FB02053BE0700B48028 /* Classify */ = {
+			isa = PBXGroup;
+			children = (
+				5DE16FB12053BE0700B48028 /* Controllers */,
+				5DE16FB22053BE0700B48028 /* Models */,
+				5DE16FB32053BE0700B48028 /* Views */,
+			);
+			path = Classify;
+			sourceTree = "<group>";
+		};
+		5DE16FB12053BE0700B48028 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5DE16FB22053BE0700B48028 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5DE16FB32053BE0700B48028 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5DE16FB42053BE0700B48028 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B5C3E93720198DB3002BD045 /* AppDelegate.h */,
+				B5C3E93820198DB3002BD045 /* AppDelegate.m */,
+				5DE16FC82053C00500B48028 /* WYQTabBarController.h */,
+				5DE16FC92053C00500B48028 /* WYQTabBarController.m */,
+				B5C3E93520198DB3002BD045 /* main.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5DE16FB52053BEB600B48028 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				5DE16FB62053BEB600B48028 /* Classes */,
+				5DE16FBA2053BEB600B48028 /* PrefixHeader */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		5DE16FB62053BEB600B48028 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5DE16FB72053BEB600B48028 /* NSarray */,
+				5DE16FBE2053BF7100B48028 /* TabBar */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5DE16FB72053BEB600B48028 /* NSarray */ = {
+			isa = PBXGroup;
+			children = (
+				5DE16FB82053BEB600B48028 /* NSArray+Log.h */,
+				5DE16FB92053BEB600B48028 /* NSArray+Log.m */,
+			);
+			path = NSarray;
+			sourceTree = "<group>";
+		};
+		5DE16FBA2053BEB600B48028 /* PrefixHeader */ = {
+			isa = PBXGroup;
+			children = (
+				5DE16FBB2053BEB600B48028 /* PrefixHeader.pch */,
+				5DE16FBC2053BEB600B48028 /* Tools */,
+			);
+			path = PrefixHeader;
+			sourceTree = "<group>";
+		};
+		5DE16FBC2053BEB600B48028 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		5DE16FBE2053BF7100B48028 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				5DE16FBF2053BF7100B48028 /* RDVTabBar.h */,
+				5DE16FC02053BF7100B48028 /* RDVTabBar.m */,
+				5DE16FC12053BF7100B48028 /* RDVTabBarController.h */,
+				5DE16FC22053BF7100B48028 /* RDVTabBarController.m */,
+				5DE16FC32053BF7100B48028 /* RDVTabBarItem.h */,
+				5DE16FC42053BF7100B48028 /* RDVTabBarItem.m */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		993857CCB97AF527F76D3577 /* Frameworks */ = {
@@ -112,10 +232,8 @@
 		B5C3E93320198DB3002BD045 /* 主流框架纯代码 */ = {
 			isa = PBXGroup;
 			children = (
-				B5C3E95C201993A9002BD045 /* Controllers */,
-				B5C3E95D201993A9002BD045 /* Models */,
-				B5C3E95E201993A9002BD045 /* Others */,
-				B5C3E964201993A9002BD045 /* Views */,
+				5DE16FAF2053BE0700B48028 /* Classes */,
+				5DE16FB52053BEB600B48028 /* Others */,
 				B5C3E93420198DB3002BD045 /* Supporting Files */,
 			);
 			path = "主流框架纯代码";
@@ -124,13 +242,10 @@
 		B5C3E93420198DB3002BD045 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B5C3E93720198DB3002BD045 /* AppDelegate.h */,
-				B5C3E93820198DB3002BD045 /* AppDelegate.m */,
 				B5C3E94320198DB3002BD045 /* Assets.xcassets */,
 				B5C3E94520198DB3002BD045 /* LaunchScreen.storyboard */,
 				B5C3E94820198DB3002BD045 /* Info.plist */,
 				B5C3E94020198DB3002BD045 /* _______.xcdatamodeld */,
-				B5C3E93520198DB3002BD045 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -142,53 +257,6 @@
 				B5C3E95320198DB3002BD045 /* Info.plist */,
 			);
 			path = "主流框架纯代码UITests";
-			sourceTree = "<group>";
-		};
-		B5C3E95C201993A9002BD045 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		B5C3E95D201993A9002BD045 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		B5C3E95E201993A9002BD045 /* Others */ = {
-			isa = PBXGroup;
-			children = (
-				B5C3E95F201993A9002BD045 /* PrefixHeader */,
-			);
-			path = Others;
-			sourceTree = "<group>";
-		};
-		B5C3E95F201993A9002BD045 /* PrefixHeader */ = {
-			isa = PBXGroup;
-			children = (
-				B5C3E960201993A9002BD045 /* PrefixHeader.pch */,
-				B5C3E961201993A9002BD045 /* Tools */,
-			);
-			path = PrefixHeader;
-			sourceTree = "<group>";
-		};
-		B5C3E961201993A9002BD045 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				B5C3E962201993A9002BD045 /* NSArray+Log.h */,
-				B5C3E963201993A9002BD045 /* NSArray+Log.m */,
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
-		B5C3E964201993A9002BD045 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +306,7 @@
 		B5C3E92920198DB3002BD045 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WYQ;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = neo;
 				TargetAttributes = {
@@ -352,8 +421,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DE16FBD2053BEB600B48028 /* NSArray+Log.m in Sources */,
+				5DE16FC72053BF7100B48028 /* RDVTabBarItem.m in Sources */,
 				B5C3E94220198DB3002BD045 /* _______.xcdatamodeld in Sources */,
-				B5C3E965201993A9002BD045 /* NSArray+Log.m in Sources */,
+				5DE16FC62053BF7100B48028 /* RDVTabBarController.m in Sources */,
+				5DE16FCA2053C00500B48028 /* WYQTabBarController.m in Sources */,
+				5DE16FC52053BF7100B48028 /* RDVTabBar.m in Sources */,
 				B5C3E9692019940F002BD045 /* README.md in Sources */,
 				B5C3E93920198DB3002BD045 /* AppDelegate.m in Sources */,
 				B5C3E93620198DB3002BD045 /* main.m in Sources */,
@@ -551,6 +624,7 @@
 				B5C3E95820198DB3002BD045 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5C3E95920198DB3002BD045 /* Build configuration list for PBXNativeTarget "主流框架纯代码UITests" */ = {
 			isa = XCConfigurationList;
@@ -559,6 +633,7 @@
 				B5C3E95B20198DB3002BD045 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -569,7 +644,7 @@
 				B5C3E94120198DB3002BD045 /* _______.xcdatamodel */,
 			);
 			currentVersion = B5C3E94120198DB3002BD045 /* _______.xcdatamodel */;
-			path = _______.xcdatamodeld;
+			path = "_______.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
