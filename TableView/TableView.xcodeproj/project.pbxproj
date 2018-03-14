@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		48D8FE470740058F3209A624 /* Pods_TableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4038F3E240339591961F5204 /* Pods_TableView.framework */; };
 		5D5C5D121FE5776C00C09E57 /* TableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5C5D111FE5776C00C09E57 /* TableViewHeaderView.m */; };
+		5D7794B82056DEBC00664AD6 /* WYQBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7794B72056DEBC00664AD6 /* WYQBaseTableView.m */; };
 		5DC10A1E1FB425810038B199 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC10A1D1FB425810038B199 /* TableViewCell.m */; };
 		B50ED0E42011D04300F02A4B /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = B50ED0E32011D04300F02A4B /* NSArray+Log.m */; };
 		B50ED0E62011D0B900F02A4B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B50ED0E52011D0B900F02A4B /* Podfile */; };
@@ -41,6 +42,8 @@
 		4038F3E240339591961F5204 /* Pods_TableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D5C5D101FE5776C00C09E57 /* TableViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewHeaderView.h; sourceTree = "<group>"; };
 		5D5C5D111FE5776C00C09E57 /* TableViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewHeaderView.m; sourceTree = "<group>"; };
+		5D7794B62056DEBC00664AD6 /* WYQBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYQBaseTableView.h; sourceTree = "<group>"; };
+		5D7794B72056DEBC00664AD6 /* WYQBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYQBaseTableView.m; sourceTree = "<group>"; };
 		5DC10A1C1FB425810038B199 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		5DC10A1D1FB425810038B199 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		72D99EBF393DA31A48635EB8 /* Pods-TableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TableView/Pods-TableView.debug.xcconfig"; sourceTree = "<group>"; };
@@ -227,6 +230,8 @@
 			children = (
 				B5D8E0F21FB220D60099017D /* TableSectionView.h */,
 				B5D8E0F31FB220D60099017D /* TableSectionView.m */,
+				5D7794B62056DEBC00664AD6 /* WYQBaseTableView.h */,
+				5D7794B72056DEBC00664AD6 /* WYQBaseTableView.m */,
 				5DC10A1C1FB425810038B199 /* TableViewCell.h */,
 				5DC10A1D1FB425810038B199 /* TableViewCell.m */,
 				5D5C5D101FE5776C00C09E57 /* TableViewHeaderView.h */,
@@ -406,6 +411,7 @@
 				5DC10A1E1FB425810038B199 /* TableViewCell.m in Sources */,
 				B50ED0E42011D04300F02A4B /* NSArray+Log.m in Sources */,
 				B5835AB01F99B931006C7BFC /* main.m in Sources */,
+				5D7794B82056DEBC00664AD6 /* WYQBaseTableView.m in Sources */,
 				B5D8E0F61FB220D60099017D /* TableSectionView.m in Sources */,
 				B5D8E0F51FB220D60099017D /* TableSectionModel.m in Sources */,
 				B5D8E0F41FB220D60099017D /* CellModel.m in Sources */,

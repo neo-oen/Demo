@@ -23,9 +23,9 @@
     UINavigationController * navigationController4 = [[UIStoryboard storyboardWithName:@"four" bundle:nil] instantiateInitialViewController];
     
       [self setViewControllers:@[navigationController1,navigationController2,navigationController3,navigationController4]];
-    
 
-    
+    NSOperation * sd;
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,3 +36,4 @@
 
 
 @end
+

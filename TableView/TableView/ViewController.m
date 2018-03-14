@@ -60,25 +60,21 @@
 -(void)addFuction{
     NSDictionary * dic = @{@"name":@"yid",@"icon":@"m_4_100"};
     CellModel * cell = [CellModel cellWithDict:dic];
-    [_tableView addTableSectionCellWithModel:cell ];
 }
 -(void)delectFuction{
 
-    [_tableView deleteTableSectionCell];
 
 }
 -(void)changeFuction{
     NSDictionary * dic = @{@"name":@"yid",@"icon":@"m_4_100"};
     NSIndexPath * index = [NSIndexPath indexPathForRow:0 inSection:0];
     CellModel * cell = [CellModel cellWithDict:dic];
-    [_tableView changeTableSectionCellWithModel:cell andIndexPath:index];
 }
 -(void)moveFuction{
     NSInteger a = 0;
     NSIndexPath * indexA = [NSIndexPath indexPathForRow:0 inSection:0];
     NSIndexPath * indexB = [NSIndexPath indexPathForRow:1 inSection:0];
     
-    [_tableView moveTableSectionCellWithIndexPath:indexA toIndexPath:indexB];
     
 }
 
