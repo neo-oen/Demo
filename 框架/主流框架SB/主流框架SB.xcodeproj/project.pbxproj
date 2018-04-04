@@ -39,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D5932EE2062705200C8C69C /* 主流框架SB.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "主流框架SB.entitlements"; sourceTree = "<group>"; };
 		5DE170022053C58D00B48028 /* one.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = one.storyboard; sourceTree = "<group>"; };
 		5DE170052053C58D00B48028 /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
 		5DE170062053C58D00B48028 /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
@@ -68,7 +69,7 @@
 		B5C3E98F2019A11B002BD045 /* 主流框架SBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "主流框架SBUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C3E9932019A11B002BD045 /* ____SBUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____SBUITests.m"; sourceTree = "<group>"; };
 		B5C3E9952019A11B002BD045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5C3E9A82019A740002BD045 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		B5C3E9A82019A740002BD045 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B5C3E9A92019A740002BD045 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DEE783A4297524BFDB08EA75 /* Pods-主流框架SB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-主流框架SB.release.xcconfig"; path = "Pods/Target Support Files/Pods-主流框架SB/Pods-主流框架SB.release.xcconfig"; sourceTree = "<group>"; };
 		FCAB202E248075068E4D50E4 /* Pods_____SB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_____SB.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -336,6 +337,7 @@
 		B5C3E9752019A11B002BD045 /* 主流框架SB */ = {
 			isa = PBXGroup;
 			children = (
+				5D5932EE2062705200C8C69C /* 主流框架SB.entitlements */,
 				5DE16FFF2053C58D00B48028 /* Classes */,
 				5DE170192053C58D00B48028 /* Others */,
 				B5C3E9762019A11B002BD045 /* Supporting Files */,
@@ -426,6 +428,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 5P46D56G7P;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 					B5C3E98E2019A11B002BD045 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -504,10 +511,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-主流框架SB/Pods-主流框架SB-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

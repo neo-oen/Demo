@@ -24,6 +24,7 @@
     [path setLineWidth:20];
     [[UIColor greenColor] set];
     [path stroke];
+    
 }
 
 
