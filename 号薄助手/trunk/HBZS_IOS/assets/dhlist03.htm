@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta charset="UTF-8">
+<title>常用电话</title>
+<link rel="stylesheet" type="text/css" href="indexAll.css">
+<script src="pimAPIs.js"></script>
+</head>
+<body>
+<div class="floor w">
+    <div id="dhBanner" class="floor-area lazyimg" style="display:none"></div>
+
+  <ul class="dhlist">
+<li onclick="pimApiDoCall('4008517517');"><span>400-851-7517</span><img src="icon_maidanglao.jpg" />麦当劳</li>
+<li onclick="pimApiDoCall('4008823823');"><span>400-882-3823</span><img src="icon_kfc.jpg" />肯德基</li>
+<li onclick="pimApiDoCall('4008123123');"><span>400-812-3123</span><img src="icon_bishengke.jpg" />必胜客</li>
+<li onclick="pimApiDoCall('4006927927');"><span>400-692-7927</span><img src="icon_zhengongfu.jpg" />真功夫</li>
+<li onclick="pimApiDoCall('4008197197');"><span>400-819-7197</span><img src="icon_jiyejia.jpg" />吉野家</li>
+<li onclick="pimApiDoCall('4008927927');"><span>400-892-7927</span><img src="icon_yipinsanxiao.jpg" />一品三笑</li>
+<li onclick="pimApiDoCall('4006309907');"><span>400-630-9907</span><img src="icon_dekeshi.jpg" />德克士</li>
+<li onclick="pimApiDoCall('4008177878');"><span>400-817-7878</span><img src="icon_xiabuxiabu.jpg" />呷哺呷哺</li>
+<li onclick="pimApiDoCall('4008107107');"><span>400-810-7107</span><img src="icon_haidilao.jpg" />海底捞</li>
+<li onclick="pimApiDoCall('4000979797');"><span>400-097-9797</span><img src="icon_yonghe.jpg" />永和大王</li>
+<li onclick="pimApiDoCall('4006789977');"><span>400-678-9977</span><img src="icon_xiangcunji.jpg" />乡村基</li>
+<li onclick="pimApiDoCall('4000117777');"><span>400-011-7777</span><img src="icon_baiduwaimai.jpg" />百度外卖</li>
+<li onclick="pimApiDoCall('4000557117');"><span>400-055-7117</span><img src="icon_eleme.jpg" />饿了么</li>
+<li onclick="pimApiDoCall('4008507777');"><span>400-850-7777</span><img src="icon_meituanwaimai.jpg" />美团外卖</li>
+<li onclick="pimApiDoCall('4008267710');"><span>400-826-7710</span><img src="icon_taodiandian.jpg" />淘点点外卖</li>
+  </ul>
+</div>
+</div>
+<script>  
+var oHead = document.getElementsByTagName('body').item(0);   
+var oScript= document.createElement("script");
+oScript.src="http://pim.189.cn/fuli/images/iOSDHBannerCms03.js?"+Math.random();  
+oHead.appendChild(oScript);   
+</script>
+<div style="display:none">
+<iframe src="http://www.vnet.cn/cwclient/eSurfingBB/push/pimLiveCount.htm?ios_dhlist03" width="0" height="0"></iframe>
+</div>
+</body>
+</html>

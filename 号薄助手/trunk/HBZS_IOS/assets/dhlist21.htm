@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta charset="UTF-8">
+<title>常用电话</title>
+<link rel="stylesheet" type="text/css" href="indexAll.css">
+<script src="pimAPIs.js"></script>
+</head>
+<body>
+<div class="floor w">
+    <div id="dhBanner" class="floor-area lazyimg" style="display:none"></div>
+
+  <ul class="dhlist">
+<li onclick="pimApiDoCall('4000001999');"><span>400-000-1999</span><img src="icon_dididache.jpg" />滴滴打车</li>
+<li onclick="pimApiDoCall('4000002666');"><span>400-000-2666</span><img src="icon_kuaididache.jpg" />快的打车</li>
+<li onclick="pimApiDoCall('96106');"><span>96106</span><img src="icon_pim.jpg" />北京叫车电话</li>
+<li onclick="pimApiDoCall('96961');"><span>96961</span><img src="icon_pim.jpg" />上海锦江叫车电话</li>
+<li onclick="pimApiDoCall('96822');"><span>96822</span><img src="icon_pim.jpg" />上海大众叫车电话</li>
+<li onclick="pimApiDoCall('96900');"><span>96900</span><img src="icon_pim.jpg" />广州叫车电话</li>
+<li onclick="pimApiDoCall('075596511');"><span>0755-96511</span><img src="icon_pim.jpg" />深圳叫车电话</li>
+<li onclick="pimApiDoCall('96880');"><span>96880</span><img src="icon_pim.jpg" />天津叫车电话</li>
+<li onclick="pimApiDoCall('96096');"><span>96096</span><img src="icon_pim.jpg" />重庆叫车电话</li>
+<li onclick="pimApiDoCall('965188');"><span>965188</span><img src="icon_pim.jpg" />南京叫车电话</li>
+<li onclick="pimApiDoCall('057128811111');"><span>0571-28811111</span><img src="icon_pim.jpg" />杭州叫车电话</li>
+<li onclick="pimApiDoCall('05925320000');"><span>0592-5320000</span><img src="icon_pim.jpg" />厦门叫车电话</li>
+  </ul>
+</div>
+</div>
+<script>  
+var oHead = document.getElementsByTagName('body').item(0);   
+var oScript= document.createElement("script");
+oScript.src="http://pim.189.cn/fuli/images/iOSDHBannerCms21.js?"+Math.random();  
+oHead.appendChild(oScript);   
+</script>
+<div style="display:none">
+<iframe src="http://www.vnet.cn/cwclient/eSurfingBB/push/pimLiveCount.htm?ios_dhlist21" width="0" height="0"></iframe>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+/*
+ tpnool_proto
+
+
+ Author:
+
+  Wang Tao
+
+  Wang Tao (wangtao@ctid.com.cn)
+
+ Version: 1.0
+
+ Creation Time: 2011-11-29
+
+ Description:
+
+ Update TPNOOL(The phone numbers ownership of land )
+  
+*/
+
+option optimize_for = LITE_RUNTIME;
+
+package ctuab.proto.message;
+
+//Tpnool Data
+message TpnoolData {	
+	optional string number_segment = 1; 		//Phone Number segment
+	optional string province_name = 2; 		  //Province name
+	optional string city_name = 3; 		      //City name
+}
+
+
+//Update Tpnool response
+message GetTpnoolResponse {
+	optional int32 tpnool_ver = 1;	                  //Tpnool Data Version
+	repeated TpnoolData mobile_tpnool_data = 2; 	  //Mobile Tpnool Data
+	repeated TpnoolData tel_tpnool_data = 3; 		  //Telephone Tpnool Data
+}

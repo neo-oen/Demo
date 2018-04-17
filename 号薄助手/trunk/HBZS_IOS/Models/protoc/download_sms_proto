@@ -1,0 +1,34 @@
+/*
+ download_sms_proto
+
+ Author:
+
+ Xu Rui
+
+ Xu Rui (xurui@ctid.com.cn)
+
+ Version: 1.0
+
+ Creation Time: 2012-04-26
+
+ Description:
+
+	Download SMS Request and Response
+
+*/
+
+option optimize_for = LITE_RUNTIME;
+
+import "base_type_proto";
+
+package ctuab.proto.message;
+
+//Download SMS request
+message DownloadSmsRequest {
+	repeated string id				=	1;		//The SMS IDs which client wants to download from server
+}
+
+//Download SMS response
+message DownloadSmsResponse {
+	repeated Sms sms				=	1;		//SMSes
+}

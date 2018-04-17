@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta charset="UTF-8">
+<title>常用电话</title>
+<link rel="stylesheet" type="text/css" href="indexAll.css">
+<script src="pimAPIs.js"></script>
+</head>
+<body>
+<div class="floor w">
+    <div id="dhBanner" class="floor-area lazyimg" style="display:none"></div>
+
+  <ul class="dhtablist3">
+    <li><a href="dhlist06.htm">车险</a></li>
+    <li><a href="dhlist07.htm">财险</a></li>
+    <li class="c"><a href="dhlist05.htm">寿险</a></li>
+  </ul>
+  <ul class="dhlist">
+    <li onclick="pimApiDoCall('95519');"><span>95519</span><img src="icon_zhongguorenshou.jpg" />中国人寿保险</li>
+    <li onclick="pimApiDoCall('95511');"><span>95511</span><img src="icon_zhongguopingan.jpg" />中国平安保险</li>
+    <li onclick="pimApiDoCall('95567');"><span>95567</span><img src="icon_xinhuarenshou.jpg" />新华人寿保险</li>
+    <li onclick="pimApiDoCall('95500');"><span>95500</span><img src="icon_taipingyangbaoxian.jpg" />太平洋保险</li>
+    <li onclick="pimApiDoCall('95522');"><span>95522</span><img src="icon_taikangrenshou.jpg" />泰康人寿保险</li>
+    <li onclick="pimApiDoCall('4008118228');"><span>400-811-8228</span><img src="icon_changchengrenshou.jpg" />长城人寿保险</li>
+    <li onclick="pimApiDoCall('4008895518');"><span>400-889-5518</span><img src="icon_zhongguorenming.jpg" />中国人民人寿保险</li>
+    <li onclick="pimApiDoCall('4008203588');"><span>400-820-3588</span><img src="icon_meiguoyoubang.jpg" />美国友邦保险</li>
+    <li onclick="pimApiDoCall('95545');"><span>95545</span><img src="icon_zhongyingrenshou.jpg" />中英人寿保险</li>
+    <li onclick="pimApiDoCall('4008838838');"><span>4008-838-838</span><img src="icon_xinchengrenshou.jpg" />信诚人寿保险</li>
+    <li onclick="pimApiDoCall('95596');"><span>95596</span><img src="icon_minshengrenshou.jpg" />民生人寿保险</li>
+    <li onclick="pimApiDoCall('4008188168');"><span>400-818-8168</span><img src="icon_zhongmeidaduhui.jpg" />中美大都会人寿保险</li>
+    <li onclick="pimApiDoCall('4008200035');"><span>400-820-0035</span><img src="icon_shengmingrenshou.jpg" />生命人寿保险</li>
+    <li onclick="pimApiDoCall('95589');"><span>95589</span><img src="icon_taipingrenshou.jpg" />太平人寿保险</li>
+    <li onclick="pimApiDoCall('95105698');"><span>95105698</span><img src="icon_pim.jpg" />光大永明人寿保险</li>
+    <li onclick="pimApiDoCall('4008188699');"><span>400-818-8699</span><img src="icon_henganbiaozhun.jpg" />恒安标准人寿保险</li>
+    <li onclick="pimApiDoCall('4008101888');"><span>400-810-1888</span><img src="icon_zhonghangsanxing.jpg" />中航三星人寿保险</li>
+    <li onclick="pimApiDoCall('95105768');"><span>95105768</span><img src="icon_haikangrenshou.jpg" />海康人寿保险</li>
+    <li onclick="pimApiDoCall('95510');"><span>95510</span><img src="icon_yangguangbaoxian.jpg" />阳光保险</li>
+  </ul>
+</div>
+<script>  
+var oHead = document.getElementsByTagName('body').item(0);   
+var oScript= document.createElement("script");
+oScript.src="http://pim.189.cn/fuli/images/iOSDHBannerCms05.js?"+Math.random();  
+oHead.appendChild(oScript);   
+</script>
+<div style="display:none">
+<iframe src="http://www.vnet.cn/cwclient/eSurfingBB/push/pimLiveCount.htm?ios_dhlist05" width="0" height="0"></iframe>
+</div>
+</body>
+</html>

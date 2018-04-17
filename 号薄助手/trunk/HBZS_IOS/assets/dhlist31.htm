@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta charset="UTF-8">
+<title>常用电话</title>
+<link rel="stylesheet" type="text/css" href="indexAll.css">
+<script src="pimAPIs.js"></script>
+</head>
+<body>
+<div class="floor w">
+    <div id="dhBanner" class="floor-area lazyimg" style="display:none"></div>
+
+  <ul class="dhtablist8">
+    <li><a href="dhlist01.htm">手机</a></li>
+    <li><a href="dhlist12.htm">电脑</a></li>
+    <li><a href="dhlist27.htm">电视</a></li>
+    <li><a href="dhlist23.htm">相机</a></li>
+    <li><a href="dhlist28.htm">空调</a></li>
+    <li><a href="dhlist29.htm">冰箱</a></li>
+    <li><a href="dhlist30.htm">洗衣机</a></li>
+    <li class="c"><a href="dhlist31.htm">手表</a></li>
+  </ul>
+  <ul class="dhlist">
+    <li onclick="pimApiDoCall('02162820809');"><span>021-62820809</span><img src="icon_casio.jpg" />卡西欧</li>
+    <li onclick="pimApiDoCall('4006501958');"><span>400-650-1958</span><img src="icon_citizen.jpg" />西铁城</li>
+    <li onclick="pimApiDoCall('02162720688');"><span>021-62720688</span><img src="icon_seiko.jpg" />精工</li>
+    <li onclick="pimApiDoCall('4006701832');"><span>400-670-1832</span><img src="icon_longines.jpg" />浪琴</li>
+    <li onclick="pimApiDoCall('4007005858');"><span>400-700-5858</span><img src="icon_fiyta.jpg" />飞亚达</li>
+    <li onclick="pimApiDoCall('4006701848');"><span>400-670-1848</span><img src="icon_omega.jpg" />欧米茄</li>
+    <li onclick="pimApiDoCall('4000088339');"><span>400-008-8339</span><img src="icon_ebohr.jpg" />依波</li>
+    <li onclick="pimApiDoCall('4008210823');"><span>400-821-0823</span><img src="icon_amarni.jpg" />阿玛尼</li>
+  </ul>
+</div>
+<script>  
+var oHead = document.getElementsByTagName('body').item(0);   
+var oScript= document.createElement("script");
+oScript.src="http://pim.189.cn/fuli/images/iOSDHBannerCms31.js?"+Math.random();  
+oHead.appendChild(oScript);   
+</script>
+<div style="display:none">
+<iframe src="http://www.vnet.cn/cwclient/eSurfingBB/push/pimLiveCount.htm?ios_dhlist31" width="0" height="0"></iframe>
+</div>
+</body>
+</html>

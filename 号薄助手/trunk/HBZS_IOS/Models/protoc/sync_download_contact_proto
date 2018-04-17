@@ -1,0 +1,36 @@
+/*
+ sync_download_contact_proto
+
+ Author:
+
+ Version: 1.0
+
+ Creation Time: 2011-11-10
+
+ Description:
+
+   Synchronous downloading for contact data.
+
+*/
+
+option optimize_for = LITE_RUNTIME;
+
+import "contact_proto";
+
+package ctuab.proto.message;
+
+// Synchronous downloading request
+message SyncDownloadContactRequest {
+	repeated int32 contact_id = 1 [packed=true];		// list of contactId
+	repeated int32 group_id = 2 [packed=true];		// list of groupId
+	
+	optional bool is_request_business_card = 3;         // Whether requesting business card
+}
+
+// Synchronous downloading response
+message SyncDownloadContactResponse {
+	repeated Contact contact = 1;	// list of contact
+	repeated Group group = 2;		// list of group
+	
+	optional Contact business_card = 3;   // Business card
+}

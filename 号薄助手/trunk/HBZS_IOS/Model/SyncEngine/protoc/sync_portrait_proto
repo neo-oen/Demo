@@ -1,0 +1,39 @@
+/*
+ sync_portrait_proto
+
+ Author:
+
+ Xu Rui
+
+ Xu Rui (xurui@ctid.com.cn)
+
+ Version: 1.0
+
+ Creation Time: 2012-02-21
+
+ Description:
+
+	SyncProtrait request and response
+
+*/
+
+option optimize_for = LITE_RUNTIME;
+
+import "upload_portrait_proto";
+
+package ctuab.proto.message;
+
+//Sync Portrait Request
+message SyncPortraitRequest {
+	repeated PortraitSummary portrait_summary = 1; 			//The complete summary of client's portrait
+	
+	optional int32 business_card_portrait_version = 2;      //Business card portrait version
+}
+
+//Sync Portrait Response
+message SyncPortraitResponse {
+	repeated int32 download_portrait_id = 1 [packed=true];	//Contact IDs which client should download its portaits
+	repeated int32 deleted_portrait_id = 2 [packed=true];	//Contact IDs which client should delete its local portaits
+	
+	optional bool is_need_to_download_business_card_portrait = 3; //Whether client should download business card portrait or not
+}

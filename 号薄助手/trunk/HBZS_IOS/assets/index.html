@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta charset="UTF-8">
+        <title>生活</title>
+        <link rel="stylesheet" type="text/css" href="indexAll.css">
+        <script src="jquery-1.11.2.min.js"></script>
+        <script src="pimAPIs.js"></script>
+        <script>
+            var liveVer = "2.0";//版本发布同时也要修改这个参数
+            var liveiOS = true;
+            var lifeLon = "null";
+            var lifeLat = "null";
+            //pimApiGetlocation();		
+            function dhSearchGo(){
+                if(dhSearch.value!=""){
+                    //location.href="dhlistQ.htm?find="+dhSearch.value;
+                    pimApiOpenURL('常用电话',"dhlistQ.htm?find="+dhSearch.value);
+                }else{
+                    //location.href="dhlistQ.htm";
+                    pimApiOpenURL('常用电话',"dhlistQ.htm");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="index-wrap hide" style="display: block; opacity: 1;">
+            <div class="floor w">
+                <div id="indexFuliCms1" class="lazyimg ovf" style="display:none"></div>
+                <div id="indexSearch" class="lazyimg ovf" style=" text-align:center;border:1px #e0e0e0 solid; border-right:0;border-left:0;border-top:0;">
+                    <input id="dhSearch" class="dhSearchInput" type='search' placeholder='常用电话' name='dhSearch' onkeypress="if(event.keyCode==13){dhSearchGo();}"/>
+                    <input type="button" class="dhSearchBtn" value="搜索" onClick="dhSearchGo();">
+                </div>
+                <div id="indexFuliCms1B" class="lazyimg ovf" style="display:none"></div>
+                <div id="lbsListBox" class="app02 floor-area border-1px border-down ovf" style="display:none">
+                    <div class="w nav-carousel pr" id="navCarousel_box" data-name="2">
+                        <div class="nav-carousel-box" id="navCarousel">
+                            <ul class="slide_ul">
+                                <li id="lbsList"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="indexFuliCms2" class="lazyimg ovf" style="display:none"></div>
+                <div id="telListBox" class="lazyimg ovf">
+                    <div class="floor-title pr">常用电话</div>
+                    <ul class="app14-pic01 border-1px border-upd">
+                        <li id="telList01"><a onClick="pimApiOpenURL('美食就餐','dhlist03.htm');"><img alt="" src="dh19.png"></a><a onClick="pimApiOpenURL('快递速运','dhlist32.htm');"><img alt="" src="dh17.png"></a></li>
+                        <li id="telList02"><a onClick="pimApiOpenURL('公共服务','dhlist09.htm');"><img alt="" src="dh01.png"></a><a onClick="pimApiOpenURL('家电维修','dhlist01.htm');"><img alt="" src="dh16.png"></a></li>
+                        <li id="telList03"><a onClick="pimApiOpenURL('的士叫车','dhlist21.htm');"><img alt="" src="dh03.png"></a><a onClick="pimApiOpenURL('租车代驾','dhlist11.htm');"><img alt="" src="dh06.png"></a></li>
+                        <li id="telList04"><a onClick="pimApiOpenURL('酒店预订','dhlist13.htm');"><img alt="" src="dh07.png"></a><a onClick="pimApiOpenURL('火车订票','dhlist15.htm');"><img alt="" src="dh08.png"></a></li>
+                        <li id="telList05"><a onClick="pimApiOpenURL('通信服务','dhlist10.htm');"><img alt="" src="dh05.png"></a><a onClick="pimApiOpenURL('水电煤气','dhlist17.htm');"><img alt="" src="dh10.png"></a></li>
+                        <li id="telList06"><a onClick="pimApiOpenURL('汽车公司','dhlist20.htm');"><img alt="" src="dh02.png"></a><a onClick="pimApiOpenURL('信用卡中心','dhlist22.htm');"><img alt="" src="dh04.png"></a></li>
+                        <li id="telList07"><a onClick="pimApiOpenURL('有限电视','dhlist16.htm');"><img alt="" src="dh09.png"></a><a onClick="pimApiOpenURL('党政部门','dhlist18.htm');"><img alt="" src="dh11.png"></a></li>
+                        <li id="telList08"><a onClick="pimApiOpenURL('监督投诉','dhlist19.htm');"><img alt="" src="dh12.png"></a><a onClick="pimApiOpenURL('农村信用社','dhlist24.htm');"><img alt="" src="dh13.png"></a></li>
+                        <li id="telList09"><a onClick="pimApiOpenURL('保险服务','dhlist06.htm');"><img alt="" src="dh21.png"></a><a onClick="pimApiOpenURL('常用网站','dhlist25.htm');"><img alt="" src="dh14.png"></a></li>
+                        <li id="telList10"><a onClick="pimApiOpenURL('游戏客服','dhlist26.htm');"><img alt="" src="dh15.png"></a><a onClick="pimApiOpenURL('银行银联','dhlist02.htm');"><img alt="" src="dh18.png"></a></li>
+                        <li id="telList11"><a onClick="pimApiOpenURL('航空机票','dhlist04.htm');"><img alt="" src="dh20.png"></a><a onClick="pimApiOpenURL('网上购物','dhlist08.htm');"><img alt="" src="dh22.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+		<script>  
+        var oHead = document.getElementsByTagName('body').item(0);   
+        var oScript= document.createElement("script");
+        oScript.src="http://i.vnet.mobi/image/ctpim/iOSIndexFuliCms.js?"+Math.random();  
+        oHead.appendChild(oScript);
+        </script>
+        <div style="display:none"><iframe src="http://www.vnet.cn/cwclient/eSurfingBB/push/pimLiveCount.htm?iosindex" width="0" height="0"></iframe></div>
+    </body>
+</html>

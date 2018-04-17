@@ -1,0 +1,30 @@
+/*
+ contact_proto
+
+
+ Author:
+
+  Wang tao
+
+ Wang tao (wangtao@ctid.com.cn)
+
+ Version: 1.0
+
+ Creation Time: 2011-11-10
+
+ Description:
+
+   This document defines Encrypted Data
+*/
+
+option optimize_for = LITE_RUNTIME;
+
+import "base_type_proto";
+
+package ctuab.proto.message;
+
+
+//Encrypted Data
+message EncryptedData {
+    optional Name name = 1;   //contact name
+}

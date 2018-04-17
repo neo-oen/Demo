@@ -1,0 +1,24 @@
+/*
+ get_user_cloud_summary_proto
+
+ Author:
+
+ Version: 1.0
+
+ Creation Time: 2013-03-10
+
+ Description:
+
+   Get cloud summary of user
+
+*/
+
+option optimize_for = LITE_RUNTIME;
+
+package ctuab.proto.message;
+
+message GetUserCloudSummaryResponse {
+	required int32 contactCount = 1;    //get contact count by cloud
+	required int32 messageCount = 2;    //get message count by cloud
+	required int32 callLogCount = 3;    //get call log count by cloud
+}

@@ -1,0 +1,22 @@
+/*
+ get_version_proto
+
+ Author:
+
+ Version: 1.0
+
+ Creation Time: 2011-11-10
+
+ Description:
+
+   Get versionNo of contact list
+
+*/
+
+option optimize_for = LITE_RUNTIME;
+
+package ctuab.proto.message;
+
+message GetContactListVersionResponse {
+	required int32 contact_list_version = 1;
+}

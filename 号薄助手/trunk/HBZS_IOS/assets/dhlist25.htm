@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta charset="UTF-8">
+<title>常用电话</title>
+<link rel="stylesheet" type="text/css" href="indexAll.css">
+<script src="pimAPIs.js"></script>
+</head>
+<body>
+<div class="floor w">
+    <div id="dhBanner" class="floor-area lazyimg" style="display:none"></div>
+
+  <ul class="dhlist">
+<li onclick="pimApiDoCall('075583765566');"><span>0755-83765566</span><img src="icon_tencent.jpg" />腾讯</li>
+<li onclick="pimApiDoCall('01058511234');"><span>010-58511234</span><img src="icon_sohu.jpg" />搜狐</li>
+<li onclick="pimApiDoCall('01062728080');"><span>010-62728080</span><img src="icon_sogou.jpg" />搜狗</li>
+<li onclick="pimApiDoCall('075583767777');"><span>0755-83767777</span><img src="icon_weixin1.jpg" />微信</li>
+<li onclick="pimApiDoCall('01059928888');"><span>010-59928888</span><img src="icon_baidu.jpg" />百度</li>
+<li onclick="pimApiDoCall('4006900000');"><span>400-690-0000</span><img src="icon_sina.jpg" />新浪</li>
+<li onclick="pimApiDoCall('4007585858');"><span>400-758-5858</span><img src="icon_58tongcheng.jpg" />58同城</li>
+<li onclick="pimApiDoCall('4008205527');"><span>400-820-5527</span><img src="icon_dazhongdianping.jpg" />大众点评网</li>
+<li onclick="pimApiDoCall('4000517317');"><span>4000-517-317</span><img src="icon_lashouwang.jpg" />拉手网</li>
+<li onclick="pimApiDoCall('10101234');"><span>10101234</span><img src="icon_qunaer.jpg" />去哪儿网</li>
+<li onclick="pimApiDoCall('10106666');"><span>1010-6666</span><img src="icon_xiecheng.jpg" />携程网</li>
+<li onclick="pimApiDoCall('057188158198');"><span>0571-88158198</span><img src="icon_taobao.jpg" />淘宝网</li>
+<li onclick="pimApiDoCall('4006605335');"><span>400-660-5335</span><img src="icon_meituan.jpg" />美团网</li>
+<li onclick="pimApiDoCall('4001066666');"><span>400-106-6666</span><img src="icon_dangdang.jpg" />当当网</li>
+<li onclick="pimApiDoCall('02122268888');"><span>021-22268888</span><img src="icon_tieyou.jpg" />铁友网</li>
+<li onclick="pimApiDoCall('01057835066');"><span>010-57835066</span><img src="icon_shijijiayuan.jpg" />世纪佳缘网</li>
+</ul>
+</div>
+<script>  
+var oHead = document.getElementsByTagName('body').item(0);   
+var oScript= document.createElement("script");
+oScript.src="http://pim.189.cn/fuli/images/iOSDHBannerCms25.js?"+Math.random();  
+oHead.appendChild(oScript);   
+</script>
+<div style="display:none">
+<iframe src="http://www.vnet.cn/cwclient/eSurfingBB/push/pimLiveCount.htm?ios_dhlist25" width="0" height="0"></iframe>
+</div>
+</body>
+</html>

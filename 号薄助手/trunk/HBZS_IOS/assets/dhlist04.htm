@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta charset="UTF-8">
+<title>常用电话</title>
+<link rel="stylesheet" type="text/css" href="indexAll.css">
+<script src="pimAPIs.js"></script>
+</head>
+<body>
+<div class="floor w">
+    <div id="dhBanner" class="floor-area lazyimg" style="display:none"></div>
+
+  <ul class="dhlist">
+<li onclick="pimApiDoCall('95583');"><span>95583</span><img src="icon_guohang.jpg" />中国国航</li>
+<li onclick="pimApiDoCall('95339');"><span>95339</span><img src="icon_haihang.jpg" />海南航空</li>
+<li onclick="pimApiDoCall('95539');"><span>95539</span><img src="icon_nanhang.jpg" />南方航空 </li>
+<li onclick="pimApiDoCall('95530');"><span>95530</span><img src="icon_donghang.jpg" />东方航空</li>
+<li onclick="pimApiDoCall('95080');"><span>95080</span><img src="icon_shenhang.jpg" />深圳航空</li>
+<li onclick="pimApiDoCall('95557');"><span>95557</span><img src="icon_xiahang.jpg" />厦门航空</li>
+<li onclick="pimApiDoCall('4006096777');"><span>400-609-6777</span><img src="icon_shandonghangkong.jpg" />山东航空 </li>
+<li onclick="pimApiDoCall('4008876737');"><span>400-887-6737</span><img src="icon_kunhang.jpg" />昆明航空</li>
+<li onclick="pimApiDoCall('95071999');"><span>95071999</span><img src="icon_shouhang.jpg" />首都航空</li>
+<li onclick="pimApiDoCall('053296630');"><span>0532-96630</span><img src="icon_qinghang.jpg" />青岛航空</li>
+<li onclick="pimApiDoCall('950710');"><span>950710</span><img src="icon_tianhang.jpg" />天津航空</li>
+<li onclick="pimApiDoCall('95530');"><span>95530</span><img src="icon_shanghang.jpg" />上海航空</li>
+<li onclick="pimApiDoCall('95520');"><span>95520</span><img src="icon_jixiang.jpg" />吉祥航空</li>
+<li onclick="pimApiDoCall('95524');"><span>95524</span><img src="icon_chunqiu.jpg" />春秋航空</li>
+<li onclick="pimApiDoCall('4008300999');"><span>400-830-0999</span><img src="icon_chuanhang.jpg" />四川航空</li>
+<li onclick="pimApiDoCall('4008886628');"><span>400-888-6628</span><img src="icon_guotaihangkong.jpg" />国泰航空</li>
+<li onclick="pimApiDoCall('02022817666');"><span>020-22817666</span><img src="icon_yahang.jpg" />亚洲航空</li>
+<li onclick="pimApiDoCall('4008150800');"><span>400-815-0800</span><img src="icon_meiguohangkong.jpg" />美国航空</li>
+<li onclick="pimApiDoCall('60378433000');"><span>603-7843-3000</span><img src="icon_malaixiya.jpg" />马来西亚航空</li>
+  </ul>
+</div>
+</div>
+<script>  
+var oHead = document.getElementsByTagName('body').item(0);   
+var oScript= document.createElement("script");
+oScript.src="http://pim.189.cn/fuli/images/iOSDHBannerCms04.js?"+Math.random();  
+oHead.appendChild(oScript);   
+</script>
+<div style="display:none">
+<iframe src="http://www.vnet.cn/cwclient/eSurfingBB/push/pimLiveCount.htm?ios_dhlist04" width="0" height="0"></iframe>
+</div>
+</body>
+</html>

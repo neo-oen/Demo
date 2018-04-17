@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta charset="UTF-8">
+<title>常用电话</title>
+<link rel="stylesheet" type="text/css" href="indexAll.css">
+<script src="pimAPIs.js"></script>
+</head>
+<body>
+<div class="floor w">
+    <div id="dhBanner" class="floor-area lazyimg" style="display:none"></div>
+
+  <ul class="dhlist">
+<li onclick="pimApiDoCall('12306');"><span>12306</span><img src="icon_huochepiao.jpg" />12306客服</li>
+<li onclick="pimApiDoCall('01095105105');"><span>010-95105105</span><img src="icon_huochepiao.jpg" />北京铁路局</li>
+<li onclick="pimApiDoCall('02095105105');"><span>020-95105105</span><img src="icon_huochepiao.jpg" />广铁集团</li>
+<li onclick="pimApiDoCall('02195105105');"><span>021-95105105</span><img src="icon_huochepiao.jpg" />上海铁路局</li>
+<li onclick="pimApiDoCall('02795105105');"><span>027-95105105</span><img src="icon_huochepiao.jpg" />武汉铁路局</li>
+<li onclick="pimApiDoCall('037195105105');"><span>0371-95105105</span><img src="icon_huochepiao.jpg" />郑州铁路局</li>
+<li onclick="pimApiDoCall('045195105105');"><span>0451-95105105</span><img src="icon_huochepiao.jpg" />哈尔滨铁路局</li>
+<li onclick="pimApiDoCall('02495105105');"><span>024-95105105</span><img src="icon_huochepiao.jpg" />沈阳铁路局</li>
+<li onclick="pimApiDoCall('035195105105');"><span>0351-95105105</span><img src="icon_huochepiao.jpg" />太原铁路局</li>
+<li onclick="pimApiDoCall('02996688');"><span>029-96688</span><img src="icon_huochepiao.jpg" />西安铁路局</li>
+<li onclick="pimApiDoCall('053195105105');"><span>0531-95105105</span><img src="icon_huochepiao.jpg" />济南铁路局</li>
+<li onclick="pimApiDoCall('047195105105');"><span>0471-95105105</span><img src="icon_huochepiao.jpg" />呼和浩特铁路局</li>
+<li onclick="pimApiDoCall('02896006');"><span>028-96006</span><img src="icon_huochepiao.jpg" />成都铁路局</li>
+<li onclick="pimApiDoCall('079195105105');"><span>0791-95105105</span><img src="icon_huochepiao.jpg" />南昌铁路局</li>
+<li onclick="pimApiDoCall('077195105105');"><span>0771-95105105</span><img src="icon_huochepiao.jpg" />南宁铁路局</li>
+<li onclick="pimApiDoCall('087195105105');"><span>0871-95105105</span><img src="icon_huochepiao.jpg" />昆明铁路局</li>
+<li onclick="pimApiDoCall('093195105105');"><span>0931-95105105</span><img src="icon_huochepiao.jpg" />兰州铁路局</li>
+<li onclick="pimApiDoCall('099195105105');"><span>0991-95105105</span><img src="icon_huochepiao.jpg" />乌鲁木齐铁路局</li>
+<li onclick="pimApiDoCall('097195105105');"><span>0971-95105105</span><img src="icon_huochepiao.jpg" />青藏铁路公司</li>
+  </ul>
+</div>
+</div>
+<script>  
+var oHead = document.getElementsByTagName('body').item(0);   
+var oScript= document.createElement("script");
+oScript.src="http://pim.189.cn/fuli/images/iOSDHBannerCms15.js?"+Math.random();  
+oHead.appendChild(oScript);   
+</script>
+<div style="display:none">
+<iframe src="http://www.vnet.cn/cwclient/eSurfingBB/push/pimLiveCount.htm?ios_dhlist15" width="0" height="0"></iframe>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta charset="UTF-8">
+<title>常用电话</title>
+<link rel="stylesheet" type="text/css" href="indexAll.css">
+<script src="pimAPIs.js"></script>
+</head>
+<body>
+<div class="floor w">
+    <div id="dhBanner" class="floor-area lazyimg" style="display:none"></div>
+
+  <ul class="dhtablist8">
+    <li><a href="dhlist01.htm">手机</a></li>
+    <li><a href="dhlist12.htm">电脑</a></li>
+    <li><a href="dhlist27.htm">电视</a></li>
+    <li><a href="dhlist23.htm">相机</a></li>
+    <li><a href="dhlist28.htm">空调</a></li>
+    <li class="c"><a href="dhlist29.htm">冰箱</a></li>
+    <li><a href="dhlist30.htm">洗衣机</a></li>
+    <li><a href="dhlist31.htm">手表</a></li>
+  </ul>
+  <ul class="dhlist">
+    <li onclick="pimApiDoCall('4006999999');"><span>400-699-9999</span><img src="icon_haier.jpg" />海尔</li>
+    <li onclick="pimApiDoCall('4008899999');"><span>400-889-9999</span><img src="icon_siemens.jpg" />西门子</li>
+    <li onclick="pimApiDoCall('4008111666');"><span>400-811-1666</span><img src="icon_meiling.jpg" />美菱</li>
+    <li onclick="pimApiDoCall('4008099999');"><span>400-809-9999</span><img src="icon_ronshen.jpg" />容声</li>
+    <li onclick="pimApiDoCall('4008899315');"><span>400-889-9315</span><img src="icon_midea.jpg" />美的</li>
+    <li onclick="pimApiDoCall('4008199999');"><span>400-819-9999</span><img src="icon_lg.jpg" />LG</li>
+    <li onclick="pimApiDoCall('4008123456');"><span>400-812-3456</span><img src="icon_tcl.jpg" />TCL</li>
+    <li onclick="pimApiDoCall('4006098888');"><span>400-609-8888</span><img src="icon_xinfei.jpg" />新飞</li>
+    <li onclick="pimApiDoCall('4008105858');"><span>400-810-5858</span><img src="icon_sansung.jpg" />三星</li>
+    <li onclick="pimApiDoCall('4008100781');"><span>400-810-0781</span><img src="icon_songxia.jpg" />松下</li>
+    <li onclick="pimApiDoCall('4006111111');"><span>400-611-1111</span><img src="icon_hisense.jpg" />海信</li>
+    <li onclick="pimApiDoCall('4008981818');"><span>400-898-1818</span><img src="icon_sharp.jpg" />夏普</li>
+  </ul>
+</div>
+</div>
+<script>  
+var oHead = document.getElementsByTagName('body').item(0);   
+var oScript= document.createElement("script");
+oScript.src="http://pim.189.cn/fuli/images/iOSDHBannerCms29.js?"+Math.random();  
+oHead.appendChild(oScript);   
+</script>
+<div style="display:none">
+<iframe src="http://www.vnet.cn/cwclient/eSurfingBB/push/pimLiveCount.htm?ios_dhlist29" width="0" height="0"></iframe>
+</div>
+</body>
+</html>

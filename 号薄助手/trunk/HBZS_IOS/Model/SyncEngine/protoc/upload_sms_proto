@@ -1,0 +1,29 @@
+/*
+ upload_sms_proto
+
+ Author:
+
+ Xu Rui
+
+ Xu Rui (xurui@ctid.com.cn)
+
+ Version: 1.0
+
+ Creation Time: 2012-04-26
+
+ Description:
+
+	Upload SMS Request
+
+*/
+
+option optimize_for = LITE_RUNTIME;
+
+import "base_type_proto";
+
+package ctuab.proto.message;
+
+//Upload SMS request
+message UploadSmsRequest {
+	repeated Sms sms				=	1;		//The SMSs which client uploads
+}

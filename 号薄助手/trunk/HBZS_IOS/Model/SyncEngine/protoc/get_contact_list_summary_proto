@@ -1,0 +1,34 @@
+/*
+ get_contact_list_summary_proto
+
+
+ Author:
+
+ chen jun
+
+ chen jun (chen_jun@ctid.com.cn)
+
+ Version: 1.0
+
+ Creation Time: 2011-11-10
+
+ Description:
+
+ this proto file defines data structs for getting Contact list summary
+
+*/
+
+option optimize_for = LITE_RUNTIME;
+
+package ctuab.proto.message;
+
+//the response dat
+message ContactListSummaryResponse {
+    repeated int32 contact_summary= 1 [packed=true]; //the contact summary list 
+    repeated int32 group_summary= 2 [packed=true];   //the group summary list
+    optional int32 contact_list_version = 3;//the contact list version
+	repeated int32 contact_version = 4 [packed=true]; //the contact version list
+    repeated int32 group_version = 5 [packed=true];   //the group version list
+	
+	optional int32 business_card_version = 6;         //Business card version
+}

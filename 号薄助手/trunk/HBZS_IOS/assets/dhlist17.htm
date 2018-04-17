@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta charset="UTF-8">
+<title>常用电话</title>
+<link rel="stylesheet" type="text/css" href="indexAll.css">
+<script src="pimAPIs.js"></script>
+</head>
+<body>
+<div class="floor w">
+    <div id="dhBanner" class="floor-area lazyimg" style="display:none"></div>
+
+  <ul class="dhlist">
+<li onclick="pimApiDoCall('96116');"><span>96116</span><img src="icon_pim.jpg" />北京供水热线</li>
+<li onclick="pimApiDoCall('962740');"><span>962740</span><img src="icon_pim.jpg" />上海供水热线</li>
+<li onclick="pimApiDoCall('96968');"><span>96968</span><img src="icon_pim.jpg" />广州供水热线</li>
+<li onclick="pimApiDoCall('82137777');"><span>82137777</span><img src="icon_pim.jpg" />深圳供水热线</li>
+<li onclick="pimApiDoCall('96655');"><span>96655</span><img src="icon_pim.jpg" />天津供水热线</li>
+<li onclick="pimApiDoCall('966886');"><span>966886</span><img src="icon_pim.jpg" />重庆供水热线</li>
+<li onclick="pimApiDoCall('95598');"><span>95598</span><img src="icon_guojiadianwangkefu.jpg" />国家电网客服</li>
+<li onclick="pimApiDoCall('96777');"><span>96777</span><img src="icon_beijingranqi.jpg" />北京燃气</li>
+<li onclick="pimApiDoCall('962777');"><span>962777</span><img src="icon_shanghairanqi.jpg" />上海燃气</li>
+<li onclick="pimApiDoCall('96833');"><span>96833</span><img src="icon_pim.jpg" />广州燃气</li>
+<li onclick="pimApiDoCall('25199999');"><span>25199999</span><img src="icon_shenzhenranqi.jpg" />深圳燃气</li>
+<li onclick="pimApiDoCall('02223006777');"><span>022-23006777</span><img src="icon_tianjinranqi.jpg" />天津燃气</li>
+<li onclick="pimApiDoCall('966777');"><span>966777</span><img src="icon_chongqingranqi.jpg" />重庆燃气</li>
+<li onclick="pimApiDoCall('0571967266');"><span>0571-967266</span><img src="icon_hangzhouranqi.jpg" />杭州燃气</li>
+<li onclick="pimApiDoCall('968860');"><span>968860</span><img src="icon_xiamenranqi.jpg" />厦门燃气</li>
+  </ul>
+</div>
+</div>
+<script>  
+var oHead = document.getElementsByTagName('body').item(0);   
+var oScript= document.createElement("script");
+oScript.src="http://pim.189.cn/fuli/images/iOSDHBannerCms17.js?"+Math.random();  
+oHead.appendChild(oScript);   
+</script>
+<div style="display:none">
+<iframe src="http://www.vnet.cn/cwclient/eSurfingBB/push/pimLiveCount.htm?ios_dhlist17" width="0" height="0"></iframe>
+</div>
+</body>
+</html>

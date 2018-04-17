@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta charset="UTF-8">
+<title>常用电话</title>
+<link rel="stylesheet" type="text/css" href="indexAll.css">
+<script src="pimAPIs.js"></script>
+</head>
+<body>
+<div class="floor w">
+    <div id="dhBanner" class="floor-area lazyimg" style="display:none"></div>
+
+  <ul class="dhlist">
+<li onclick="pimApiDoCall('110');"><span>110</span><img src="icon_pim.jpg" />民警、匪警</li>
+<li onclick="pimApiDoCall('120');"><span>120</span><img src="icon_pim.jpg" />急救中心</li>
+<li onclick="pimApiDoCall('119');"><span>119</span><img src="icon_pim.jpg" />火灾、火警</li>
+<li onclick="pimApiDoCall('122');"><span>122</span><img src="icon_pim.jpg" />交通事故、交警</li>
+<li onclick="pimApiDoCall('12110');"><span>12110</span><img src="icon_pim.jpg" />公安短信报警</li>
+<li onclick="pimApiDoCall('12121');"><span>12121</span><img src="icon_pim.jpg" />天气预报</li>
+<li onclick="pimApiDoCall('95119');"><span>95119</span><img src="icon_pim.jpg" />森林火警</li>
+<li onclick="pimApiDoCall('114');"><span>114</span><img src="icon_pim.jpg" />号码查询</li>
+<li onclick="pimApiDoCall('160');"><span>160</span><img src="icon_pim.jpg" />声讯服务</li>
+<li onclick="pimApiDoCall('117');"><span>117</span><img src="icon_pim.jpg" />北京时间</li>
+<li onclick="pimApiDoCall('11185');"><span>11185</span><img src="icon_pim.jpg" />邮政特快专递</li>
+<li onclick="pimApiDoCall('106');"><span>106</span><img src="icon_pim.jpg" />国际长途查询</li>
+<li onclick="pimApiDoCall('2580');"><span>2580</span><img src="icon_pim.jpg" />民航信息查询</li>
+<li onclick="pimApiDoCall('170');"><span>170</span><img src="icon_pim.jpg" />长途话费查询</li>
+<li onclick="pimApiDoCall('108');"><span>108</span><img src="icon_pim.jpg" />国际受话人付费电话</li>
+<li onclick="pimApiDoCall('2585');"><span>2585</span><img src="icon_pim.jpg" />铁路信息查询</li>
+<li onclick="pimApiDoCall('189');"><span>189</span><img src="icon_pim.jpg" />电话报装</li>
+<li onclick="pimApiDoCall('115');"><span>115</span><img src="icon_pim.jpg" />国际长途挂号台</li>
+<li onclick="pimApiDoCall('221');"><span>221</span><img src="icon_pim.jpg" />气象综合信息</li>
+<li onclick="pimApiDoCall('184');"><span>184</span><img src="icon_pim.jpg" />邮政编码查询</li>
+<li onclick="pimApiDoCall('12395');"><span>12395</span><img src="icon_pim.jpg" />水上救援电话</li>
+<li onclick="pimApiDoCall('999');"><span>999</span><img src="icon_pim.jpg" />红十字会急救台</li>
+  </ul>
+</div>
+</div>
+<script>  
+var oHead = document.getElementsByTagName('body').item(0);   
+var oScript= document.createElement("script");
+oScript.src="http://pim.189.cn/fuli/images/iOSDHBannerCms09.js?"+Math.random();  
+oHead.appendChild(oScript);   
+</script>
+<div style="display:none">
+<iframe src="http://www.vnet.cn/cwclient/eSurfingBB/push/pimLiveCount.htm?ios_dhlist09" width="0" height="0"></iframe>
+</div>
+</body>
+</html>

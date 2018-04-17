@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta charset="UTF-8">
+<title>常用电话</title>
+<link rel="stylesheet" type="text/css" href="indexAll.css">
+<script src="pimAPIs.js"></script>
+</head>
+<body>
+<div class="floor w">
+    <div id="dhBanner" class="floor-area lazyimg" style="display:none"></div>
+
+  <ul class="dhlist">
+    <li onclick="pimApiDoCall('057188158198');"><span>0571-88158198</span><img src="icon_taobao.jpg" />淘宝网</li>
+    <li onclick="pimApiDoCall('4008608608');"><span>400-860-8608</span><img src="icon_tianmao.jpg" />天猫</li>
+    <li onclick="pimApiDoCall('4006065500');"><span>400-606-5500</span><img src="icon_jingdong.jpg" />京东商城 </li>
+    <li onclick="pimApiDoCall('4001066666');"><span>400-106-6666</span><img src="icon_dangdang.jpg" />当当网</li>
+    <li onclick="pimApiDoCall('4008105666');"><span>400-810-5666</span><img src="icon_zhuoyue.jpg" />卓越网 </li>
+    <li onclick="pimApiDoCall('4000071111');"><span>400-007-1111</span><img src="icon_yihaodian.jpg" />一号店</li>
+    <li onclick="pimApiDoCall('4008281878');"><span>400-828-1878</span><img src="icon_yixun.jpg" />易迅</li>
+    <li onclick="pimApiDoCall('4008365365');"><span>4008-365-365</span><img src="icon_suning.jpg" />苏宁易购</li>
+    <li onclick="pimApiDoCall('4006789888');"><span>400-6789-888</span><img src="icon_weipinhui.jpg" />唯品会</li>
+    <li onclick="pimApiDoCall('4001238888');"><span>400-123-8888</span><img src="icon_jumei.jpg" />聚美优品</li>
+    <li onclick="pimApiDoCall('4008113333');"><span>400-811-3333</span><img src="icon_guomei.jpg" />国美在线</li>
+    <li onclick="pimApiDoCall('4000517317');"><span>400-051-7317</span><img src="icon_lashou.jpg" />拉手网</li>
+    <li onclick="pimApiDoCall('4006605335');"><span>400-660-5335</span><img src="icon_meituan.jpg" />美团 </li>
+    <li onclick="pimApiDoCall('4006507099');"><span>400-650-7099</span><img src="icon_fanke.jpg" />凡客诚品 </li>
+    <li onclick="pimApiDoCall('4006888887');"><span>400-688-8887</span><img src="icon_nuomi.jpg" />糯米网</li>
+    <li onclick="pimApiDoCall('4006858666');"><span>400-685-8666</span><img src="icon_manzuo.jpg" />满座网 </li>
+    <li onclick="pimApiDoCall('4001015555');"><span>400-101-5555</span><img src="icon_wowotuan.jpg" />窝窝团 </li>
+  </ul>
+</div>
+</div>
+<script>  
+var oHead = document.getElementsByTagName('body').item(0);   
+var oScript= document.createElement("script");
+oScript.src="http://pim.189.cn/fuli/images/iOSDHBannerCms08.js?"+Math.random();  
+oHead.appendChild(oScript);   
+</script>
+<div style="display:none">
+<iframe src="http://www.vnet.cn/cwclient/eSurfingBB/push/pimLiveCount.htm?ios_dhlist08" width="0" height="0"></iframe>
+</div>
+</body>
+</html>

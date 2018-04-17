@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta charset="UTF-8">
+<title>常用电话</title>
+<link rel="stylesheet" type="text/css" href="indexAll.css">
+<script src="pimAPIs.js"></script>
+</head>
+<body>
+<div class="floor w">
+    <div id="dhBanner" class="floor-area lazyimg" style="display:none"></div>
+
+  <ul class="dhlist">
+<li onclick="pimApiDoCall('01012388');"><span>010-12388</span><img src="icon_pim.jpg" />中央纪委</li>
+<li onclick="pimApiDoCall('12315');"><span>12315</span><img src="icon_pim.jpg" />消费维权投诉电话</li>
+<li onclick="pimApiDoCall('12365');"><span>12365</span><img src="icon_pim.jpg" />技术监督局质量投诉</li>
+<li onclick="pimApiDoCall('96300');"><span>96300</span><img src="icon_pim.jpg" />国家烟草局投诉电话</li>
+<li onclick="pimApiDoCall('12318');"><span>12318</span><img src="icon_pim.jpg" />全国文化市场举报</li>
+<li onclick="pimApiDoCall('12358');"><span>12358</span><img src="icon_pim.jpg" />物价举报投诉电话</li>
+<li onclick="pimApiDoCall('12310');"><span>12310</span><img src="icon_pim.jpg" />机构编制违夫举报</li>
+<li onclick="pimApiDoCall('12319');"><span>12319</span><img src="icon_pim.jpg" />城建服务热线电话</li>
+<li onclick="pimApiDoCall('12388');"><span>12388</span><img src="icon_pim.jpg" />全国纪检监察举报</li>
+<li onclick="pimApiDoCall('12366');"><span>12366</span><img src="icon_pim.jpg" />地税纳税服务热线</li>
+<li onclick="pimApiDoCall('12369');"><span>12369</span><img src="icon_pim.jpg" />环保局监督电话</li>
+<li onclick="pimApiDoCall('12345');"><span>12345</span><img src="icon_pim.jpg" />政府公益服务接入网</li>
+<li onclick="pimApiDoCall('12320');"><span>12320</span><img src="icon_pim.jpg" />公共卫生环境投诉</li>
+<li onclick="pimApiDoCall('12333');"><span>12333</span><img src="icon_pim.jpg" />劳动和社会保障局</li>
+<li onclick="pimApiDoCall('12348');"><span>12348</span><img src="icon_pim.jpg" />全国法律服务热线</li>
+<li onclick="pimApiDoCall('96102');"><span>96102</span><img src="icon_pim.jpg" />偷税漏税举报热线</li>
+  </ul>
+</div>
+</div>
+<script>  
+var oHead = document.getElementsByTagName('body').item(0);   
+var oScript= document.createElement("script");
+oScript.src="http://pim.189.cn/fuli/images/iOSDHBannerCms19.js?"+Math.random();  
+oHead.appendChild(oScript);   
+</script>
+<div style="display:none">
+<iframe src="http://www.vnet.cn/cwclient/eSurfingBB/push/pimLiveCount.htm?ios_dhlist19" width="0" height="0"></iframe>
+</div>
+</body>
+</html>

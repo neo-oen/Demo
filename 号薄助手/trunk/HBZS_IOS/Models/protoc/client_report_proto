@@ -1,0 +1,46 @@
+/*
+ client_report_proto
+
+ Author:
+
+ Xu Rui
+
+ Xu Rui (xurui@ctid.com.cn)
+
+ Version: 1.0
+
+ Creation Time: 2012-05-23
+
+ Description:
+
+	Report from client
+
+*/
+
+option optimize_for = LITE_RUNTIME;
+
+package ctuab.proto.message;
+
+//Error report
+message ErrorReport {
+	optional string report_id           = 1;
+	optional string app_version_code    = 2;
+	optional string app_version_name    = 3;
+	optional string phone_model         = 4;
+	optional string brand               = 5;
+	optional string product             = 6;
+	optional string os_version          = 7;
+	optional int32 total_mem_size       = 8;
+	optional int32 available_mem_size   = 9;
+	optional string stack_trace         = 10;
+	optional string user_app_start_time = 11;
+	optional string user_app_crash_time = 12;
+}
+
+//Client report request
+message ClientReportRequest {
+    optional string imsi                = 1;
+	optional string surfing_account     = 2;
+	optional int64 sync_user_id         = 3;
+	repeated ErrorReport error_report	= 4;
+}

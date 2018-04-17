@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta charset="UTF-8">
+<title>常用电话</title>
+<link rel="stylesheet" type="text/css" href="indexAll.css">
+<script src="pimAPIs.js"></script>
+</head>
+<body>
+<div class="floor w">
+    <div id="dhBanner" class="floor-area lazyimg" style="display:none"></div>
+
+  <ul class="dhtablist8">
+    <li><a href="dhlist01.htm">手机</a></li>
+    <li class="c"><a href="dhlist12.htm">电脑</a></li>
+    <li><a href="dhlist27.htm">电视</a></li>
+    <li><a href="dhlist23.htm">相机</a></li>
+    <li><a href="dhlist28.htm">空调</a></li>
+    <li><a href="dhlist29.htm">冰箱</a></li>
+    <li><a href="dhlist30.htm">洗衣机</a></li>
+    <li><a href="dhlist31.htm">手表</a></li>
+  </ul>
+  <ul class="dhlist">
+    <li onclick="pimApiDoCall('4001002000');"><span>400-100-2000</span><img src="icon_lianxiang.jpg" />联想</li>
+    <li onclick="pimApiDoCall('4006272273');"><span>400-627-2273</span><img src="icon_pingguo.jpg" />苹果</li>
+    <li onclick="pimApiDoCall('4008105858');"><span>400-810-5858</span><img src="icon_sanxing.jpg" />三星</li>
+    <li onclick="pimApiDoCall('4008811852');"><span>400-881-1852</span><img src="icon_daier.jpg" />戴尔</li>
+    <li onclick="pimApiDoCall('4006103888');"><span>400-610-3888</span><img src="icon_huipu.jpg" />惠普</li>
+    <li onclick="pimApiDoCall('4006006655');"><span>400-600-6655</span><img src="icon_huashuo.jpg" />华硕</li>
+    <li onclick="pimApiDoCall('4008102228');"><span>400-810-2228</span><img src="icon_suoni.jpg" />索尼</li>
+    <li onclick="pimApiDoCall('4008202048');"><span>400-820-2048</span><img src="icon_dongzhi.jpg" />东芝</li>
+    <li onclick="pimApiDoCall('4007001000');"><span>400-700-1000</span><img src="icon_hongqi.jpg" />宏碁</li>
+    <li onclick="pimApiDoCall('4008118888');"><span>400-811-8888</span><img src="icon_changchengdiannao.jpg" />长城</li>
+    <li onclick="pimApiDoCall('4001069999');"><span>400-106-9999</span><img src="icon_shenzhoudiannao.jpg" />神舟</li>
+  </ul>
+</div>
+</div>
+<script>  
+var oHead = document.getElementsByTagName('body').item(0);   
+var oScript= document.createElement("script");
+oScript.src="http://pim.189.cn/fuli/images/iOSDHBannerCms12.js?"+Math.random();  
+oHead.appendChild(oScript);   
+</script>
+<div style="display:none">
+<iframe src="http://www.vnet.cn/cwclient/eSurfingBB/push/pimLiveCount.htm?ios_dhlist12" width="0" height="0"></iframe>
+</div>
+</body>
+</html>

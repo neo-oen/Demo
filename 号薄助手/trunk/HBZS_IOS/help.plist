@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>question</key>
+		<string>什么是重复联系人?</string>
+		<key>answer</key>
+		<string>重复联系人是指所有信息都是相同的联系人。</string>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>重复联系人如何产生的?</string>
+		<key>answer</key>
+		<string>重复联系人一般是第三方社交软件备份、同步联系人信息过程中产生的。</string>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>什么是相似联系人?</string>
+		<key>answer</key>
+		<string>相似联系人是指部分信息相同的联系人。</string>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>怎么合并相似联系人?</string>
+		<key>answer</key>
+		<string>在“更多”页面点击联系人去重，如果您有相似的联系人，那么在联系人去重结束后会出现“相似联系人合并”页面。点击“手动合并”即可编辑联系人信息，最后点击“完成”就能完成合并。</string>
+	</dict>
+</array>
+</plist>
