@@ -62,17 +62,17 @@
 		5DE170352053C5A600B48028 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6933E878C09001F1AA743DB3 /* Pods-主流框架SB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-主流框架SB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-主流框架SB/Pods-主流框架SB.debug.xcconfig"; sourceTree = "<group>"; };
 		B5C3E9732019A11B002BD045 /* 主流框架SB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "主流框架SB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5C3E9832019A11B002BD045 /* ____SB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "____SB.xcdatamodel"; sourceTree = "<group>"; };
+		B5C3E9832019A11B002BD045 /* ____SB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ____SB.xcdatamodel; sourceTree = "<group>"; };
 		B5C3E9852019A11B002BD045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5C3E9882019A11B002BD045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5C3E98A2019A11B002BD045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5C3E98F2019A11B002BD045 /* 主流框架SBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "主流框架SBUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5C3E9932019A11B002BD045 /* ____SBUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____SBUITests.m"; sourceTree = "<group>"; };
+		B5C3E9932019A11B002BD045 /* ____SBUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ____SBUITests.m; sourceTree = "<group>"; };
 		B5C3E9952019A11B002BD045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5C3E9A82019A740002BD045 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B5C3E9A92019A740002BD045 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DEE783A4297524BFDB08EA75 /* Pods-主流框架SB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-主流框架SB.release.xcconfig"; path = "Pods/Target Support Files/Pods-主流框架SB/Pods-主流框架SB.release.xcconfig"; sourceTree = "<group>"; };
-		FCAB202E248075068E4D50E4 /* Pods_____SB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_____SB.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCAB202E248075068E4D50E4 /* Pods_____SB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_____SB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -512,12 +512,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-主流框架SB/Pods-主流框架SB-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/ASIHTTPRequest/ASIHTTPRequest.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ASIHTTPRequest.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -770,7 +774,7 @@
 				B5C3E9832019A11B002BD045 /* ____SB.xcdatamodel */,
 			);
 			currentVersion = B5C3E9832019A11B002BD045 /* ____SB.xcdatamodel */;
-			path = "____SB.xcdatamodeld";
+			path = ____SB.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
