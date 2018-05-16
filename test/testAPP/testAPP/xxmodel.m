@@ -14,7 +14,7 @@
 {
     self = [super init];
     if (self) {
-        self.shareType = 0;
+        self.selected = NO;
     }
     return self;
 }

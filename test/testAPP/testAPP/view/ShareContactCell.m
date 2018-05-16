@@ -26,6 +26,7 @@
         _accessorView = [UIButton buttonWithType:UIButtonTypeCustom];
         [_accessorView setImage:[UIImage imageNamed:@"普通箭头-List"] forState:UIControlStateNormal];
         [_accessorView.imageView setContentMode:UIViewContentModeCenter];
+        [_accessorView.imageView setClipsToBounds:NO];
         [_accessorView addTarget:self action:@selector(accessorButtonClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.contentView addSubview:_accessorView];
     }

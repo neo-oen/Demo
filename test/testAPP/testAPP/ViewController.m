@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *kaiguan;
 
 @property(nonatomic,strong)NSMutableArray * models;
+@property(nonatomic,strong)NSMutableArray * models2;
 
 @end
 
@@ -28,60 +29,65 @@
 
 - (IBAction)diyige:(UISegmentedControl *)sender {
     
-//    switch ( sender.selectedSegmentIndex) {
-//        case 0:
-//
-//            [_shareLIstView setShareListViewWith:@[]  andViewType:myShareListViewType withFirstBCA:^(ContactShareInfo *model) {
-//
-//            } withSecondBCA:^(ContactShareInfo *model) {
-//
-//            } withSendOtherBCA:^(ContactShareInfo *model) {
-//
-//            } withAccessorViewBCA:^(ContactShareInfo *model) {
-//
-//            }];
-//            break;
-//        case 1:
-//            [_shareLIstView setShareListViewWith:[self.models copy] andViewType:myShareListViewType withFirstBCA:^(ContactShareInfo *model) {
-//                 NSLog(@"----1111---");
-//            } withSecondBCA:^(ContactShareInfo *model) {
-//                 NSLog(@"----1111---");
-//            } withSendOtherBCA:^(ContactShareInfo *model) {
-//                 NSLog(@"----1111---");
-//            } withAccessorViewBCA:^(ContactShareInfo *model) {
-//                 NSLog(@"----1111---");
-//            }];
-//            break;
-//        case 2:
-//            [_shareLIstView setShareListViewWith:[self.models copy] andViewType:toMyShareListViewTypew withFirstBCA:^(ContactShareInfo *model) {
-//                NSLog(@"----2222---");
-//            } withSecondBCA:^(ContactShareInfo *model) {
-//                NSLog(@"---222----");
-//            } withSendOtherBCA:^(ContactShareInfo *model) {
-//                NSLog(@"--2222----");
-//            } withAccessorViewBCA:^(ContactShareInfo *model) {
-//
-//            }];
-//            break;
-//        default:
-//            break;
-//    }
-//
-    
     switch ( sender.selectedSegmentIndex) {
         case 0:
-            
-            [_shareLIstView setShareListViewWith:@[]  andViewType:myShareListViewType];
+
+            [_shareLIstView setShareListViewWith:@[]  andViewType:myShareListViewType withFirstBCA:^(ContactShareInfo *model) {
+
+            } withSecondBCA:^(ContactShareInfo *model) {
+
+            } withSendOtherBCA:^(ContactShareInfo *model) {
+
+            } withAccessorViewBCA:^(ContactShareInfo *model) {
+
+            }];
             break;
         case 1:
-            [_shareLIstView setShareListViewWith:[self.models copy] andViewType:myShareListViewType];
+            [_shareLIstView setShareListViewWith:[self.models copy] andViewType:myShareListViewType withFirstBCA:^(ContactShareInfo *model) {
+                UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+                pasteboard.string =[NSString stringWithFormat:@"链接：%@ 提取码：%@",model.shareurl,model.extractcode];
+#warning 提醒已经复制完成
+            } withSecondBCA:^(ContactShareInfo *model) {
+                //弹出提示框，告诉情况。
+                //调用删除函数删除
+                
+                 NSLog(@"----1111---");
+            } withSendOtherBCA:^(ContactShareInfo *model) {
+                 NSLog(@"----1111---");
+            } withAccessorViewBCA:^(ContactShareInfo *model) {
+                 NSLog(@"----1111---");
+            }];
             break;
         case 2:
-            [_shareLIstView setShareListViewWith:[self.models copy] andViewType:toMyShareListViewTypew];
+            [_shareLIstView setShareListViewWith:[self.models2 copy] andViewType:toMyShareListViewTypew withFirstBCA:^(ContactShareInfo *model) {
+                NSLog(@"----2222---");
+            } withSecondBCA:^(ContactShareInfo *model) {
+                NSLog(@"---222----");
+            } withSendOtherBCA:^(ContactShareInfo *model) {
+                NSLog(@"--2222----");
+            } withAccessorViewBCA:^(ContactShareInfo *model) {
+
+            }];
             break;
         default:
             break;
     }
+
+    
+//    switch ( sender.selectedSegmentIndex) {
+//        case 0:
+//
+//            [_shareLIstView setShareListViewWith:@[]  andViewType:myShareListViewType];
+//            break;
+//        case 1:
+//            [_shareLIstView setShareListViewWith:[self.models copy] andViewType:myShareListViewType];
+//            break;
+//        case 2:
+//            [_shareLIstView setShareListViewWith:[self.models2 copy] andViewType:toMyShareListViewTypew];
+//            break;
+//        default:
+//            break;
+//    }
     
 }
 
@@ -114,12 +120,29 @@
             ContactShareInfo * model = [[ContactShareInfo alloc]init];
             model.shareurl = [NSString stringWithFormat:@"XXXXXXX-%d-XXXXXXXXX",i];
             model.extractcode = [NSString stringWithFormat:@"======x%dx=======",i+7];
-            
+            model.shareType = 0;
+
             [_models addObject:model];
         }
         
     }
     return _models;
+}
+-(NSMutableArray *)models2
+{
+    
+    if(!_models2) {
+        _models2 = [[NSMutableArray alloc]init];
+        for (int i=0; i<10; i++) {
+            ContactShareInfo * model = [[ContactShareInfo alloc]init];
+            model.shareurl = [NSString stringWithFormat:@"XXXXXXX-%d-XXXXXXXXX",i];
+            model.extractcode = [NSString stringWithFormat:@"======x%dx=======",i+7];
+            model.shareType = 1;
+            [_models2 addObject:model];
+        }
+        
+    }
+    return _models2;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
