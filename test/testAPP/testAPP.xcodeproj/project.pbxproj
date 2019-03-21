@@ -8,25 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5D7BF425206B957E00B78712 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7BF424206B957E00B78712 /* AppDelegate.m */; };
-		5D7BF428206B957E00B78712 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7BF427206B957E00B78712 /* ViewController.m */; };
 		5D7BF42B206B957E00B78712 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D7BF429206B957E00B78712 /* Main.storyboard */; };
 		5D7BF42D206B957E00B78712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D7BF42C206B957E00B78712 /* Assets.xcassets */; };
 		5D7BF430206B957E00B78712 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D7BF42E206B957E00B78712 /* LaunchScreen.storyboard */; };
 		5D7BF433206B957E00B78712 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7BF432206B957E00B78712 /* main.m */; };
 		5D7BF43D206B957E00B78712 /* testAPPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7BF43C206B957E00B78712 /* testAPPTests.m */; };
 		5D7BF448206B957E00B78712 /* testAPPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7BF447206B957E00B78712 /* testAPPUITests.m */; };
-		B59ACABC2091B8A000A94C64 /* GGProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = B59ACABB2091B8A000A94C64 /* GGProgressView.m */; };
-		B5C8BA0E20A1902D00120899 /* SegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8BA0D20A1902D00120899 /* SegmentView.m */; };
-		B5C8BA1320A290D400120899 /* SegmentItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8BA1220A290D400120899 /* SegmentItemView.m */; };
-		B5C8BA2D20AA832900120899 /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8BA2C20AA832900120899 /* BaseTableView.m */; };
-		B5C8BA3020AA837700120899 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8BA2F20AA837700120899 /* BaseTableViewCell.m */; };
-		B5C8BA3A20AA85CF00120899 /* ShareContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8BA3920AA85CF00120899 /* ShareContactCell.m */; };
+		B513B15B22432E0700F5B980 /* ZBTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B513B15922432E0700F5B980 /* ZBTextField.m */; };
+		B556D3CB22432BB70054EFCD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B556D3CA22432BB70054EFCD /* ViewController.m */; };
 		B5C8BA4020AAA6EB00120899 /* greenColor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5C8BA3F20AAA6EB00120899 /* greenColor@2x.png */; };
-		B5C8BA4820AAB01A00120899 /* xxmodel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8BA4720AAB01A00120899 /* xxmodel.m */; };
-		B5C8BA4F20ABCCD500120899 /* ShareContactTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8BA4E20ABCCD500120899 /* ShareContactTableView.m */; };
-		B5C8BA6320ABFA7500120899 /* HB_ShareListView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8BA6220ABFA7500120899 /* HB_ShareListView.m */; };
-		B5C8BA6620ABFFC200120899 /* NoShareListTV.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8BA6520ABFFC200120899 /* NoShareListTV.m */; };
-		B5C8BA6820ABFFD500120899 /* NoShareListTV.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5C8BA6720ABFFD500120899 /* NoShareListTV.xib */; };
 		E1D5B4E2B164779C4A0FE6D5 /* Pods_testAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05DA507A0F7F379FF478512B /* Pods_testAPP.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,8 +43,6 @@
 		5D7BF420206B957E00B78712 /* testAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D7BF423206B957E00B78712 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5D7BF424206B957E00B78712 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5D7BF426206B957E00B78712 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5D7BF427206B957E00B78712 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5D7BF42A206B957E00B78712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D7BF42C206B957E00B78712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D7BF42F206B957E00B78712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,28 +55,11 @@
 		5D7BF447206B957E00B78712 /* testAPPUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testAPPUITests.m; sourceTree = "<group>"; };
 		5D7BF449206B957E00B78712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B480BBC5F6A2A3DC7B259DD9 /* Pods-testAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testAPP/Pods-testAPP.debug.xcconfig"; sourceTree = "<group>"; };
-		B59ACABA2091B8A000A94C64 /* GGProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGProgressView.h; sourceTree = "<group>"; };
-		B59ACABB2091B8A000A94C64 /* GGProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGProgressView.m; sourceTree = "<group>"; };
-		B5C8BA0C20A1902D00120899 /* SegmentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentView.h; sourceTree = "<group>"; };
-		B5C8BA0D20A1902D00120899 /* SegmentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentView.m; sourceTree = "<group>"; };
-		B5C8BA1120A290D400120899 /* SegmentItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentItemView.h; sourceTree = "<group>"; };
-		B5C8BA1220A290D400120899 /* SegmentItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentItemView.m; sourceTree = "<group>"; };
-		B5C8BA2B20AA832900120899 /* BaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableView.h; sourceTree = "<group>"; };
-		B5C8BA2C20AA832900120899 /* BaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableView.m; sourceTree = "<group>"; };
-		B5C8BA2E20AA837700120899 /* BaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
-		B5C8BA2F20AA837700120899 /* BaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
-		B5C8BA3820AA85CF00120899 /* ShareContactCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareContactCell.h; sourceTree = "<group>"; };
-		B5C8BA3920AA85CF00120899 /* ShareContactCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareContactCell.m; sourceTree = "<group>"; };
+		B513B15922432E0700F5B980 /* ZBTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBTextField.m; sourceTree = "<group>"; };
+		B513B15A22432E0700F5B980 /* ZBTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBTextField.h; sourceTree = "<group>"; };
+		B556D3C922432BB70054EFCD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B556D3CA22432BB70054EFCD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B5C8BA3F20AAA6EB00120899 /* greenColor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greenColor@2x.png"; sourceTree = "<group>"; };
-		B5C8BA4620AAB01A00120899 /* xxmodel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xxmodel.h; sourceTree = "<group>"; };
-		B5C8BA4720AAB01A00120899 /* xxmodel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xxmodel.m; sourceTree = "<group>"; };
-		B5C8BA4D20ABCCD500120899 /* ShareContactTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareContactTableView.h; sourceTree = "<group>"; };
-		B5C8BA4E20ABCCD500120899 /* ShareContactTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareContactTableView.m; sourceTree = "<group>"; };
-		B5C8BA6120ABFA7500120899 /* HB_ShareListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HB_ShareListView.h; sourceTree = "<group>"; };
-		B5C8BA6220ABFA7500120899 /* HB_ShareListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HB_ShareListView.m; sourceTree = "<group>"; };
-		B5C8BA6420ABFFC200120899 /* NoShareListTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoShareListTV.h; sourceTree = "<group>"; };
-		B5C8BA6520ABFFC200120899 /* NoShareListTV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoShareListTV.m; sourceTree = "<group>"; };
-		B5C8BA6720ABFFD500120899 /* NoShareListTV.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoShareListTV.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,23 +124,16 @@
 			children = (
 				5D7BF423206B957E00B78712 /* AppDelegate.h */,
 				5D7BF424206B957E00B78712 /* AppDelegate.m */,
-				B59ACABA2091B8A000A94C64 /* GGProgressView.h */,
-				B59ACABB2091B8A000A94C64 /* GGProgressView.m */,
-				B5C8BA0C20A1902D00120899 /* SegmentView.h */,
-				B5C8BA0D20A1902D00120899 /* SegmentView.m */,
-				B5C8BA1120A290D400120899 /* SegmentItemView.h */,
-				B5C8BA1220A290D400120899 /* SegmentItemView.m */,
-				5D7BF426206B957E00B78712 /* ViewController.h */,
-				5D7BF427206B957E00B78712 /* ViewController.m */,
-				B5C8BA4620AAB01A00120899 /* xxmodel.h */,
-				B5C8BA4720AAB01A00120899 /* xxmodel.m */,
-				B5C8BA2620AA6D2300120899 /* view */,
+				B513B15A22432E0700F5B980 /* ZBTextField.h */,
+				B513B15922432E0700F5B980 /* ZBTextField.m */,
 				5D7BF429206B957E00B78712 /* Main.storyboard */,
 				B5C8BA3F20AAA6EB00120899 /* greenColor@2x.png */,
 				5D7BF42C206B957E00B78712 /* Assets.xcassets */,
 				5D7BF42E206B957E00B78712 /* LaunchScreen.storyboard */,
 				5D7BF431206B957E00B78712 /* Info.plist */,
 				5D7BF432206B957E00B78712 /* main.m */,
+				B556D3C922432BB70054EFCD /* ViewController.h */,
+				B556D3CA22432BB70054EFCD /* ViewController.m */,
 			);
 			path = testAPP;
 			sourceTree = "<group>";
@@ -190,34 +154,6 @@
 				5D7BF449206B957E00B78712 /* Info.plist */,
 			);
 			path = testAPPUITests;
-			sourceTree = "<group>";
-		};
-		B5C8BA2620AA6D2300120899 /* view */ = {
-			isa = PBXGroup;
-			children = (
-				B5C8BA3120AA837F00120899 /* Base */,
-				B5C8BA4D20ABCCD500120899 /* ShareContactTableView.h */,
-				B5C8BA4E20ABCCD500120899 /* ShareContactTableView.m */,
-				B5C8BA3820AA85CF00120899 /* ShareContactCell.h */,
-				B5C8BA3920AA85CF00120899 /* ShareContactCell.m */,
-				B5C8BA6120ABFA7500120899 /* HB_ShareListView.h */,
-				B5C8BA6220ABFA7500120899 /* HB_ShareListView.m */,
-				B5C8BA6420ABFFC200120899 /* NoShareListTV.h */,
-				B5C8BA6520ABFFC200120899 /* NoShareListTV.m */,
-				B5C8BA6720ABFFD500120899 /* NoShareListTV.xib */,
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
-		B5C8BA3120AA837F00120899 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				B5C8BA2B20AA832900120899 /* BaseTableView.h */,
-				B5C8BA2C20AA832900120899 /* BaseTableView.m */,
-				B5C8BA2E20AA837700120899 /* BaseTableViewCell.h */,
-				B5C8BA2F20AA837700120899 /* BaseTableViewCell.m */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		E6FDCCBB3E3B6165F791F00A /* Frameworks */ = {
@@ -336,7 +272,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5C8BA6820ABFFD500120899 /* NoShareListTV.xib in Resources */,
 				B5C8BA4020AAA6EB00120899 /* greenColor@2x.png in Resources */,
 				5D7BF430206B957E00B78712 /* LaunchScreen.storyboard in Resources */,
 				5D7BF42D206B957E00B78712 /* Assets.xcassets in Resources */,
@@ -368,11 +303,21 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-testAPP/Pods-testAPP-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/FLEX/FLEX.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLEX.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -404,18 +349,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5C8BA3020AA837700120899 /* BaseTableViewCell.m in Sources */,
-				B5C8BA2D20AA832900120899 /* BaseTableView.m in Sources */,
-				B5C8BA0E20A1902D00120899 /* SegmentView.m in Sources */,
-				B5C8BA4820AAB01A00120899 /* xxmodel.m in Sources */,
-				B5C8BA4F20ABCCD500120899 /* ShareContactTableView.m in Sources */,
-				5D7BF428206B957E00B78712 /* ViewController.m in Sources */,
-				B59ACABC2091B8A000A94C64 /* GGProgressView.m in Sources */,
-				B5C8BA1320A290D400120899 /* SegmentItemView.m in Sources */,
-				B5C8BA6320ABFA7500120899 /* HB_ShareListView.m in Sources */,
-				B5C8BA6620ABFFC200120899 /* NoShareListTV.m in Sources */,
+				B556D3CB22432BB70054EFCD /* ViewController.m in Sources */,
+				B513B15B22432E0700F5B980 /* ZBTextField.m in Sources */,
 				5D7BF433206B957E00B78712 /* main.m in Sources */,
-				B5C8BA3A20AA85CF00120899 /* ShareContactCell.m in Sources */,
 				5D7BF425206B957E00B78712 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

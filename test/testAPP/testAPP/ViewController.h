@@ -2,14 +2,16 @@
 //  ViewController.h
 //  testAPP
 //
-//  Created by 王雅强 on 2018/3/28.
-//  Copyright © 2018年 王雅强. All rights reserved.
+//  Created by neo on 2019/3/21.
+//  Copyright © 2019 王雅强. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface ViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
