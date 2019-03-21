@@ -57,6 +57,7 @@
 		B480BBC5F6A2A3DC7B259DD9 /* Pods-testAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testAPP/Pods-testAPP.debug.xcconfig"; sourceTree = "<group>"; };
 		B513B15922432E0700F5B980 /* ZBTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBTextField.m; sourceTree = "<group>"; };
 		B513B15A22432E0700F5B980 /* ZBTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBTextField.h; sourceTree = "<group>"; };
+		B513B15E224330A900F5B980 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		B556D3C922432BB70054EFCD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B556D3CA22432BB70054EFCD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B5C8BA3F20AAA6EB00120899 /* greenColor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greenColor@2x.png"; sourceTree = "<group>"; };
@@ -122,6 +123,7 @@
 		5D7BF422206B957E00B78712 /* testAPP */ = {
 			isa = PBXGroup;
 			children = (
+				B513B15C224330A900F5B980 /* Others */,
 				5D7BF423206B957E00B78712 /* AppDelegate.h */,
 				5D7BF424206B957E00B78712 /* AppDelegate.m */,
 				B513B15A22432E0700F5B980 /* ZBTextField.h */,
@@ -154,6 +156,22 @@
 				5D7BF449206B957E00B78712 /* Info.plist */,
 			);
 			path = testAPPUITests;
+			sourceTree = "<group>";
+		};
+		B513B15C224330A900F5B980 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				B513B15D224330A900F5B980 /* PrefixHeader */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		B513B15D224330A900F5B980 /* PrefixHeader */ = {
+			isa = PBXGroup;
+			children = (
+				B513B15E224330A900F5B980 /* PrefixHeader.pch */,
+			);
+			path = PrefixHeader;
 			sourceTree = "<group>";
 		};
 		E6FDCCBB3E3B6165F791F00A /* Frameworks */ = {
@@ -518,6 +536,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5P46D56G7P;
+				GCC_PREFIX_HEADER = "./$(PROJECT_NAME)/Others/PrefixHeader/PrefixHeader.pch";
 				INFOPLIST_FILE = testAPP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -534,6 +553,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5P46D56G7P;
+				GCC_PREFIX_HEADER = "./$(PROJECT_NAME)/Others/PrefixHeader/PrefixHeader.pch";
 				INFOPLIST_FILE = testAPP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
