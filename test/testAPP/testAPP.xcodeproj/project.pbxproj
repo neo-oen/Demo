@@ -14,8 +14,9 @@
 		5D7BF433206B957E00B78712 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7BF432206B957E00B78712 /* main.m */; };
 		5D7BF43D206B957E00B78712 /* testAPPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7BF43C206B957E00B78712 /* testAPPTests.m */; };
 		5D7BF448206B957E00B78712 /* testAPPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7BF447206B957E00B78712 /* testAPPUITests.m */; };
-		B513B15B22432E0700F5B980 /* ZBTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B513B15922432E0700F5B980 /* ZBTextField.m */; };
 		B556D3CB22432BB70054EFCD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B556D3CA22432BB70054EFCD /* ViewController.m */; };
+		B5BE1D302269727700350D99 /* UIView+ZBDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BE1D2F2269727700350D99 /* UIView+ZBDraw.m */; };
+		B5BE1D332269DA4000350D99 /* zbLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5BE1D322269DA4000350D99 /* zbLabel.m */; };
 		B5C8BA4020AAA6EB00120899 /* greenColor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5C8BA3F20AAA6EB00120899 /* greenColor@2x.png */; };
 		E1D5B4E2B164779C4A0FE6D5 /* Pods_testAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05DA507A0F7F379FF478512B /* Pods_testAPP.framework */; };
 /* End PBXBuildFile section */
@@ -55,11 +56,13 @@
 		5D7BF447206B957E00B78712 /* testAPPUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testAPPUITests.m; sourceTree = "<group>"; };
 		5D7BF449206B957E00B78712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B480BBC5F6A2A3DC7B259DD9 /* Pods-testAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testAPP/Pods-testAPP.debug.xcconfig"; sourceTree = "<group>"; };
-		B513B15922432E0700F5B980 /* ZBTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBTextField.m; sourceTree = "<group>"; };
-		B513B15A22432E0700F5B980 /* ZBTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBTextField.h; sourceTree = "<group>"; };
 		B513B15E224330A900F5B980 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		B556D3C922432BB70054EFCD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B556D3CA22432BB70054EFCD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B5BE1D2E2269727700350D99 /* UIView+ZBDraw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ZBDraw.h"; sourceTree = "<group>"; };
+		B5BE1D2F2269727700350D99 /* UIView+ZBDraw.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZBDraw.m"; sourceTree = "<group>"; };
+		B5BE1D312269DA4000350D99 /* zbLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zbLabel.h; sourceTree = "<group>"; };
+		B5BE1D322269DA4000350D99 /* zbLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zbLabel.m; sourceTree = "<group>"; };
 		B5C8BA3F20AAA6EB00120899 /* greenColor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greenColor@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,8 +129,8 @@
 				B513B15C224330A900F5B980 /* Others */,
 				5D7BF423206B957E00B78712 /* AppDelegate.h */,
 				5D7BF424206B957E00B78712 /* AppDelegate.m */,
-				B513B15A22432E0700F5B980 /* ZBTextField.h */,
-				B513B15922432E0700F5B980 /* ZBTextField.m */,
+				B5BE1D2E2269727700350D99 /* UIView+ZBDraw.h */,
+				B5BE1D2F2269727700350D99 /* UIView+ZBDraw.m */,
 				5D7BF429206B957E00B78712 /* Main.storyboard */,
 				B5C8BA3F20AAA6EB00120899 /* greenColor@2x.png */,
 				5D7BF42C206B957E00B78712 /* Assets.xcassets */,
@@ -136,6 +139,8 @@
 				5D7BF432206B957E00B78712 /* main.m */,
 				B556D3C922432BB70054EFCD /* ViewController.h */,
 				B556D3CA22432BB70054EFCD /* ViewController.m */,
+				B5BE1D312269DA4000350D99 /* zbLabel.h */,
+				B5BE1D322269DA4000350D99 /* zbLabel.m */,
 			);
 			path = testAPP;
 			sourceTree = "<group>";
@@ -367,8 +372,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5BE1D302269727700350D99 /* UIView+ZBDraw.m in Sources */,
 				B556D3CB22432BB70054EFCD /* ViewController.m in Sources */,
-				B513B15B22432E0700F5B980 /* ZBTextField.m in Sources */,
+				B5BE1D332269DA4000350D99 /* zbLabel.m in Sources */,
 				5D7BF433206B957E00B78712 /* main.m in Sources */,
 				5D7BF425206B957E00B78712 /* AppDelegate.m in Sources */,
 			);
