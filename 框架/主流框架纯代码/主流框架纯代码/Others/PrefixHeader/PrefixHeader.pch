@@ -10,6 +10,7 @@
 #pragma mark - ============== 常用头文件 ==============
 #import "NSArray+Log.h"
 #import "Masonry/Masonry.h"
+#import "JRSwizzle.h"
 
 #pragma mark - ============== 常用宏 ==============
 // 判断是否为iOS7

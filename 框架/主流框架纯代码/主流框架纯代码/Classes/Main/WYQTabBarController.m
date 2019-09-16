@@ -34,8 +34,10 @@
     
     [self setViewControllers:@[navigationController1,navigationController2,navigationController3,navigationController4]];
     
-    [viewControll3.rdv_tabBarItem setTitle:@"sdfs"];
-    
+    [viewControll3.tabBarItem setTitle:@"sdfs"];
+    RDVTabBarItem * ii = [[RDVTabBarItem alloc]init];
+    [ii setTitle:@"kk"];
+    viewControll1.tabBarItem = ii;
 
     [viewControll2.navigationItem setTitle:@"werwer"];
     

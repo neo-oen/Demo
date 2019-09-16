@@ -13,6 +13,7 @@
 		5DE16FC72053BF7100B48028 /* RDVTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE16FC42053BF7100B48028 /* RDVTabBarItem.m */; };
 		5DE16FCA2053C00500B48028 /* WYQTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE16FC92053C00500B48028 /* WYQTabBarController.m */; };
 		95ED0119DFC86DA6B766A9F4 /* Pods________.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFAAD0374AD7C1067199FD96 /* Pods________.framework */; };
+		B55D6F972328E54100EBD076 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = B55D6F952328E54000EBD076 /* JRSwizzle.m */; };
 		B5C3E93620198DB3002BD045 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E93520198DB3002BD045 /* main.m */; };
 		B5C3E93920198DB3002BD045 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E93820198DB3002BD045 /* AppDelegate.m */; };
 		B5C3E94220198DB3002BD045 /* _______.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5C3E94020198DB3002BD045 /* _______.xcdatamodeld */; };
@@ -47,6 +48,8 @@
 		5DE16FC42053BF7100B48028 /* RDVTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDVTabBarItem.m; sourceTree = "<group>"; };
 		5DE16FC82053C00500B48028 /* WYQTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYQTabBarController.h; sourceTree = "<group>"; };
 		5DE16FC92053C00500B48028 /* WYQTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYQTabBarController.m; sourceTree = "<group>"; };
+		B55D6F952328E54000EBD076 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		B55D6F962328E54100EBD076 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
 		B5C3E93120198DB3002BD045 /* 主流框架纯代码.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "主流框架纯代码.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C3E93520198DB3002BD045 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../main.m; sourceTree = "<group>"; };
 		B5C3E93720198DB3002BD045 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -147,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				5DE16FB62053BEB600B48028 /* Classes */,
+				B55D6F932328E50D00EBD076 /* Category */,
 				5DE16FBA2053BEB600B48028 /* PrefixHeader */,
 			);
 			path = Others;
@@ -205,6 +209,23 @@
 				CFAAD0374AD7C1067199FD96 /* Pods________.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B55D6F932328E50D00EBD076 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B55D6F942328E52500EBD076 /* NSObject */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		B55D6F942328E52500EBD076 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				B55D6F962328E54100EBD076 /* JRSwizzle.h */,
+				B55D6F952328E54000EBD076 /* JRSwizzle.m */,
+			);
+			path = NSObject;
 			sourceTree = "<group>";
 		};
 		B5C3E92820198DB3002BD045 = {
@@ -425,6 +446,7 @@
 				5DE16FC72053BF7100B48028 /* RDVTabBarItem.m in Sources */,
 				B5C3E94220198DB3002BD045 /* _______.xcdatamodeld in Sources */,
 				5DE16FC62053BF7100B48028 /* RDVTabBarController.m in Sources */,
+				B55D6F972328E54100EBD076 /* JRSwizzle.m in Sources */,
 				5DE16FCA2053C00500B48028 /* WYQTabBarController.m in Sources */,
 				5DE16FC52053BF7100B48028 /* RDVTabBar.m in Sources */,
 				B5C3E9692019940F002BD045 /* README.md in Sources */,

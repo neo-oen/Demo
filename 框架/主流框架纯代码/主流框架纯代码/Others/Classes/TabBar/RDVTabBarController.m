@@ -285,6 +285,44 @@
 
 @implementation UIViewController (RDVTabBarControllerItem)
 
+//+ (void)load {
+//    [super load];
+//
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        [UIViewController swizzleMethod:@selector(setTabBarItem:) withMethod:@selector(rdv_setTabBarItem:)];
+//        [UIViewController swizzleMethod:@selector(tabBarItem) withMethod:@selector(rdv_tabBarItem)];
+//
+//    });
+//}
+//
+//+ (BOOL)swizzleMethod:(SEL)originSelector withMethod:(SEL)swizzleSelector {
+//    Method originMethod = class_getInstanceMethod(self, originSelector);
+//    if (!originMethod) {
+//        return NO;
+//    }
+//
+//    Method swizzleMethod = class_getInstanceMethod(self, swizzleSelector);
+//    if (!swizzleMethod) {
+//        return NO;
+//    }
+//
+//    class_addMethod(self,
+//                    originSelector,
+//                    class_getMethodImplementation(self, originSelector),
+//                    method_getTypeEncoding(originMethod));
+//
+//    class_addMethod(self,
+//                    swizzleSelector,
+//                    class_getMethodImplementation(self, swizzleSelector),
+//                    method_getTypeEncoding(swizzleMethod));
+//
+//    method_exchangeImplementations(class_getInstanceMethod(self, originSelector), class_getInstanceMethod(self, swizzleSelector));
+//
+//    return YES;
+//}
+//
+//
 - (RDVTabBarController *)rdv_tabBarController {
     RDVTabBarController *tabBarController = objc_getAssociatedObject(self, @selector(rdv_tabBarController));
     
@@ -295,13 +333,13 @@
     return tabBarController;
 }
 
-- (RDVTabBarItem *)rdv_tabBarItem {
+- (RDVTabBarItem *)tabBarItem {
     RDVTabBarController *tabBarController = [self rdv_tabBarController];
     NSInteger index = [tabBarController indexForViewController:self];
     return [[[tabBarController tabBar] items] objectAtIndex:index];
 }
 
-- (void)rdv_setTabBarItem:(RDVTabBarItem *)tabBarItem {
+- (void)setTabBarItem:(RDVTabBarItem *)tabBarItem {
     RDVTabBarController *tabBarController = [self rdv_tabBarController];
     
     if (!tabBarController) {
